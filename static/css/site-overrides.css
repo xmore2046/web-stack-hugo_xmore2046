@@ -163,17 +163,22 @@ body.io-black-mode .sidebar .card{ background:#232527; }
 }
 
 /* ===== 14. 页脚版权：固定最左侧 ===== */
-footer.main-footer .footer-text{
+/* 提高选择器权重，覆盖主题 custom-style.css 的 text-align:center */
+footer.main-footer.footer-type-1 .footer-inner .footer-text{
     text-align:left !important;
     float:left !important;
     margin:0 !important;
+    width:100%;
 }
-footer.main-footer .footer-inner{
+footer.main-footer.footer-type-1 .footer-inner{
     text-align:left !important;
+    display:block !important;
+    width:100%;
 }
 @media (max-width:767.98px){
-    footer.main-footer .footer-text{
+    footer.main-footer.footer-type-1 .footer-inner .footer-text{
         text-align:left !important;
         float:none !important;
+        width:100%;
     }
 }
