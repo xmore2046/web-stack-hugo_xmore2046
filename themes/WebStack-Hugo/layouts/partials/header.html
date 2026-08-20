@@ -37,6 +37,7 @@
             (function () {
                 var hm = document.createElement("script");
                 hm.src = "https://hm.baidu.com/hm.js?{{ $.Site.Params.seo.baiduhmid }}";
+                hm.async = true;
                 var s = document.getElementsByTagName("script")[0];
                 s.parentNode.insertBefore(hm, s);
             })();
@@ -46,7 +47,7 @@
 
     <!-- 51.LA 网站统计 -->
     {{ with .Site.Params.seo.tj51laid }}
-    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+    <script async charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
     <script>LA.init({id:"{{ $.Site.Params.seo.tj51laid }}",ck:"{{ $.Site.Params.seo.tj51lack }}"})</script>    
     {{ end }} 
     <!-- end 51.LA 网站统计 -->
@@ -59,7 +60,6 @@
 
     <!-- Fancybox -->
     {{if .Page.Site.Params.fancybox }}
-    <link rel="stylesheet" id="fancybox-css" href="{{ relURL "assets/css/fancybox.min-3.5.7.css" }}"/>
     <script type="text/javascript" id="fancybox-js" src="{{ relURL "assets/js/fancybox.min-3.5.7.js" }}" defer></script>
     {{ end }}
     <!-- end Fancybox -->
