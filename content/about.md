@@ -4,30 +4,13 @@ date: 2020-07-28T19:27:08+08:00
 draft: false
 ---
 
-#### 这是 Hugo 版 WebStack 主题
+#### 关于本站
 
-本项目是基于**纯静态**的网址导航网站 [webstack.cc](https://github.com/WebStackPage/WebStackPage.github.io) 制作的 [Hugo](https://gohugo.io/) 主题，其中部分代码参考了以下几个开源项目：<br/><br/>
+本站是一个基于 **WebStack-Hugo** 主题搭建的纯静态网址导航站，帮助你快速收藏、分类和直达常用网站。
 
-- [https://github.com/liutongxu/liutongxu.github.io](https://github.com/liutongxu/liutongxu.github.io)
-- [https://github.com/iplaycode/webstack-hugo](https://github.com/iplaycode/webstack-hugo)
+- 主题开源地址：<https://github.com/shenweiyan/WebStack-Hugo>
+- 本站数据采用 YAML 维护，导航内容可通过 `data/webstack.yml` 自由增删改。
 
-<br/>
+#### 联系我们
 
-主题安装后，将 exampleSite 目录下的文件复制到 hugo 站点根目录，根据需要把 config.toml 的一些信息改成自己的，导航的网址信息可通过 data 目录下 webstack.yml 修改。
-
-这是一个开源的公益项目，你可以拿来制作自己的网址导航，也可以做与导航无关的网站。
-
-WebStack 有非常多的魔改版本，这是其中一个。如果你对本主题进行了一些个性化调整，欢迎来本项目中 issue 分享一下！
-
-<br/>
-
-#### 主题开源地址
-
-[https://github.com/shenweiyan/webstack-hugo](https://github.com/shenweiyan/webstack-hugo)
-
-<br/>
-
-#### 主题演示地址
-
-- [https://nav.bioitee.com](https://nav.bioitee.com)
-- [https://shenweiyan.github.io/webstack-hugo](https://shenweiyan.github.io/webstack-hugo)
+如有收录、删除或合作需求，请联系邮箱：**xmore2046@outlook.com**

@@ -1,83 +1,163 @@
-:root {
-    --site-ink: #18232f;
-    --site-muted: #647486;
-    --site-accent: #d95f3f;
-    --site-accent-soft: #fff0e9;
-    --site-line: rgba(24, 35, 47, .09);
-    --site-shadow: 0 14px 34px rgba(24, 35, 47, .09);
+/* ============================================================
+   站点级覆盖样式（主题自动引入 css/site-overrides.css）
+   原则：只覆盖、不破坏；统一圆角、统一品牌色、更简约协调
+   ============================================================ */
+
+:root{
+    --site-ink:          #24303c;                 /* 正文主色 */
+    --site-muted:        #8492a6;                 /* 次要文字 */
+    --site-accent:       #d95f3f;                 /* 品牌强调色 */
+    --site-accent-hover: #c24f31;                 /* 强调色 hover */
+    --site-accent-soft:  rgba(217,95,63,.1);      /* 强调色浅底 */
+    --site-line:         #e6ebf1;                 /* 分隔线/描边 */
+    --site-shadow:       0 6px 24px rgba(31,45,61,.08);    /* 卡片阴影 */
+    --site-shadow-hover: 0 14px 36px rgba(31,45,61,.14);   /* hover 阴影 */
+    --site-radius:       16px;                    /* 收藏块/主卡片圆角 */
+    --site-radius-lg:    12px;                    /* logo 圆角 */
+    --site-radius-sm:    8px;                     /* 小元素圆角 */
 }
 
-body.io-grey-mode {
-    color: var(--site-ink);
-    background: #f5f7f8;
-    background-image: linear-gradient(135deg, rgba(255, 255, 255, .85), transparent 48%),
-        radial-gradient(circle at 90% 4%, rgba(217, 95, 63, .12), transparent 28rem);
+/* ===== 1. 页面底纸（浅色） ===== */
+body.io-grey-mode{
+    background:#f4f6f8;
+    background-image:linear-gradient(180deg,#fafbfc 0%,#eef1f4 100%);
 }
 
-.main-content {
-    background: transparent;
+/* ===== 2. 全局卡片统一圆角 ===== */
+.card,.block{
+    border-radius:var(--site-radius);
 }
 
-.big-header-banner {
-    background: rgba(255, 255, 255, .88);
-    box-shadow: 0 1px 0 var(--site-line);
-    backdrop-filter: blur(14px);
+/* ===== 3. 收藏块卡片 ===== */
+.url-body .card{
+    border:1px solid var(--site-line);
+    box-shadow:var(--site-shadow);
+    border-radius:var(--site-radius);
+    transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.url-body .card:hover{
+    transform:translateY(-3px);
+    border-color:rgba(217,95,63,.25);
+    box-shadow:var(--site-shadow-hover);
+}
+.url-body .card .card-body{
+    padding:1rem 1.1rem;
 }
 
-.page-header .navbar {
-    min-height: 74px;
+/* ===== 4. 收藏块 logo 圆角 ===== */
+.url-card .url-img,
+.url-card .url-img>img{
+    border-radius:var(--site-radius-lg);
 }
 
-.site-menu > li > a,
-.nav > li > a {
-    transition: color .2s ease, transform .2s ease;
+/* ===== 5. 直达按钮（胶囊样式） ===== */
+.url-card .default a.togo{
+    background:var(--site-accent-soft);
+    border-radius:50%;
+    width:28px;
+    height:28px;
+    line-height:28px;
+    opacity:.75;
+}
+.url-card .default a.togo i{
+    color:var(--site-accent);
+}
+.url-card .default .url-body:hover a.togo{
+    opacity:1;
 }
 
-.site-menu > li > a:hover,
-.nav > li > a:hover {
-    color: var(--site-accent);
-    transform: translateY(-1px);
+/* ===== 6. 分类标题与面板色条 ===== */
+h4.text-gray{
+    color:var(--site-ink);
+    font-weight:600;
+}
+/* 面板标题下的小色条：主题默认红色 -> 品牌橙 */
+.sidebar .card-header:after{
+    background-color:var(--site-accent);
 }
 
-.url-body .card {
-    border: 1px solid var(--site-line);
-    border-radius: 8px;
-    box-shadow: 0 5px 16px rgba(24, 35, 47, .04);
-    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+/* ===== 7. 搜索框/按钮配色与圆角 ===== */
+#search-text{
+    border-radius:var(--site-radius-sm);
+}
+.sidebar .card .searchform input[type='text']{
+    border-radius:var(--site-radius-sm);
+    background-color:#f1f3f6;
+    border:1px solid transparent;
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+}
+.sidebar .card .searchform input[type='submit']{
+    border-radius:var(--site-radius-sm);
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+    background-color:var(--site-accent);
+    border-color:var(--site-accent);
+}
+.sidebar .card .searchform input[type='submit']:hover{
+    background-color:var(--site-accent-hover);
+    border-color:var(--site-accent-hover);
 }
 
-.url-body .card:hover {
-    border-color: rgba(217, 95, 63, .3);
-    box-shadow: var(--site-shadow);
-    transform: translateY(-3px);
+/* ===== 8. 侧边栏卡片 ===== */
+.sidebar .card{
+    border:1px solid var(--site-line);
+    box-shadow:var(--site-shadow);
+    border-radius:var(--site-radius);
 }
 
-.url-img {
-    background: var(--site-accent-soft);
-    border-radius: 7px;
+/* ===== 9. 夜间模式协调 ===== */
+body.io-black-mode{
+    background:#1b1d1f;
 }
-
-.text-gray {
-    color: var(--site-ink) !important;
+body.io-black-mode .card,
+body.io-black-mode .block{
+    background:#232527;
+    border:1px solid rgba(255,255,255,.06);
+    border-radius:var(--site-radius);
 }
-
-.site-tag {
-    color: var(--site-accent);
+body.io-black-mode .url-body .card{
+    background:#232527;
+    border-color:rgba(255,255,255,.06);
 }
-
-.friendlink.card {
-    border: 1px solid var(--site-line);
-    border-radius: 8px;
-    box-shadow: 0 5px 16px rgba(24, 35, 47, .04);
+body.io-black-mode .url-body .card:hover{
+    border-color:rgba(217,95,63,.45);
+    box-shadow:0 14px 36px rgba(2,4,6,.4);
 }
+body.io-black-mode h4.text-gray{ color:#e8e8e8; }
+body.io-black-mode .sidebar .card{ background:#232527; }
 
-@media (max-width: 767.98px) {
-    .content-site {
-        padding-left: 14px;
-        padding-right: 14px;
+/* ===== 10. 手机端适度收敛圆角 ===== */
+@media (max-width:575.98px){
+    .url-body .card,
+    .card,.block{
+        border-radius:12px;
     }
-
-    .url-body .card {
-        margin-bottom: 14px !important;
+    .url-card .url-img,
+    .url-card .url-img>img{
+        border-radius:10px;
     }
+}
+
+/* ===== 11. 隐藏"网站提交"菜单（原指向第三方问卷） ===== */
+#menu-item-237{
+    display:none !important;
+}
+
+/* ===== 12. 栅格背景：暗灰质感（浅色模式） ===== */
+.io-grey-mode .page-container .grid-bg{
+    background-image:
+        linear-gradient(rgba(36,48,60,.045) 1px, transparent 0),
+        linear-gradient(90deg, rgba(36,48,60,.045) 1px, transparent 0);
+    background-size:18px 18px;
+    background-color:#e9ebee;
+}
+
+/* ===== 13. 栅格背景：夜间模式 ===== */
+.io-black-mode .page-container .grid-bg{
+    background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 0),
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 0);
+    background-size:18px 18px;
+    background-color:#1b1d1f;
 }
