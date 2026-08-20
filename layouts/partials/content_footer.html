@@ -25,7 +25,7 @@
                 {{ end }}
             </div>
             <div class="footer-inner">
-                <div class="footer-text">{{ replace $.Site.Params.footer.copyright "{year}" now.Year | markdownify }}</div>
+                <div class="footer-text">{{ replace $.Site.Params.footer.copyright "{year}" now.Year | safeHTML }}</div>
             </div>
         </footer>
     </div><!-- main-content end -->

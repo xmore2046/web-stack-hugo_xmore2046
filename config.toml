@@ -31,7 +31,7 @@ publishDir            = "public"				# 站点静态文件保存目录
     GoogleAdsClient = ''					# Google AdSense 
 
 [params.qweather]
-    key = "085791e805a24491b43b06cf58ab31e7"
+    key = "a34d3676a1f8477c8a9bfffa68a4a82a"
 
 [params.images]
     favicon           = "images/logo.png"
@@ -46,4 +46,4 @@ publishDir            = "public"				# 站点静态文件保存目录
     unsafe = true
 
 [params.footer]
-    copyright = '内容源自网络，如有不妥，请联系邮箱：xmore2046@outlook.com <br/>© WebStack / Hugo'
+    copyright = '© WebStack/Hugo/xmore2046@outlook.com'

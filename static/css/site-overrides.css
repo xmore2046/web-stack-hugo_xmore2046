@@ -161,3 +161,19 @@ body.io-black-mode .sidebar .card{ background:#232527; }
     background-size:18px 18px;
     background-color:#1b1d1f;
 }
+
+/* ===== 14. 页脚版权：固定最左侧 ===== */
+footer.main-footer .footer-text{
+    text-align:left !important;
+    float:left !important;
+    margin:0 !important;
+}
+footer.main-footer .footer-inner{
+    text-align:left !important;
+}
+@media (max-width:767.98px){
+    footer.main-footer .footer-text{
+        text-align:left !important;
+        float:none !important;
+    }
+}
