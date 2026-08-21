@@ -192,3 +192,25 @@ footer.main-footer.footer-type-1 .footer-inner{
         width:100%;
     }
 }
+
+/* ===== 15. 头部搜索区 banner 背景：品牌渐变矢量图 ===== */
+/* 覆盖主题 JS 设置的 inline style（!important 优先于 jQuery .css） */
+#search-bg{
+    background-image:url('/images/banner.svg') !important;
+    background-size:cover !important;
+    background-position:center center !important;
+    background-repeat:no-repeat !important;
+}
+/* 夜间模式自动切换深灰网格 banner */
+body.io-black-mode #search-bg,
+body.night #search-bg,
+body.io-grey-mode.night #search-bg{
+    background-image:url('/images/banner-night.svg') !important;
+}
+/* 搜索框文字在深色 banner 上保持白色可读（覆盖主题 custom-style 的深灰） */
+#search-bg #search-text{
+    color:#fff !important;
+}
+#search-bg #search-text::placeholder{
+    color:rgba(255,255,255,.55) !important;
+}
