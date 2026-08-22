@@ -214,48 +214,62 @@
       links:
         # —— IP 与网络检测 ——
         - title: Ping0
+          logo: ping0.cc.png
           url: https://ping0.cc/
           description: 高精度 IP 归属地、风控值与原生 IP 检测。
         - title: IP.SB
+          logo: ip.sb.png
           url: https://ip.sb/
           description: 简洁高效的 IP 地址查询与归属地工具。
         - title: IPIP
+          logo: www.ipip.net.png
           url: https://www.ipip.net/ip.html
           description: 全球 IP 精准定位、风险值与纯净度检测。
         - title: ipdata
+          logo: ipdata.co.png
           url: https://ipdata.co/
           description: IP 定位与风险评分 API，服务全球 200 亿+ 请求。
         # —— 隐私与安全检测 ——
         - title: BrowserScan
+          logo: www.browserscan.net.png
           url: https://www.browserscan.net/
           description: 浏览器指纹检测，评估在线隐私与反检测能力。
         - title: Scamalytics
+          logo: scamalytics.com.png
           url: https://scamalytics.com/
           description: IP 欺诈风险评分、代理与数据中心检测。
         - title: FOFA
+          logo: fofa.info.png
           url: https://fofa.info/
           description: 网络空间测绘与安全搜索引擎。
         # —— DNS 与域名工具 ——
         - title: DNS Checker
+          logo: dnschecker.org.png
           url: https://dnschecker.org/
           description: 全球多节点 DNS 解析传播检测。
         - title: NSLookup
+          logo: www.nslookup.io.png
           url: https://www.nslookup.io/
           description: 在线查询域名 A/AAAA/MX/TXT 等 DNS 记录。
         - title: DNSPod 域名检测
+          logo: www.dnspod.cn.png
           url: https://www.dnspod.cn/
           description: 腾讯云 DNSPod 域名健康诊断、WHOIS 与拨测。
         - title: ClouDNS
+          logo: www.cloudns.net.png
           url: https://www.cloudns.net/
           description: 免费 DNS 托管与域名解析管理平台。
         # —— 测速与连通性 ——
         - title: ITDOG
+          logo: www.itdog.cn.png
           url: https://www.itdog.cn/
           description: 在线 ping、tcping、测速、MTR、DNS 查询。
         - title: Ping.pe
+          logo: ping.pe.png
           url: https://ping.pe/
           description: 全球多节点 ping、端口检测与路由追踪。
         - title: Google Fiber 测速
+          logo: speed.googlefiber.net.png
           url: https://speed.googlefiber.net/
           description: Google Fiber 官方网速测试。
         # —— 生成器与工具箱 ——
@@ -264,9 +278,11 @@
           url: https://www.uuidgenerator.net/
           description: 在线生成 UUID 与 GUID。
         - title: 美国地址生成器
+          logo: www.fakeaddressgenerator.com.png
           url: https://www.fakeaddressgenerator.com/
           description: 生成美国虚拟地址、身份与信用卡信息。
         - title: 随机十六进制生成器
+          logo: www.lddgo.net.png
           url: https://www.lddgo.net/string/random-hex
           description: 按长度生成随机 HEX 字符串。
     - term: 谷歌插件

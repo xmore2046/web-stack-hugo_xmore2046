@@ -130,18 +130,25 @@ if (-not $SkipIcons) {
     Write-Host "Missing icons : $($missingIcons.Count)"
 }
 if (-not $SkipLinks) {
+    # 反爬/需登录类状态码：401,403,404(无首页),417,429 等，站点在线但被拦截，归类为 WARN
+    $botBlocked = @(401, 403, 404, 417, 429)
     $ok     = @($linkResults | Where-Object { $_.Status -ge 200 -and $_.Status -lt 400 })
-    $warn   = @($linkResults | Where-Object { $_.Status -eq 403 })
-    $dead   = @($linkResults | Where-Object { $_.Status -ge 400 -and $_.Status -ne 403 })
+    $warn   = @($linkResults | Where-Object { $botBlocked -contains $_.Status })
+    $dead   = @($linkResults | Where-Object { $_.Status -ge 400 -and $botBlocked -notcontains $_.Status })
     $failed = @($linkResults | Where-Object { $_.Status -eq 0 })
     Write-Host "Links OK      : $($ok.Count)"
-    Write-Host "Links 403     : $($warn.Count)  (可能为反爬/需登录，人工确认)"
-    Write-Host "Links DEAD    : $($dead.Count)  (4xx/5xx)"
+    Write-Host "Links WARN    : $($warn.Count)  (反爬/需登录/无首页，人工确认)"
+    Write-Host "Links DEAD    : $($dead.Count)  (真实 4xx/5xx)"
     Write-Host "Links FAILED  : $($failed.Count)  (超时/SSL/连接失败)"
     Write-Host "----------------------------------------------"
-    foreach ($d in ($dead + $failed)) {
-        $tag = if ($d.Status -eq 0) { 'FAIL' } else { 'DEAD' }
-        Write-Host ("  [{0}] {1}  ->  {2}  {3}" -f $tag, $d.Title, $d.Url, $d.Error)
+    foreach ($d in $dead) {
+        Write-Host ("  [DEAD] {0}  ->  {1}  HTTP {2}" -f $d.Title, $d.Url, $d.Status)
+    }
+    foreach ($f in $failed) {
+        Write-Host ("  [FAIL] {0}  ->  {1}  {2}" -f $f.Title, $f.Url, $f.Error)
+    }
+    foreach ($w in $warn) {
+        Write-Host ("  [WARN] {0}  ->  {1}  HTTP {2}" -f $w.Title, $w.Url, $w.Status)
     }
     $linkResults | Sort-Object Status, Title |
         Export-Csv -Path $outCsv -NoTypeInformation -Encoding UTF8
