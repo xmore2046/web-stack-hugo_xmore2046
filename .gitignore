@@ -4,3 +4,6 @@ public/
 
 # 主题源码下载副本（正式主题在 themes/ 下，此目录为冗余副本）
 WebStack-Hugo/
+
+# 浏览器自动化测试产生的临时数据
+.playwright-cli/

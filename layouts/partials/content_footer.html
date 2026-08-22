@@ -13,12 +13,12 @@
                 </a>
                 <!-- 右下角搜索 end -->
                 {{ if $.Site.Params.nightMode }} 
-                <a href="javascript:" onclick="window.location.href='javascript:switchNightMode()'" class="btn rounded-circle switch-dark-mode m-1" id="yejian"
+                <a href="javascript:" onclick="event.stopPropagation(); switchNightMode();" class="btn rounded-circle switch-dark-mode m-1" id="yejian"
                     data-toggle="tooltip" data-placement="left" title="夜间模式">
                     <i class="mode-ico iconfont icon-light"></i>
                 </a>
 		{{ else }}
-		<a href="javascript:" onclick="window.location.href='javascript:switchNightMode()'" class="btn rounded-circle switch-dark-mode m-1" id="yejian"
+		<a href="javascript:" onclick="event.stopPropagation(); switchNightMode();" class="btn rounded-circle switch-dark-mode m-1" id="yejian"
                     data-toggle="tooltip" data-placement="left" title="日间模式">
                     <i class="mode-ico iconfont icon-night"></i>
                 </a>

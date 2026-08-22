@@ -124,15 +124,13 @@ body.io-black-mode .url-body .card:hover{
     border-color:rgba(217,95,63,.45);
     box-shadow:0 14px 36px rgba(2,4,6,.4);
 }
-/* 夜间模式分类标题强制浅色，覆盖主题的 #888（对比度不足）和 #555（变黑） */
-body.io-black-mode h4.text-gray,
-body.night h4.text-gray,
-body.io-grey-mode.night h4.text-gray{
+/* 夜间模式分类标题强制浅色，覆盖主题的 #888（对比度不足）和 #555（变黑）
+   仅绑定 io-black-mode：night class 可能因 JS 遗留与白天模式共存，
+   若按 night 匹配会把白天标题染白导致不可见 */
+body.io-black-mode h4.text-gray{
     color:#e8e8e8 !important;
 }
-body.io-black-mode .text-gray,
-body.night .text-gray,
-body.io-grey-mode.night .text-gray{
+body.io-black-mode .text-gray{
     color:#c6c9cf !important;
 }
 body.io-black-mode .sidebar .card{ background:#232527; }
@@ -201,10 +199,8 @@ footer.main-footer.footer-type-1 .footer-inner{
     background-position:center center !important;
     background-repeat:no-repeat !important;
 }
-/* 夜间模式自动切换深灰网格 banner */
-body.io-black-mode #search-bg,
-body.night #search-bg,
-body.io-grey-mode.night #search-bg{
+/* 夜间模式自动切换深灰网格 banner（同上，仅绑定 io-black-mode） */
+body.io-black-mode #search-bg{
     background-image:url('/images/banner-night.svg') !important;
 }
 /* 搜索框文字在深色 banner 上保持白色可读（覆盖主题 custom-style 的深灰） */
