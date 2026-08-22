@@ -25,10 +25,12 @@ cd /d "%~dp0.."
 rem ---- 参数解析 ----
 set "SKIP_BUILD=0"
 set "DRY_RUN=0"
+set "RUN_CHECK=0"
 set "MSG=%~1"
 if /i "%MSG%"=="--help"       goto usage
 if /i "%MSG%"=="--skip-build" set "SKIP_BUILD=1" & set "MSG=%~2"
 if /i "%MSG%"=="--dry-run"    set "DRY_RUN=1"    & set "MSG=%~2"
+if /i "%MSG%"=="--check"      set "RUN_CHECK=1" & set "MSG=%~2"
 
 rem ---- 标准时间戳（避免中文系统 %date% 格式差异导致的乱码日期）----
 for /f "usebackq delims=" %%i in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm'"`) do set "DT=%%i"
@@ -58,6 +60,9 @@ echo [1/3] Hugo 构建中...
 if "%SKIP_BUILD%"=="1" (
     echo [跳过] 已指定 --skip-build
 ) else (
+    rem 清理 Hugo 缓存与残留锁文件，避免脏缓存导致的构建异常
+    if exist "resources\_gen" rmdir /s /q "resources\_gen"
+    if exist ".hugo_build.lock" del /q ".hugo_build.lock"
     call hugo --gc --minify --cleanDestinationDir
     if errorlevel 1 (
         echo.
@@ -65,6 +70,11 @@ if "%SKIP_BUILD%"=="1" (
         pause & exit /b 1
     )
     echo [成功] 构建完成 (public/)
+)
+if "%RUN_CHECK%"=="1" (
+    echo [校验] 运行链接与图标完整性检查...
+    powershell -NoProfile -ExecutionPolicy Bypass -File "scripts\check_links.ps1"
+    if errorlevel 1 echo [警告] 校验脚本退出码非 0，请人工确认上方结果。
 )
 echo.
 
@@ -136,6 +146,7 @@ echo   无参数       构建并发布（提交信息为 site update ^<时间^>�
 echo   "提交说明"   使用自定义提交信息
 echo   --skip-build 跳过本地构建，仅提交并推送
 echo   --dry-run    演练模式：执行检查但不提交、不推送
+echo   --check      构建后运行链接与图标完整性校验
 echo   --help       显示本用法
 echo.
 exit /b 0

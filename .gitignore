@@ -10,3 +10,6 @@ WebStack-Hugo/
 
 # 部署脚本运行日志
 scripts/deploy.log
+
+# 链接/图标校验结果（可重新生成）
+scripts/check_links_result.csv

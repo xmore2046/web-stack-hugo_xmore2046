@@ -67,7 +67,7 @@
             <span class="module-tab-divider" aria-hidden="true">/</span>
             <div class="friendlink module-tabs-list">
                 {{ range hugo.Data.friendlinks }}
-                <a class="module-tab" href="{{ .url }}" title="{{ .description }}" target="_blank">{{ .title }}</a>
+                <a href="{{ .url }}" title="{{ .description }}" target="_blank" rel="noopener">{{ .title }}</a>
                 {{ end }}
             </div>
         </div>
