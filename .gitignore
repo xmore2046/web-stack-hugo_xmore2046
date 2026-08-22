@@ -1,3 +1,6 @@
 .hugo_build.lock
 resources/_gen/
 public/
+
+# 主题源码下载副本（正式主题在 themes/ 下，此目录为冗余副本）
+WebStack-Hugo/
