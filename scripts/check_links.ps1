@@ -1,6 +1,8 @@
 $ErrorActionPreference = 'Continue'
 Add-Type -AssemblyName System.Net.Http
-$lines = Get-Content "data\webstack.yml"
+# 项目根目录 = scripts 的上层目录
+$root = Split-Path $PSScriptRoot -Parent
+$lines = Get-Content (Join-Path $root 'data\webstack.yml')
 $entries = New-Object System.Collections.ArrayList
 $curTitle = $null
 foreach ($line in $lines) {
@@ -30,13 +32,15 @@ for ($b = 0; $b -lt $entries.Count; $b += $batchSize) {
     }
     foreach ($t in $tasks) {
         try {
-            $resp = $t.Task.Result
+            # 用 GetAwaiter().GetResult() 直接抛出原始异常，避免 .Result 的非终止错误导致重复记录
+            $resp = $t.Task.GetAwaiter().GetResult()
             $status = [int]$resp.StatusCode
             $finalUrl = $resp.RequestMessage.RequestUri.AbsoluteUri
             [void]$results.Add([PSCustomObject]@{ Title = $t.T; Url = $t.U; Status = $status; Final = $finalUrl; Error = '' })
             $resp.Dispose()
         } catch {
-            $msg = $_.Exception.InnerException.Message
+            $msg = ''
+            if ($_.Exception.InnerException) { $msg = $_.Exception.InnerException.Message }
             if (-not $msg) { $msg = $_.Exception.Message }
             [void]$results.Add([PSCustomObject]@{ Title = $t.T; Url = $t.U; Status = 0; Final = ''; Error = $msg })
         }
@@ -45,5 +49,5 @@ for ($b = 0; $b -lt $entries.Count; $b += $batchSize) {
 }
 
 $client.Dispose()
-$results | Sort-Object Status, Title | Export-Csv -Path "check_links_result.csv" -NoTypeInformation -Encoding UTF8
-Write-Host "Done. Results saved to check_links_result.csv"
+$results | Sort-Object Status, Title | Export-Csv -Path (Join-Path $PSScriptRoot 'check_links_result.csv') -NoTypeInformation -Encoding UTF8
+Write-Host "Done. Results saved to $PSScriptRoot\check_links_result.csv"

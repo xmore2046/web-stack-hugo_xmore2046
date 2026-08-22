@@ -114,7 +114,8 @@ var theme = {"ajaxurl":"","addico":"https:\/\/nav.baidu.cn\/wp-content\/themes\/
     }
     var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1");
     if(night === ''){
-        night = (new Date().getHours() > 22 || new Date().getHours() < 6) ? '1' : '0';
+        // 未手动选择过：跟随系统深色模式偏好，默认暗色
+        night = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? '1' : '0';
     }
     applyNight(night == '1');
     console.log(night == '1' ? '夜间模式开启' : '夜间模式关闭');

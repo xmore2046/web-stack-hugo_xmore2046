@@ -33,10 +33,6 @@
           logo: trends.google.com.png
           url: https://trends.google.com/trends/
           description: 探索全球搜索趋势。
-        - title: NewKit 在线工具箱
-          logo: newkit.site.png
-          url: https://www.newkit.site/
-          description: JSON 格式化、SQL 美化、加密解密等在线工具。
     - term: 邮箱
       links:
         - title: QQ 邮箱
@@ -47,14 +43,6 @@
           logo: 163.png
           url: https://mail.163.com/
           description: 网易 163 免费邮箱，中文邮箱第一品牌。
-        - title: 126 邮箱
-          logo: 126.png
-          url: https://mail.126.com/
-          description: 网易 126 免费邮箱，你的专业电子邮局。
-        - title: yeah 邮箱
-          logo: yeah.png
-          url: https://www.yeah.net/
-          description: 网易旗下后缀为 @yeah.net 的免费邮箱。
         - title: Gmail
           logo: gmail.png
           url: https://mail.google.com/
@@ -209,32 +197,12 @@
           logo: dokploy.com.png
           url: https://dokploy.com/
           description: 自托管部署与监控平台。
-        - title: Coolify
-          logo: coolify.io.png
-          url: https://coolify.io/
-          description: 开源自托管平台，Heroku 替代品。
     - term: 文档与知识
       links:
-        - title: Docusaurus
-          logo: docusaurus.io.png
-          url: https://docusaurus.io/
-          description: 快速构建优化的文档网站。
-        - title: VuePress
-          logo: vuepress.vuejs.org.png
-          url: https://vuepress.vuejs.org/
-          description: Vue 驱动的静态网站生成器。
         - title: mdBook
           logo: rust-lang.github.io.svg
           url: https://rust-lang.github.io/mdBook/index.html
           description: 用 Markdown 创建书籍，Rust 实现。
-        - title: Free for Developers
-          logo: free-for.dev.png
-          url: https://free-for.dev/#/
-          description: 开发者免费服务合集。
-        - title: AGENTS.md
-          logo: agents.md.png
-          url: https://agents.md/
-          description: 面向编码代理的开放指南格式。
     - term: 云服务器
       links:
         - title: 阿里云
@@ -249,18 +217,6 @@
           logo: 华为云.png
           url: https://www.huaweicloud.com/
           description: 华为云计算服务与全栈解决方案。
-        - title: 云筏科技
-          logo: 云筏.png
-          url: https://www.cloudraft.cn/
-          description: 面向生信科研的云服务器服务商。
-        - title: 极云普惠云电脑
-          logo: 极云普惠云电脑.png
-          url: https://www.ji-cloud.cn/
-          description: 云电脑与云游戏，手机秒变电脑。
-        - title: 青椒云
-          logo: 青椒云.jpg
-          url: https://www.qingjiaocloud.com/
-          description: 一站式云桌面与云电脑服务平台。
 
 
 - taxonomy: 设计素材
@@ -308,46 +264,6 @@
           url: https://ezgif.com
           logo: ezgif.png
           description: 在线 GIF 制作、压缩与编辑工具集。
-        - title: Android 9-Patch
-          url: https://inloop.github.io/shadow4android/
-          logo: Android9patch.png
-          description: 自定义 Android 9-patch 阴影生成器。
-        - title: Screen Sizes
-          url: https://screensiz.es/
-          logo: screensizes.png
-          description: 主流设备视口尺寸与像素密度查询。
-        - title: SVGOMG
-          url: https://jakearchibald.github.io/svgomg/
-          logo: svgomg.png
-          description: SVG 在线压缩优化平台。
-        - title: 稿定抠图
-          url: https://www.gaoding.com
-          logo: gaoding.png
-          description: 免费在线抠图，一键换背景。
-        - title: Khroma
-          url: https://www.khroma.co/generator/
-          logo: khroma.png
-          description: AI 快速发现、搜索与保存你想要的配色。
-        - title: Coolors
-          url: https://coolors.co/
-          logo: coolors.png
-          description: 超快速的配色方案生成器。
-        - title: Color Hunt
-          url: https://www.colorhunt.co/
-          logo: colorhunt.png
-          description: 精选高颜值配色方案。
-        - title: Adobe Color
-          url: https://color.adobe.com/zh/create/color-wheel
-          logo: AdobeColorCC.png
-          description: Adobe 配色工具，色轮与社区配色方案。
-        - title: Flat UI Colors
-          url: https://flatuicolors.com/
-          logo: flatuicolors.png
-          description: 扁平 UI 配色一键复制。
-        - title: WebGradients
-          url: https://webgradients.com/
-          logo: webgradients.png
-          description: 180 款免费线性渐变配色背景。
 
     - term: 谷歌插件
       links:
@@ -359,18 +275,6 @@
           url: https://usepanda.com/
           logo: usepanda.png
           description: 面向高效生产力打造的智能资讯阅读器。
-        - title: Sizzy
-          url: https://sizzy.co/
-          logo: sizzy.png
-          description: 快速开发响应式网站的调试工具。
-        - title: CSS Peeper
-          url: https://csspeeper.com/
-          logo: csspeeper.png
-          description: 设计师专用的智能 CSS 查看器。
-        - title: Insight
-          url: https://insight.io/
-          logo: insight.png
-          description: 云端 IDE 式代码搜索与导航。
         - title: Mustsee
           url: https://mustsee.earth/
           logo: mustsee.png
@@ -473,46 +377,6 @@
           url: https://www.ziticq.com/
           logo: ziticq.png
           description: 中国首个字体品牌设计师交流网。
-        - title: 私藏字体
-          url: https://sicangziti.com/
-          logo: sicangziti.png
-          description: 优质字体免费下载站。
-        - title: FontSquirrel
-          url: https://www.fontsquirrel.com/
-          logo: fontsquirrel.png
-          description: 面向设计师的免费字体下载站。
-        - title: Urban Fonts
-          url: https://www.urbanfonts.com/
-          logo: UrbanFonts.png
-          description: 免费下载字体与花式装饰字体。
-        - title: Lost Type
-          url: https://www.losttype.com/
-          logo: losttype.png
-          description: 协作式数字字体铸造厂。
-        - title: FONTS2U
-          url: https://fonts2u.com/
-          logo: fonts2u.png
-          description: 免费下载 Windows 与 Mac 字体。
-        - title: FontM
-          url: https://fontm.com/
-          logo: FontM.png
-          description: 免费字体下载。
-        - title: MyFonts
-          url: https://www.myfonts.com/
-          logo: MyFonts.png
-          description: 适用于印刷、产品与屏幕的字体库。
-        - title: DaFont
-          url: https://www.dafont.com/
-          logo: dafont.png
-          description: 海量免费字体下载档案库。
-        - title: OnlineWebFonts
-          url: https://www.onlinewebfonts.com/
-          logo: OnlineWebFonts.png
-          description: 免费网页字体下载。
-        - title: Abstract Fonts
-          url: https://www.abstractfonts.com/
-          logo: abstractfonts.png
-          description: 超 1.3 万款免费字体。
 
 
 - taxonomy: 素材资源
@@ -614,10 +478,6 @@
           logo: vidsplay.png
           url: https://www.vidsplay.com/
           description: 免费视频素材下载网站。
-        - title: Pikwizard
-          logo: pikwizard.png
-          url: https://pikwizard.com/
-          description: 免费视频素材网站。
     - term: 纹理贴图
       links:
         - title: Textures.com
@@ -628,18 +488,81 @@
           logo: transparenttextures.png
           url: https://www.transparenttextures.com/
           description: 免费无缝纹理素材库。
-        - title: Free Stock Textures
-          logo: freestocktextures.png
-          url: https://freestocktextures.com/
-          description: 免费高品质纹理与背景素材。
-        - title: Poliigon
-          logo: Poliigon.png
-          url: https://www.poliigon.com/
-          description: 高质量 PBR 纹理、模型与 HDR。
-        - title: CGbookcase
-          logo: Cgbookcase.png
-          url: https://www.cgbookcase.com/
-          description: 免费无缝 3D 材质贴图。
+
+
+- taxonomy: 学习办公
+  icon: fas fa-graduation-cap fa-lg
+  list:
+    - term: 资源网盘
+      links:
+        - title: 百度网盘
+          logo: 百度网盘.jpg
+          url: https://pan.baidu.com/
+          description: 百度网盘，海量文件云端存储与分享。
+        - title: 夸克网盘
+          logo: 夸克网盘.png
+          url: https://pan.quark.cn/
+          description: 夸克网盘，阿里旗下高速不限速网盘。
+        - title: 阿里云盘
+          logo: 阿里云盘.png
+          url: https://www.aliyundrive.com/
+          description: 阿里云盘，你的数字世界。
+        - title: 坚果云
+          logo: 坚果云.png
+          url: https://www.jianguoyun.com/
+          description: 国内知名的云盘与同步盘服务。
+    - term: 图书社区
+      links:
+        - title: 微信读书
+          url: https://weread.qq.com/
+          logo: 微信读书.jpg
+          description: 微信读书电脑版。
+        - title: 书栈网
+          url: https://www.bookstack.cn/
+          logo: 书栈网.jpg
+          description: IT 互联网开源编程书籍免费阅读与下载。
+        - title: PDF Drive
+          logo: pdfdrive.png
+          url: https://www.pdfdrive.com/
+          description: 海量 PDF 电子书搜索与下载（需代理）。
+        - title: 电子课本网
+          logo: dzkbw.png
+          url: http://www.dzkbw.com/
+          description: 各版本中小学电子课本在线阅读。
+        - title: 经管之家
+          url: https://bbs.pinggu.org/
+          logo: 经管之家.jpg
+          description: 国内活跃的经济、管理、金融、统计在线教育和咨询网站。
+        - title: Inoreader
+          url: https://www.inoreader.com/
+          logo: inoreader.jpg
+          description: 重新掌控你的新闻订阅源。
+    - term: 投资理财
+      links:
+        - title: TradingView
+          logo: tradingview.com.png
+          url: https://www.tradingview.com/
+          description: 全球交易图表与投资社交平台。
+        - title: 价值投资导航
+          logo: value500.com.png
+          url: http://value500.com/
+          description: 坚守十四年的投资数据与资讯网站。
+        - title: 集思录
+          logo: jisilu.cn.ico
+          url: https://www.jisilu.cn/
+          description: 以数据为本的投资社区。
+        - title: 集思录-实时数据
+          logo: jisilu.cn.ico
+          url: https://www.jisilu.cn/data/cbnew/#cb
+          description: 可转债实时行情数据。
+        - title: 看财报
+          logo: kancaibao.com.png
+          url: https://www.kancaibao.com/
+          description: 价值投资财务数据分析工具。
+        - title: 巨潮资讯网
+          logo: cninfo.com.cn.svg
+          url: https://www.cninfo.com.cn/
+          description: 中国证监会指定信息披露网站。
 
 
 - taxonomy: 自媒体运营
@@ -763,32 +686,8 @@
           logo: xinshi.png
           url: https://xs.newrank.cn/
           description: 新榜旗下视频号数据分析平台。
-        - title: 友望数据
-          logo: youwant.png
-          url: https://www.youwant.cn/
-          description: 视频号数据分析平台。
-        - title: 火烧云数据
-          logo: hsydata.png
-          url: https://www.hsydata.com/
-          description: B 站大数据分析平台。
 
-        - title: 星查查
-          logo: xcckol.png
-          url: https://www.xcckol.com/
-          description: 直播带货货源供应链与数据分析。
-        - title: 直播眼
-          logo: zbyan.ico
-          url: http://pc.zbyan.net/
-          description: 直播电商全场景 AI 数据平台。
 
-        - title: 清博大数据
-          logo: gsdata.ico
-          url: https://www.gsdata.cn/
-          description: 一站式新媒体大数据解决方案。
-        - title: 火山引擎
-          logo: volcengine.png
-          url: https://www.volcengine.com/
-          description: 数据驱动增长的分析与智能引擎。
 
 
 - taxonomy: 外贸电商
@@ -868,14 +767,6 @@
           logo: ozon.menglar.com.ico
           url: https://ozon.menglar.com/
           description: Ozon 电商选品与俄罗斯市场大数据分析平台。
-        - title: 嘀嗒狗
-          logo: didadog.com.png
-          url: https://didadog.com/
-          description: 专注于 TikTok 短视频电商的数据分析服务平台。
-        - title: 有米有数
-          logo: youshu.youcloud.com.ico
-          url: https://youshu.youcloud.com/
-          description: 新电商营销大数据分析平台，覆盖广告、选品、素材与竞对分析。
 
         - title: FindNiche
           logo: findniche.com.png
@@ -904,10 +795,6 @@
           logo: search.google.com.png
           url: https://search.google.com/search-console
           description: 谷歌官方站长工具，监控收录、搜索性能与索引状态。
-        - title: 百度搜索资源平台
-          logo: ziyuan.baidu.com.svg
-          url: https://ziyuan.baidu.com/
-          description: 百度官方站长平台，收录提交、索引量统计与站点体检。
         - title: SEMrush
           logo: www.semrush.com.svg
           url: https://www.semrush.com/
@@ -915,115 +802,7 @@
         - title: SimilarWeb
           logo: www.similarweb.com.png
           url: https://www.similarweb.com/
-          description: 网站流量与用户行为分析，洞察竞品与行业趋势。
-        - title: Moz
-          logo: moz.com.ico
-          url: https://moz.com/
-          description: 老牌 SEO 工具，域名权威度与页面优化分析。
-        - title: Ubersuggest
-          logo: neilpatel.com.png
-          url: https://app.neilpatel.com/
-          description: Neil Patel 出品的轻量 SEO 工具，关键词与内容创意建议。
-        - title: Screaming Frog
-          logo: www.screamingfrog.co.uk.png
-          url: https://www.screamingfrog.co.uk/seo-spider/
-          description: 网站爬虫审计工具，抓取分析页面、链接与 SEO 问题。
-        - title: 爱站网
-          logo: www.aizhan.com.ico
-          url: https://www.aizhan.com/
-          description: 站长工具平台，关键词排名、收录查询与 SEO 优化。
-        - title: 站长之家
-          logo: tool.chinaz.com.ico
-          url: https://tool.chinaz.com/
-          description: 综合性站长工具箱，友情链接、外链与权重查询。
-
-
-- taxonomy: 学习办公
-  icon: fas fa-graduation-cap fa-lg
-  list:
-    - term: 资源网盘
-      links:
-        - title: 百度网盘
-          logo: 百度网盘.jpg
-          url: https://pan.baidu.com/
-          description: 百度网盘，海量文件云端存储与分享。
-        - title: 夸克网盘
-          logo: 夸克网盘.png
-          url: https://pan.quark.cn/
-          description: 夸克网盘，阿里旗下高速不限速网盘。
-        - title: 阿里云盘
-          logo: 阿里云盘.png
-          url: https://www.aliyundrive.com/
-          description: 阿里云盘，你的数字世界。
-        - title: 天翼云盘
-          logo: 天翼云盘.jpg
-          url: https://cloud.189.cn/
-          description: 中国电信云盘，文件备份与共享。
-        - title: 坚果云
-          logo: 坚果云.png
-          url: https://www.jianguoyun.com/
-          description: 国内知名的云盘与同步盘服务。
-    - term: 图书社区
-      links:
-        - title: 微信读书
-          url: https://weread.qq.com/
-          logo: 微信读书.jpg
-          description: 微信读书电脑版。
-        - title: Z-Library
-          logo: z-library.sk.png
-          url: https://z-library.sk/
-          description: 全球最大的在线电子图书馆。
-        - title: 书栈网
-          url: https://www.bookstack.cn/
-          logo: 书栈网.jpg
-          description: IT 互联网开源编程书籍免费阅读与下载。
-        - title: PDF Drive
-          logo: pdfdrive.png
-          url: https://www.pdfdrive.com/
-          description: 海量 PDF 电子书搜索与下载（需代理）。
-        - title: 电子课本网
-          logo: dzkbw.png
-          url: http://www.dzkbw.com/
-          description: 各版本中小学电子课本在线阅读。
-
-        - title: 经管之家
-          url: https://bbs.pinggu.org/
-          logo: 经管之家.jpg
-          description: 国内活跃的经济、管理、金融、统计在线教育和咨询网站。
-        - title: Inoreader
-          url: https://www.inoreader.com/
-          logo: inoreader.jpg
-          description: 重新掌控你的新闻订阅源。
-    - term: 投资理财
-      links:
-        - title: TradingView
-          logo: tradingview.com.png
-          url: https://www.tradingview.com/
-          description: 全球交易图表与投资社交平台。
-        - title: 价值投资导航
-          logo: value500.com.png
-          url: http://value500.com/
-          description: 坚守十四年的投资数据与资讯网站。
-        - title: 集思录
-          logo: jisilu.cn.ico
-          url: https://www.jisilu.cn/
-          description: 以数据为本的投资社区。
-        - title: 集思录-实时数据
-          logo: jisilu.cn.ico
-          url: https://www.jisilu.cn/data/cbnew/#cb
-          description: 可转债实时行情数据。
-        - title: 看财报
-          logo: kancaibao.com.png
-          url: https://www.kancaibao.com/
-          description: 价值投资财务数据分析工具。
-        - title: 巨潮资讯网
-          logo: cninfo.com.cn.svg
-          url: https://www.cninfo.com.cn/
-          description: 中国证监会指定信息披露网站。
-        - title: Palmmicro
-          logo: palmmicro.com.jpg
-          url: https://palmmicro.com/woody/res/chinafuturecn.php
-          description: A 股商品等基金净值计算工具。
+          description: 网站流量与用户行为分析，洞察竞品与行业趋势.
 
 
 - taxonomy: 悠闲娱乐
