@@ -1,0 +1,3895 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta name="robots" content="noindex,follow">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+  <title>搜索电子书 - 藏尽天下好书 - SaltyLeo 的书架</title>
+
+  
+  
+  
+    <link rel="canonical" href="https://tstrs.me/search">
+    <meta property="og:url" content="https://tstrs.me/search">
+  
+
+  
+  
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="搜索电子书 - SaltyLeo 的书架">
+    <meta property="og:description" content="在 SaltyLeo 的书架搜索电子书，支持书名、作者等多维度检索，海量资源免费下载。">
+    <meta name="description" content="在 SaltyLeo 的书架搜索电子书，支持书名、作者等多维度检索，海量资源免费下载。">
+    <meta name="keywords" content="电子书搜索, 找书, 电子书下载, 免费电子书, SaltyLeo 的书架">
+    <meta name="twitter:card" content="summary">
+  
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="/static/96.png">
+  <meta name="author" content="SaltyLeo">
+  
+  
+  <meta name="csrf-token" content="ImM1NzNkNWU3NTk0NTBjOWY0YTVlODIwMzg0ZWI0MjMxOGE0OTgyNDIi.aok-zw.9AT3o8DdJuhPWv7wtqasnmAjNQ8">
+
+  
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "WebSite", "name": "SaltyLeo \u7684\u4e66\u67b6", "potentialAction": {"@type": "SearchAction", "query-input": "required name=query", "target": "https://tstrs.me/search?q={query}"}, "url": "https://tstrs.me"}
+  </script>
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link href="/static/theme.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-webfont/1.7.0/style.css">
+  <script>
+    // 主题初始化 - 在页面渲染前执行，避免闪烁
+    (function() {
+      // 主题版本戳：更新此值可强制所有用户重置为新默认主题（格式：YYYYMMDD）
+      var THEME_VERSION = '20260131';
+      var savedVersion = localStorage.getItem('theme_version');
+      var savedTheme = localStorage.getItem('theme');
+      
+      // 如果版本不匹配，重置为新的默认主题（白色）
+      if (savedVersion !== THEME_VERSION) {
+        savedTheme = null;
+        try {
+          localStorage.setItem('theme_version', THEME_VERSION);
+        } catch (e) {}
+      }
+      
+      // 默认使用日间模式（白色背景），后续记忆用户选择
+      var theme = savedTheme || 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZRZT3ZH62P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZRZT3ZH62P');
+  </script>
+
+  <script src="/static/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8662211448990280" crossorigin="anonymous"></script>
+  
+  <script src="/static/lazysizes.min.js"></script>
+  <script src="/static/jquery.min.js"></script>
+
+  
+  
+
+
+<script>
+(function() {
+  'use strict';
+  
+  const detectionResults = {
+    startTime: Date.now(),
+    totalTests: 7,
+    completedTests: 0,
+    results: [],
+    hasAdBlock: false,
+    blockedMethods: [],
+    isRecheck: false
+  };
+  
+  function resetDetectionResults() {
+    detectionResults.startTime = Date.now();
+    detectionResults.completedTests = 0;
+    detectionResults.results = [];
+    detectionResults.hasAdBlock = false;
+    detectionResults.blockedMethods = [];
+    detectionResults.isRecheck = true;
+  }
+  
+  function recordResult(methodName, status, details, category) {
+    const result = {
+      method: methodName,
+      status: status,
+      timestamp: Date.now(),
+      duration: Date.now() - detectionResults.startTime,
+      details: details || {},
+      adBlockDetected: status === 'blocked',
+      category: category || 'local'
+    };
+    
+    detectionResults.results.push(result);
+    detectionResults.completedTests++;
+    
+    if (result.adBlockDetected) {
+      detectionResults.blockedMethods.push(methodName);
+    }
+    
+    if (detectionResults.completedTests === detectionResults.totalTests) {
+      setTimeout(showDetectionSummary, 100);
+    }
+  }
+  
+  function detectByBaitElement() {
+    const baits = [
+      createBait('ad ads adsbox ad-placement banner-ad', 'bait1'),
+      createBait('adsbygoogle ad-slot google-ad', 'bait2'),
+      createBait('advertisement pub_300x250 pub_728x90', 'bait3'),
+      createBait('ad-container sponsored-content ad-wrapper', 'bait4'),
+      createBait('ad-text ad_iframe ad-label native-ad', 'bait5')
+    ];
+    
+    function createBait(className, id) {
+      const bait = document.createElement('div');
+      bait.className = className;
+      bait.id = id;
+      bait.style.cssText = 'position:absolute;top:-1px;left:-1px;width:1px;height:1px;';
+      document.body.appendChild(bait);
+      return bait;
+    }
+    
+    setTimeout(function() {
+      let blockedCount = 0;
+      let baitDetails = [];
+      
+      baits.forEach(function(bait) {
+        const isHidden = bait.offsetHeight === 0 || 
+                        bait.offsetWidth === 0 || 
+                        window.getComputedStyle(bait).display === 'none' ||
+                        window.getComputedStyle(bait).visibility === 'hidden';
+        
+        baitDetails.push({
+          id: bait.id,
+          className: bait.className,
+          被屏蔽: isHidden,
+          高度: bait.offsetHeight,
+          宽度: bait.offsetWidth,
+          display: window.getComputedStyle(bait).display
+        });
+        
+        if (isHidden) {
+          blockedCount++;
+        }
+        
+        document.body.removeChild(bait);
+      });
+      
+      if (blockedCount > 0) {
+        recordResult('诱饵元素检测', 'blocked', {
+          blockedCount: blockedCount,
+          totalBaits: baits.length,
+          details: baitDetails
+        }, 'local');
+      } else {
+        recordResult('诱饵元素检测', 'success', {
+          blockedCount: 0,
+          totalBaits: baits.length
+        }, 'local');
+      }
+    }, 100);
+  }
+  
+  function detectByAdSense() {
+    setTimeout(function() {
+      const adsenseExists = typeof window.adsbygoogle !== 'undefined';
+      
+      if (!adsenseExists) {
+        recordResult('AdSense脚本检测', 'blocked', {
+          reason: 'adsbygoogle对象未定义'
+        }, 'intl_external');
+      } else {
+        recordResult('AdSense脚本检测', 'success', {
+          adsenseLoaded: true
+        }, 'intl_external');
+      }
+    }, 2000);
+  }
+  
+  function detectByFetch() {
+    const startTime = Date.now();
+    
+    const testUrl = '/static/ad-pixel.png?' + Date.now();
+    
+    fetch(testUrl, {
+      method: 'GET'
+    })
+    .then(response => {
+      if (response.ok) {
+        const duration = Date.now() - startTime;
+        recordResult('Fetch请求检测', 'success', {
+          duration: duration
+        }, 'local');
+      } else {
+        throw new Error('Request failed');
+      }
+    })
+    .catch(function(error) {
+      const duration = Date.now() - startTime;
+      
+      recordResult('Fetch请求检测', 'blocked', {
+        error: error.message,
+        errorType: error.name,
+        duration: duration
+      }, 'local');
+    });
+  }
+  
+  function detectByExternalDomain() {
+    const cacheBuster = Date.now() + '_' + Math.random().toString(36).substring(2, 9);
+    
+    const adDomains = [
+      {
+        name: 'Google AdSense',
+        url: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
+        fallback: 'https://googleads.g.doubleclick.net/pagead/ads'
+      },
+      {
+        name: 'Google DoubleClick',
+        url: 'https://securepubads.g.doubleclick.net/tag/js/gpt.js',
+        fallback: null
+      }
+    ];
+    
+    let completedTests = 0;
+    let failedDomains = [];
+    let networkErrors = [];
+    
+    adDomains.forEach(function(domain, index) {
+      const testUrl = domain.url + '?_cb=' + cacheBuster + '&_t=' + Date.now();
+      
+      const startTime = Date.now();
+      const timeout = 5000;
+      
+      const timeoutId = setTimeout(function() {
+        const duration = Date.now() - startTime;
+        
+        failedDomains.push(domain.name);
+        networkErrors.push({
+          domain: domain.name,
+          error: 'timeout',
+          duration: duration,
+          reason: 'DNS解析超时或网络连接失败'
+        });
+        
+        completedTests++;
+        checkComplete();
+      }, timeout);
+      
+      const script = document.createElement('script');
+      script.src = testUrl;
+      script.async = true;
+      
+      script.onload = function() {
+        clearTimeout(timeoutId);
+        completedTests++;
+        checkComplete();
+      };
+      
+      script.onerror = function(event) {
+        clearTimeout(timeoutId);
+        const duration = Date.now() - startTime;
+        
+        let errorReason = '未知错误';
+        if (duration < 100) {
+          errorReason = 'DNS解析失败或Hosts文件屏蔽';
+        } else if (duration < 1000) {
+          errorReason = '网关层连接被拒绝';
+        } else {
+          errorReason = '网络超时或服务器不可达';
+        }
+        
+        failedDomains.push(domain.name);
+        networkErrors.push({
+          domain: domain.name,
+          url: domain.url,
+          error: 'network_error',
+          duration: duration,
+          reason: errorReason
+        });
+        
+        completedTests++;
+        checkComplete();
+      };
+      
+      document.head.appendChild(script);
+    });
+    
+    function checkComplete() {
+      if (completedTests === adDomains.length) {
+        if (failedDomains.length > 0) {
+          recordResult('外部域名检测', 'blocked', {
+            blockedDomains: failedDomains,
+            totalTested: adDomains.length,
+            errors: networkErrors,
+            detectionType: 'DNS/Gateway/Hosts'
+          }, 'intl_external');
+        } else {
+          recordResult('外部域名检测', 'success', {
+            totalTested: adDomains.length,
+            allAccessible: true
+          }, 'intl_external');
+        }
+      }
+    }
+  }
+  
+  function detectByBaiduAd() {
+    const startTime = Date.now();
+    const script = document.createElement('script');
+    script.src = 'https://cpro.baidustatic.com/cpro/ui/c.js?' + Date.now();
+    script.async = true;
+    
+    let finished = false;
+    function finish(status, extra) {
+      if (finished) return;
+      finished = true;
+      clearTimeout(timeout);
+      recordResult('国内广告联盟检测', status, Object.assign({ duration: Date.now() - startTime }, extra), 'cn_external');
+    }
+    
+    const timeout = setTimeout(function() {
+      finish('blocked', { error: 'timeout' });
+    }, 5000);
+    
+    script.onload = function() {
+      finish('success', {});
+    };
+    script.onerror = function() {
+      finish('blocked', { error: 'network_error' });
+    };
+    document.head.appendChild(script);
+  }
+  
+  function detectByCSSRule() {
+    const testEl = document.createElement('div');
+    testEl.className = 'ad-banner ad_banner textAd banner-ads';
+    testEl.style.cssText = 'position:absolute;top:-10px;left:-10px;width:1px;height:1px;overflow:hidden;';
+    testEl.innerHTML = '&nbsp;';
+    document.body.appendChild(testEl);
+    
+    setTimeout(function() {
+      const styles = window.getComputedStyle(testEl);
+      const isHidden = styles.display === 'none' || 
+                       styles.visibility === 'hidden' || 
+                       styles.opacity === '0' ||
+                       testEl.offsetHeight === 0;
+      
+      recordResult('CSS规则检测', isHidden ? 'blocked' : 'success', {
+        display: styles.display,
+        visibility: styles.visibility,
+        opacity: styles.opacity
+      }, 'local');
+      
+      if (testEl.parentNode) testEl.parentNode.removeChild(testEl);
+    }, 200);
+  }
+  
+  function detectByImage() {
+    const testImg = new Image();
+    const imgSrc = '/static/ad-pixel.png?' + Date.now();
+    testImg.src = imgSrc;
+    testImg.style.display = 'none';
+    
+    const startTime = Date.now();
+    
+    testImg.onerror = function() {
+      const duration = Date.now() - startTime;
+      
+      recordResult('图片资源检测', 'blocked', {
+        resource: 'ad-pixel.png',
+        duration: duration
+      }, 'local');
+    };
+    
+    testImg.onload = function() {
+      const duration = Date.now() - startTime;
+      recordResult('图片资源检测', 'success', {
+        resource: 'ad-pixel.png',
+        size: testImg.width + 'x' + testImg.height,
+        duration: duration
+      }, 'local');
+    };
+    
+    document.body.appendChild(testImg);
+    
+    setTimeout(function() {
+      if (testImg.parentNode) {
+        document.body.removeChild(testImg);
+      }
+    }, 2000);
+  }
+  
+  function runDetection() {
+    detectByBaitElement();
+    detectByAdSense();
+    detectByFetch();
+    detectByImage();
+    detectByExternalDomain();
+    detectByBaiduAd();
+    detectByCSSRule();
+  }
+  
+  function showDetectionSummary() {
+    const totalDuration = Date.now() - detectionResults.startTime;
+    
+    // 分类判定
+    const localResults = detectionResults.results.filter(r => r.category === 'local');
+    const cnExtResults = detectionResults.results.filter(r => r.category === 'cn_external');
+    
+    const localBlocked = localResults.some(r => r.status === 'blocked');
+    const cnExtBlocked = cnExtResults.some(r => r.status === 'blocked');
+    
+    // 核心判定：本地检测或国内广告联盟检测被拦截 = 存在广告屏蔽
+    // 仅国际外部（Google）失败 = 网络环境问题（GFW），不判定
+    detectionResults.hasAdBlock = localBlocked || cnExtBlocked;
+    
+    const successCount = detectionResults.results.filter(r => r.status === 'success').length;
+    const blockedCount = detectionResults.results.filter(r => r.status === 'blocked').length;
+    
+    const summary = {
+      检测时间: new Date().toLocaleString(),
+      总耗时: totalDuration + 'ms',
+      检测方法数: detectionResults.totalTests,
+      完成检测数: detectionResults.completedTests,
+      成功通过: successCount,
+      检测到屏蔽: blockedCount,
+      最终结论: detectionResults.hasAdBlock ? '检测到广告屏蔽' : '未检测到广告屏蔽',
+      屏蔽方法: detectionResults.blockedMethods,
+      详细结果: detectionResults.results
+    };
+    
+    displaySummaryOnPage(summary);
+  }
+  
+  function displaySummaryOnPage(summary) {
+    const existingModal = document.getElementById('adblock-modal-overlay');
+    
+    if (detectionResults.isRecheck && existingModal) {
+      const closeBtn = document.getElementById('adblock-modal-close-btn');
+      const spinner = document.getElementById('adblock-spinner');
+      
+      if (!detectionResults.hasAdBlock) {
+        const modalContent = document.getElementById('adblock-modal-content');
+        modalContent.style.animation = 'scaleOut 0.2s ease-out forwards';
+        existingModal.style.animation = 'fadeOut 0.2s ease-out forwards';
+        
+        setTimeout(function() {
+          document.body.style.overflow = '';
+          document.documentElement.style.overflow = '';
+          if (existingModal.parentElement) {
+            existingModal.remove();
+          }
+          const modalStyles = document.getElementById('adblock-modal-styles');
+          if (modalStyles) {
+            modalStyles.remove();
+          }
+        }, 200);
+      } else {
+        if (spinner) {
+          spinner.style.display = 'none';
+        }
+        const btnText = document.getElementById('adblock-btn-text');
+        if (btnText) {
+          btnText.textContent = '我已关闭';
+        }
+        if (closeBtn) {
+          closeBtn.disabled = false;
+        }
+      }
+      detectionResults.isRecheck = false;
+      return;
+    }
+    
+    if (!detectionResults.hasAdBlock) {
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+      return;
+    }
+    
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+    
+    const modalOverlay = document.createElement('div');
+    modalOverlay.id = 'adblock-modal-overlay';
+    modalOverlay.style.cssText = `
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 999999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 0.3s ease-out; will-change: opacity;
+    `;
+    
+    const modalContent = document.createElement('div');
+    modalContent.id = 'adblock-modal-content';
+    modalContent.className = 'adblock-modal-box';
+    
+    modalContent.innerHTML = `
+      <div class="adblock-icon">📚</div>
+      <div class="adblock-title">感谢您访问本站</div>
+      <div class="adblock-desc">
+        本站致力于提供优质的电子书查询服务<br>
+        为了持续更新内容、维持服务器运行和带宽开销<br>
+        我们需要广告来支撑网站的日常运营
+      </div>
+      <div class="adblock-desc" style="margin-bottom: 28px;">
+        若您已安装广告拦截插件,恳请将本站加入白名单<br>
+      </div>
+      <div class="adblock-actions">
+        <button id="adblock-modal-close-btn" class="adblock-btn-primary">
+          <span id="adblock-btn-text">我已关闭</span>
+          <span id="adblock-spinner" class="adblock-spinner"></span>
+        </button>
+        <button id="adblock-info-btn" class="adblock-btn-info">
+          <span class="adblock-info-icon">!</span>
+          <span>为什么总是检测失败?</span>
+        </button>
+      </div>
+    `;
+    
+    modalOverlay.appendChild(modalContent);
+    
+    const style = document.createElement('style');
+    style.id = 'adblock-modal-styles';
+    style.textContent = `
+      /* 日夜间模式CSS变量 */
+      :root {
+        --adblock-modal-bg: rgba(51, 51, 51, 0.95);
+        --adblock-modal-border: rgba(255, 255, 255, 0.15);
+        --adblock-modal-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+        --adblock-text-primary: #ffffff;
+        --adblock-text-secondary: #dddddd;
+        --adblock-text-muted: rgba(255, 255, 255, 0.7);
+        --adblock-btn-bg: rgba(255, 255, 255, 0.15);
+        --adblock-btn-border: rgba(255, 255, 255, 0.25);
+        --adblock-btn-hover-bg: rgba(255, 255, 255, 0.25);
+        --adblock-btn-hover-border: rgba(255, 255, 255, 0.4);
+        --adblock-spinner-border: rgba(255, 255, 255, 0.3);
+        --adblock-spinner-active: #ffffff;
+      }
+      [data-theme="light"] {
+        --adblock-modal-bg: rgba(249, 243, 240, 0.98);
+        --adblock-modal-border: rgba(0, 0, 0, 0.1);
+        --adblock-modal-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+        --adblock-text-primary: #000000;
+        --adblock-text-secondary: #333333;
+        --adblock-text-muted: rgba(0, 0, 0, 0.6);
+        --adblock-btn-bg: rgba(0, 0, 0, 0.08);
+        --adblock-btn-border: rgba(0, 0, 0, 0.15);
+        --adblock-btn-hover-bg: rgba(0, 0, 0, 0.12);
+        --adblock-btn-hover-border: rgba(0, 0, 0, 0.25);
+        --adblock-spinner-border: rgba(0, 0, 0, 0.2);
+        --adblock-spinner-active: #000000;
+      }
+      
+      /* 弹窗容器样式 */
+      .adblock-modal-box {
+        background: var(--adblock-modal-bg);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid var(--adblock-modal-border);
+        border-radius: 12px;
+        padding: 35px 35px 10px 35px;
+        box-shadow: var(--adblock-modal-shadow);
+        max-width: 450px;
+        width: 90%;
+        text-align: center;
+        animation: scaleIn 0.3s ease-out;
+        will-change: transform, opacity;
+      }
+      .adblock-info-box {
+        padding: 30px 35px;
+        max-width: 420px;
+      }
+      
+      /* 图标 */
+      .adblock-icon {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+      
+      /* 标题 */
+      .adblock-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--adblock-text-primary);
+        margin-bottom: 15px;
+        line-height: 1.6;
+        text-align: left;
+        font-family: 'LXGW WenKai', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      }
+      
+      /* 描述文字 */
+      .adblock-desc {
+        color: var(--adblock-text-secondary);
+        margin-bottom: 15px;
+        line-height: 1.7;
+        text-align: left;
+      }
+      
+      /* 操作按钮容器 */
+      .adblock-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+      }
+      
+      /* 主按钮 */
+      .adblock-btn-primary {
+        background: var(--adblock-btn-bg);
+        color: var(--adblock-text-primary);
+        border: 1px solid var(--adblock-btn-border);
+        padding: 12px 45px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: transform 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+      .adblock-btn-full {
+        width: 100%;
+        padding: 10px 30px;
+        font-size: 14px;
+        border-radius: 20px;
+      }
+      
+      /* Spinner */
+      .adblock-spinner {
+        display: none;
+        width: 16px;
+        height: 16px;
+        border: 2px solid var(--adblock-spinner-border);
+        border-top-color: var(--adblock-spinner-active);
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+        will-change: transform;
+      }
+      
+      /* 信息按钮 */
+      .adblock-btn-info {
+        background: transparent;
+        color: var(--adblock-text-muted);
+        border: none;
+        padding: 8px 20px;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: color 0.2s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+      }
+      
+      /* 信息图标 */
+      .adblock-info-icon {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: var(--adblock-btn-bg);
+        border: 1px solid var(--adblock-btn-border);
+        color: var(--adblock-text-primary);
+        font-size: 11px;
+        font-weight: bold;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        transition: transform 0.2s ease;
+      }
+      
+      /* 信息弹窗标题 */
+      .adblock-info-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--adblock-text-primary);
+        margin-bottom: 18px;
+        font-family: 'LXGW WenKai', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      }
+      
+      /* 信息弹窗描述 */
+      .adblock-info-desc {
+        color: var(--adblock-text-secondary);
+        line-height: 1.7;
+        font-size: 14px;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      
+      /* 强调文本样式 */
+      .adblock-highlight-text {
+        font-weight: 700;
+        font-size: 15px;
+        background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-shadow: 0 0 20px rgba(255, 107, 107, 0.3);
+        position: relative;
+        display: inline-block;
+        padding: 0 3px;
+      }
+      [data-theme="light"] .adblock-highlight-text {
+        background: linear-gradient(135deg, #d63031, #e84393);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-shadow: 0 0 15px rgba(214, 48, 49, 0.2);
+      }
+      
+      /* 动画 */
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes scaleIn {
+        from {
+          opacity: 0;
+          transform: scale(0.9) translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1) translateY(0);
+        }
+      }
+      @keyframes fadeOut {
+        from { opacity: 1; }
+        to { opacity: 0; }
+      }
+      @keyframes scaleOut {
+        from {
+          opacity: 1;
+          transform: scale(1) translateY(0);
+        }
+        to {
+          opacity: 0;
+          transform: scale(0.9) translateY(-20px);
+        }
+      }
+      @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      
+      /* 交互状态 */
+      .adblock-btn-primary:hover:not(:disabled) {
+        background: var(--adblock-btn-hover-bg);
+        border-color: var(--adblock-btn-hover-border);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      }
+      .adblock-btn-primary:active:not(:disabled) {
+        transform: translateY(0);
+        background: var(--adblock-btn-bg);
+      }
+      .adblock-btn-primary:disabled {
+        cursor: not-allowed;
+        opacity: 0.7;
+      }
+      .adblock-btn-info:hover {
+        color: var(--adblock-text-primary);
+      }
+      .adblock-btn-info:hover .adblock-info-icon {
+        background: var(--adblock-btn-hover-bg);
+        border-color: var(--adblock-btn-hover-border);
+        transform: scale(1.1);
+      }
+      .adblock-btn-info:active .adblock-info-icon {
+        transform: scale(0.95);
+      }
+    `;
+    document.head.appendChild(style);
+    document.body.appendChild(modalOverlay);
+    
+    const closeBtn = document.getElementById('adblock-modal-close-btn');
+    closeBtn.addEventListener('click', function() {
+      const btnText = document.getElementById('adblock-btn-text');
+      const spinner = document.getElementById('adblock-spinner');
+      
+      closeBtn.disabled = true;
+      btnText.textContent = '检测中...';
+      spinner.style.display = 'inline-block';
+      
+      resetDetectionResults();
+      
+      runDetection();
+    });
+    
+    // 添加感叹号按钮点击事件
+    const infoBtn = document.getElementById('adblock-info-btn');
+    if (infoBtn) {
+      infoBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        showInfoModal();
+      });
+    }
+  }
+  
+  // 显示检测原理说明弹窗
+  function showInfoModal() {
+    const existingInfo = document.getElementById('adblock-info-modal');
+    if (existingInfo) {
+      return;
+    }
+    
+    const infoOverlay = document.createElement('div');
+    infoOverlay.id = 'adblock-info-modal';
+    infoOverlay.style.cssText = `
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 9999999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 0.3s ease-out; will-change: opacity;
+    `;
+    
+    const infoContent = document.createElement('div');
+    infoContent.className = 'adblock-modal-box adblock-info-box';
+    
+    infoContent.innerHTML = `
+      <div class="adblock-info-title">💡 检测说明</div>
+      <div class="adblock-info-desc">
+        我们通过多种方式检测广告是否正常加载。当前检测到<span class="adblock-highlight-text">广告被拦截</span>。<br><br>简单来说就是广告被"屏蔽了"，常见原因包括系统或浏览器自带拦截、广告拦截或隐私插件等。
+      </div>
+      <button id="adblock-info-close" class="adblock-btn-primary adblock-btn-full">知道了</button>
+    `;
+    
+    infoOverlay.appendChild(infoContent);
+    document.body.appendChild(infoOverlay);
+    
+    // 关闭事件
+    const closeInfoModal = function() {
+      infoContent.style.animation = 'scaleOut 0.2s ease-out forwards';
+      infoOverlay.style.animation = 'fadeOut 0.2s ease-out forwards';
+      setTimeout(function() {
+        if (infoOverlay.parentElement) {
+          infoOverlay.remove();
+        }
+      }, 200);
+    };
+    
+    document.getElementById('adblock-info-close').addEventListener('click', closeInfoModal);
+    infoOverlay.addEventListener('click', function(e) {
+      if (e.target === infoOverlay) {
+        closeInfoModal();
+      }
+    });
+  }
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      runDetection();
+    });
+  } else {
+    setTimeout(runDetection, 500);
+  }
+})();
+</script>
+
+
+  <style>
+    body {
+      font-family: "LXGW WenKai", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    .ml-4 {
+      font-weight: 400!important;
+      padding-right: 0px !important;
+    }
+    .card {
+          border-radius: .4rem !important;
+    }
+
+  </style>
+</head>
+
+
+<body class="text-center" id="all">
+
+
+
+
+    <div class="cover-container p-3 pb-0 d-flex h-100 mx-auto flex-column" id="layout">
+<style>
+   html, body {
+      margin: 0;
+      padding: 0;
+      overscroll-behavior-y: none; 
+   }
+
+   body {
+      padding-top: calc(70px + env(safe-area-inset-top)); 
+   }
+
+   header.masthead {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 999;
+
+      padding: calc(16px + env(safe-area-inset-top)) 0 28px 0;
+      min-height: 70px;
+   }
+
+   /* .inner1 样式已移至 theme.css 统一管理 */
+
+   .masthead-brand a {
+      color: var(--text-primary);
+      font-weight: 600;
+      font-size: 1.35rem;
+      line-height: 1.2;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-shadow: var(--brand-text-shadow);
+   }
+
+   @media (min-width: 992px) {
+      .masthead-brand {
+         transform: translateY(-2px);
+      }
+   }
+
+   .masthead-brand a:hover {
+      color: var(--text-primary);
+      opacity: 0.9;
+   }
+
+   .nav-link {
+      color: var(--text-secondary);
+      font-weight: 500;
+      margin-left: 1rem;
+      transition: color 0.25s ease, transform 0.25s ease;
+      /* text-shadow: var(--brand-text-shadow); */
+   }
+   .nav-link:hover {
+      color: var(--text-primary);
+      transform: translateY(-1px);
+   }
+   .nav-link.active {
+      color: var(--text-primary);
+      font-weight: 600;
+      border-bottom: 2px solid var(--text-primary);
+      padding-bottom: 2px;
+   }
+</style>
+
+<header class="masthead mb-4 "style="
+    padding-top: 12px;
+">
+  <div class="cover-container px-2">
+    <div class="inner1 d-flex justify-content-between align-items-lg-start align-items-center">
+      <h3 class="masthead-brand mt-2">
+        <a href="/">SaltyLeo 的书架</a>
+      </h3>
+      <div class="d-flex align-items-center">
+        <nav class="nav nav-masthead">
+          <a class="nav-link active m-0" href="/search">搜书</a>
+          <a class="nav-link " href="/audio">听书</a>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle-btn" style="background: none; border: none; cursor: pointer; padding: 0; margin-left: 1rem;" aria-label="切换主题" title="切换日间/夜间模式">
+          <i class="bi bi-sun-fill theme-icon-light"></i>
+          <i class="bi bi-moon-stars-fill theme-icon-dark"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div class="mb-3">
+</div>
+
+
+
+
+
+
+
+
+        
+
+<style>
+  /* 统一图书封面边框样式 - 应用在容器上 */
+  .image-container {
+    border: 1px solid var(--image-container-border) !important;
+    border-radius: .4rem !important;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  /* 热门排行渐变配色 - 现代简约深色主题 */
+  .hot-bg-0 { 
+    background: var(--hot-card-bg);
+    color: var(--text-primary);
+    border-left: 3px solid var(--hot-rank-1);
+  }  /* TOP1 */
+  
+  .hot-bg-1 { 
+    background: var(--hot-card-bg);
+    color: var(--text-primary);
+    border-left: 3px solid var(--hot-rank-2);
+  }  /* TOP2 */
+  
+  .hot-bg-2 { 
+    background: var(--hot-card-bg);
+    color: var(--text-primary);
+    border-left: 3px solid var(--hot-rank-3);
+  }  /* TOP3 */
+  
+  .hot-bg-3 { 
+    background: var(--hot-card-bg);
+    color: var(--text-secondary);
+    border-left: 3px solid var(--hot-rank-4);
+  }  /* TOP4 */
+  
+  .hot-bg-4 { 
+    background: var(--hot-card-bg);
+    color: var(--text-secondary);
+    border-left: 3px solid var(--hot-rank-4);
+  }  /* TOP5 */
+  
+  .hot-bg-5 { 
+    background: var(--hot-card-bg);
+    color: var(--text-secondary);
+    border-left: 3px solid var(--hot-rank-5);
+  }  /* TOP6 */
+  
+  .hot-bg-6 { 
+    background: var(--hot-card-bg);
+    color: var(--text-secondary);
+    border-left: 3px solid var(--hot-rank-6);
+  }  /* TOP7 */
+  
+  .hot-bg-7 { 
+    background: var(--hot-card-bg);
+    color: var(--text-muted);
+    border-left: 3px solid var(--hot-rank-9);
+  }  /* TOP8 */
+  
+  .hot-bg-8 { 
+    background: var(--hot-card-bg);
+    color: var(--text-muted);
+    border-left: 3px solid var(--hot-rank-9);
+  }  /* TOP9 */
+  
+  .hot-bg-9 { 
+    background: var(--hot-card-bg);
+    color: var(--text-muted);
+    border-left: 3px solid var(--hot-rank-10);
+  }  /* TOP10 */
+
+  .hot-bg-0,
+  .hot-bg-1,
+  .hot-bg-2 {
+    text-shadow: var(--shadow-text);
+  }
+  
+  .hot-card {
+    border-radius: 6px;
+    padding: 5px 14px;
+    transition: all 0.2s ease;
+    background-clip: padding-box;
+    box-shadow: var(--hot-card-shadow);
+    border-top: 1px solid var(--hot-card-border);
+    border-right: 1px solid var(--hot-card-border);
+    border-bottom: 1px solid var(--hot-card-border);
+  }
+  
+  .hot-card:hover {
+    transform: translateX(3px);
+    box-shadow: var(--hot-card-hover-shadow);
+  }
+  
+  .badge.bg-type {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+  }
+</style>
+<main role="main" style="text-align: left;" class="inner cover p-0" id="ma">
+
+  <style>
+    .adcard{
+    border-color: var(--bg-secondary) !important;
+    background-color: var(--bg-secondary);
+    min-height: 100px!important;}
+    .adspan{
+    padding: 0px 4px;
+    border-radius: .2rem;
+    background-color: var(--bg-tertiary);
+    bottom: 0px;
+    right: 0px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    pointer-events: none;
+                          
+    }
+    .search-bar {
+        border-radius: 20px;
+        padding: 4px;
+    }
+    
+    .dropdown-toggle {
+    background-color: var(--input-bg);
+    color: var(--text-primary);
+    border: 1px solid var(--btn-border);
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-lg);
+    }
+
+    .dropdown-toggle:hover {
+        background-color: var(--dropdown-toggle-hover-bg); 
+        color: var(--dropdown-toggle-hover-text);
+        border-color: var(--btn-border);
+        box-shadow: var(--shadow-lg);
+    }
+    
+    .dropdown-menu {
+        background-color: var(--dropdown-bg);
+        border: 1px solid var(--border-color);
+    }
+    
+    .dropdown-item {
+        color: var(--dropdown-text);
+    }
+    
+    .dropdown-item:hover {
+        background-color: var(--dropdown-hover-bg);
+        color: var(--dropdown-text);
+    }
+    
+    .form-control {
+        background-color: var(--input-bg);
+        color: var(--input-text);
+        border: 1px solid var(--search-input-border);
+        transition: background-color 0.3s, color 0.3s;
+        box-shadow: var(--shadow-lg);
+    }
+    
+    .form-control:focus {
+        background-color: var(--input-focus-bg); 
+        color: var(--input-focus-text);
+        border: 1px solid var(--search-input-border);
+        box-shadow: var(--shadow-lg) !important;
+        outline: none;
+    }
+    
+    .form-control::placeholder {
+        color: var(--input-placeholder);
+    }
+    
+    .search-button {
+        background-color: var(--btn-primary-bg);
+        color: var(--btn-primary-text);
+        border: 1px solid var(--btn-border);
+        white-space: nowrap; 
+    }
+    
+    .search-button:hover {
+        background-color: var(--btn-primary-hover-bg);
+        color: var(--btn-primary-text);
+        border-color: var(--btn-border);
+    }
+    
+    .lazyload {
+        opacity: 1;
+    }
+    .c777{
+      color: var(--text-secondary);
+    }
+    .cfff{
+      color: var(--text-primary) !important;
+    }
+    .bg-type{
+  color: var(--text-primary);
+  background-color: var(--bg-tertiary);
+}
+.list-group-item{    
+  color: var(--list-item-text) !important;
+  background-color: var(--list-item-bg) !important;
+  border: 1px solid var(--list-item-border);
+}
+  .list-group-item:hover{    
+    color: var(--list-item-hover-text) !important;
+    background-color: var(--list-item-hover-bg) !important;
+  }
+.no-focus-ring:focus {
+  background-color: var(--input-focus-bg) !important;
+  color: var(--input-focus-text) !important;
+  outline: none !important;      
+  box-shadow: var(--shadow-lg) !important;
+  border-color: var(--search-input-border) !important; 
+}
+
+/* 书籍分类标题背景 - 日间模式白色 */
+[data-theme="light"] .category-nav-card .card-header {
+  background-color: #ffffff !important;
+}
+
+/* 右侧分类导航卡片滚动条样式 */
+.category-nav-card-body::-webkit-scrollbar {
+  width: 6px;
+}
+.category-nav-card-body::-webkit-scrollbar-track {
+  background: var(--bg-tertiary);
+  border-radius: 3px;
+}
+.category-nav-card-body::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+.category-nav-card-body::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+  </style>
+
+  <div class="container"style="
+  max-width: 100%;
+">
+    <div class="row justify-content-center">
+          
+
+        <h1 class="h2 mt-5 mb-2 cover-heading text-center" >立身以立学为先，立学以读书为本。</h1>
+        <p class="text-center mb-0" style="font-size: 1rem; color: var(--text-muted);">- 欧阳修</p>
+        
+      <div class="col-12 mt-0 mb-2 col-md-8 p-0">
+
+
+       <div class="mt-4 mb-5 ">
+  <form id="searchForm" action="/search" method="get">
+    <div class="input-group">
+      <button type="button" class="btn dropdown-toggle input-group-text shadow" data-bs-toggle="dropdown" aria-expanded="false" style="border-top-left-radius: 20px; border-bottom-left-radius: 20px;">
+        
+          <i class="bi bi-search ms-1"></i> <span id="dropdownText">搜书</span>
+        
+      </button>
+      <ul class="dropdown-menu shadow" style="border-radius: 20px;">
+        <li><a class="dropdown-item" style="margin-top: .5rem !important;" href="#" onclick="changeSearchType('搜书', 'bi-search ms-1', 'default')"><i class="bi bi-search ms-1"></i> 搜书</a></li>
+        <li><a class="dropdown-item" href="#" onclick="changeSearchType('书名', 'bi-book ms-1', 'book_name')"><i class="bi bi-book ms-1"></i> 书名</a></li>
+        <li><a class="dropdown-item" href="#" onclick="changeSearchType('作者', 'bi-person ms-1', 'author')"><i class="bi bi-person ms-1"></i> 作者</a></li>
+        <li><a class="dropdown-item" href="#" onclick="changeSearchType('出版社', 'bi-building ms-1', 'publisher')"><i class="bi bi-building ms-1"></i> 出版社</a></li>
+        <li><a class="dropdown-item" href="#" style="margin-bottom: .5rem !important;" onclick="changeSearchType('ISBN', 'bi-hash ms-1', 'isbn')"><i class="bi bi-hash ms-1"></i> ISBN</a></li>
+      </ul>
+      <input type="hidden" name="search_type" id="searchType" value="default"/>
+      <input
+        type="text"
+        name="q"
+        class="form-control no-focus-ring shadow"
+        style="height: 48px; font-size: 16px; padding: 15px;"
+        placeholder="输入关键词搜索"
+        value=""
+        id="searchQuery"
+        autocomplete="off"
+      >
+      <button
+        class="btn btn-secondary shadow search-submit-btn"
+        style="font-weight: bold; height: 48px; padding: 0 20px;border-top-right-radius: 20px; border-bottom-right-radius: 20px;"
+        type="submit"
+      >搜索</button>
+    </div>
+</form>
+
+ <div id="suggestionsBox" class="list-group mt-2 me-5 shadow" style="margin-left: 5.9rem; display: none; position: absolute; z-index: 1000;"></div>
+<style>
+/* 搜索按钮样式 - 夜间模式 */
+.search-submit-btn {
+  color: var(--btn-secondary-text);
+  text-shadow: none;
+  background-color: var(--btn-secondary-bg);
+  border: .07rem solid #575757;
+}
+
+.search-submit-btn:hover,
+.search-submit-btn:focus,
+.search-submit-btn:active {
+  color: var(--btn-secondary-text) !important;
+  text-shadow: none !important;
+  background-color: var(--btn-secondary-bg) !important;
+  border: .07rem solid #575757 !important;
+}
+
+/* 搜索按钮样式 - 日间模式 */
+[data-theme="light"] .search-submit-btn {
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #e29d5d;
+  border: .07rem solid #dcb19b;
+}
+
+[data-theme="light"] .search-submit-btn:hover,
+[data-theme="light"] .search-submit-btn:focus,
+[data-theme="light"] .search-submit-btn:active {
+  color: #ffffff !important;
+  text-shadow: none !important;
+  background-color: #e29d5d !important;
+  border: .07rem solid #dcb19b !important;
+}
+
+.hot-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 1px 10px;
+    background: var(--input-bg);
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    border: 1px solid var(--btn-border);
+}
+.hot-link:hover {
+    background: var(--hot-link-hover-bg);
+    color: var(--hot-link-hover-text);
+    border-color: var(--hot-link-hover-border);
+}
+
+/* 分类提示按钮 - 渐变色动画 */
+.category-hint-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0px 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #e29d5d, #d4763a, #c55a2e, #d4763a, #e29d5d);
+  background-size: 300% 300%;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  animation: gradientFlow 4s ease infinite;
+  box-shadow: 0 2px 8px rgba(226, 157, 93, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-hint-btn:hover {
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(226, 157, 93, 0.5);
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+[data-theme="dark"] .category-hint-btn {
+  background: linear-gradient(135deg, #6b8cce, #5a7bc0, #4a6cb3, #5a7bc0, #6b8cce);
+  background-size: 300% 300%;
+  box-shadow: 0 2px 8px rgba(107, 140, 206, 0.3);
+}
+
+[data-theme="dark"] .category-hint-btn:hover {
+  box-shadow: 0 4px 12px rgba(107, 140, 206, 0.5);
+}</style>
+
+
+<style>
+  @media (max-width: 768px) {
+    #hotKeywords .hot-keyword-btn:nth-of-type(n+8) {
+      display: none !important;
+    }
+  }
+</style>
+    
+
+<div id="hotKeywords" class="mt-3 text-center m-1">
+
+  <div class="d-flex flex-column align-items-center">
+    <div class="d-flex flex-wrap justify-content-center">
+            <div class="mb-2" style="line-height: 1.5; font-weight: bold;color: var(--text-secondary);">热门搜索：</div>
+
+      
+        <button type="button" class="hot-link btn btn-outline-secondary shadow btn-sm me-2 mb-2 hot-keyword-btn">
+          斗破苍穹
+        </button>
+      
+        <button type="button" class="hot-link btn btn-outline-secondary shadow btn-sm me-2 mb-2 hot-keyword-btn">
+          机械工业出版社
+        </button>
+      
+        <button type="button" class="hot-link btn btn-outline-secondary shadow btn-sm me-2 mb-2 hot-keyword-btn">
+          了凡四训
+        </button>
+      
+        <button type="button" class="hot-link btn btn-outline-secondary shadow btn-sm me-2 mb-2 hot-keyword-btn">
+          沧浪之水
+        </button>
+      
+        <button type="button" class="hot-link btn btn-outline-secondary shadow btn-sm me-2 mb-2 hot-keyword-btn">
+          严歌苓
+        </button>
+      
+        <button type="button" class="hot-link btn btn-outline-secondary shadow btn-sm me-2 mb-2 hot-keyword-btn">
+          历史军事
+        </button>
+      
+        <button type="button" class="hot-link btn btn-outline-secondary shadow btn-sm me-2 mb-2 hot-keyword-btn">
+          全职高手
+        </button>
+      
+        <button type="button" class="hot-link btn btn-outline-secondary shadow btn-sm me-2 mb-2 hot-keyword-btn">
+          红岩
+        </button>
+      
+        <button type="button" class="hot-link btn btn-outline-secondary shadow btn-sm me-2 mb-2 hot-keyword-btn">
+          一句顶一万句
+        </button>
+      
+        <button type="button" class="hot-link btn btn-outline-secondary shadow btn-sm me-2 mb-2 hot-keyword-btn">
+          DK
+        </button>
+      
+        <button type="button" class="hot-link btn btn-outline-secondary shadow btn-sm me-2 mb-2 hot-keyword-btn">
+          夜无疆
+        </button>
+      
+        <button type="button" class="hot-link btn btn-outline-secondary shadow btn-sm me-2 mb-2 hot-keyword-btn">
+          我的阿勒泰
+        </button>
+      
+        <button type="button" class="hot-link btn btn-outline-secondary shadow btn-sm me-2 mb-2 hot-keyword-btn">
+          辰东
+        </button>
+      
+        <button type="button" class="hot-link btn btn-outline-secondary shadow btn-sm me-2 mb-2 hot-keyword-btn">
+          心理学
+        </button>
+      
+        <button type="button" class="hot-link btn btn-outline-secondary shadow btn-sm me-2 mb-2 hot-keyword-btn">
+          唐诗
+        </button>
+      
+    </div>
+    <div class="mt-3 text-center d-flex align-items-center justify-content-center flex-wrap">
+      <span style="color: var(--text-muted); font-size: 1.1rem;">📚 不知道搜什么？试试</span>
+      <a href="/category" class="category-hint-btn ms-2">
+        <i class="bi bi-grid-3x3-gap"></i> 按分类浏览
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+ 
+<script>
+  function changeSearchType(text, iconClass, searchType) {
+    document.getElementById('dropdownText').innerText = text;
+    document.getElementById('searchType').value = searchType;
+    const button = document.querySelector('.dropdown-toggle i');
+    button.className = `bi ${iconClass}`;
+  }
+
+  function debounce(func, delay) {
+    let timer;
+    return function () {
+      const context = this;
+      const args = arguments;
+      clearTimeout(timer);
+      timer = setTimeout(() => func.apply(context, args), delay);
+    };
+  }
+
+  const handleSearch = debounce(function () {
+    const query = document.getElementById('searchQuery').value.trim();
+    if (query.length >= 3) {
+      fetch(`/rts?q=${encodeURIComponent(query)}`)
+        .then(response => response.json())
+        .then(data => {
+          const suggestionsBox = document.getElementById('suggestionsBox');
+          suggestionsBox.innerHTML = '';
+
+          if (data.length > 0) {
+            data.forEach(suggestion => {
+              const suggestionItem = document.createElement('button');
+              suggestionItem.type = 'button';
+              suggestionItem.className = 'list-group-item list-group-item-action';
+              suggestionItem.addEventListener('click', function () {
+                // 直接填入并提交，后端会记录搜索热词（本地自增）
+                document.getElementById('searchQuery').value = suggestion;
+                document.getElementById('searchForm').submit();
+              });
+
+              suggestionItem.innerText = suggestion;
+              suggestionsBox.appendChild(suggestionItem);
+            });
+
+            suggestionsBox.style.display = 'block';
+          } else {
+            suggestionsBox.style.display = 'none';
+          }
+        })
+        .catch(error => {
+          console.error('Error fetching search suggestions:', error);
+        });
+    } else {
+      document.getElementById('suggestionsBox').style.display = 'none';
+    }
+  }, 500);
+
+  document.getElementById('searchQuery').addEventListener('input', handleSearch);
+
+  document.getElementById('searchForm').addEventListener('submit', function (event) {
+    const query = document.getElementById('searchQuery').value.trim();
+    if (!query) {
+      event.preventDefault();
+      alert("请输入搜索关键词！");
+      return;
+    }
+    // 不再前端打点；提交后由后端在 /search 路由本地自增记录搜索词
+  });
+
+  document.querySelectorAll('.hot-keyword-btn').forEach(button => {
+    button.addEventListener('click', function () {
+      const keyword = this.innerText.trim();
+      document.getElementById('searchQuery').value = keyword;
+      document.getElementById('searchForm').submit();
+    });
+  });
+</script>
+
+</div>
+
+
+
+<!-- <div class="text-center my-3 mt-0 mb-5">
+  <a href="/audio" class="badge bg-type text-white text-decoration-none px-3 py-2 d-inline-block">
+    <h6 class="m-0">不想看书？那就听书🎧吧！</h6>
+  </a>
+</div> -->
+      </div>
+      
+
+      
+      
+          <div class="col-12 col-sm-12 mb-3 p-0 ">
+          <div class="card w-100 border position-relative adcard">
+            <span class="position-absolute adspan">广告</span>
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8662211448990280"
+                  crossorigin="anonymous"></script>
+              <ins class="adsbygoogle"
+                  style="display:block"
+                  data-ad-client="ca-pub-8662211448990280"
+                  data-ad-slot="7474974068"
+                  data-ad-format="auto"
+                  data-full-width-responsive="true"></ins>
+              <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+          </div>
+        </div>
+      
+    </div>
+
+
+  <div class="row">
+
+    
+
+
+<!-- 轮播图与分类导航组合区域 -->
+
+
+<div class="col-12 p-0 mb-3">
+  <div class="row g-3">
+    <!-- 左侧轮播图 - 70% 宽度 -->
+    <div class="col-12 col-lg-8">
+      
+      <div id="homepageCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          
+          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          
+          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="1"  aria-label="Slide 2"></button>
+          
+          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="2"  aria-label="Slide 3"></button>
+          
+          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="3"  aria-label="Slide 4"></button>
+          
+          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="4"  aria-label="Slide 5"></button>
+          
+          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="5"  aria-label="Slide 6"></button>
+          
+        </div>
+        <div class="carousel-inner" style="border-radius: 8px; overflow: hidden;">
+          
+          <div class="carousel-item active">
+            <a href="/booklists/1">
+              <img src="https://files.slack.com/files-pri/T087YK7DSNL-F0AS8RE2DGR/download/072469e6-681a-4c37-a194-e0ce6f1ac4bf.jpg?pub_secret=a24d6760a7" class="d-block w-100" alt="文明的演进：文字、载体与认知的断代史" style="height: auto; max-height: 300px; object-fit: cover;">
+            </a>
+          </div>
+          
+          <div class="carousel-item ">
+            <a href="/booklists/14">
+              <img src="https://files.slack.com/files-pri/T087YK7DSNL-F0AJWQ8VBA6/download/unnamed.jpg?pub_secret=56cb31b033" class="d-block w-100" alt="这个宇宙，冷酷与浪漫并存" style="height: auto; max-height: 300px; object-fit: cover;">
+            </a>
+          </div>
+          
+          <div class="carousel-item ">
+            <a href="/booklists/12">
+              <img src="https://files.slack.com/files-tmb/T087YK7DSNL-F0AJWHR0TJQ-28f2dcdb40/9a91ea4b46b0b652e5d5e9b09c83a33f-photoroom_480.png?pub_secret=20b694107a" class="d-block w-100" alt="立春" style="height: auto; max-height: 300px; object-fit: cover;">
+            </a>
+          </div>
+          
+          <div class="carousel-item ">
+            <a href="/booklists/10">
+              <img src="https://files.slack.com/files-tmb/T087YK7DSNL-F0AJW89DBGU-5764ae1072/e817ac3938646367aa157d8163b14984-photoroom_480.png?pub_secret=2b211601f1" class="d-block w-100" alt="雨水" style="height: auto; max-height: 300px; object-fit: cover;">
+            </a>
+          </div>
+          
+          <div class="carousel-item ">
+            <a href="/booklists/8">
+              <img src="https://files.slack.com/files-pri/T087YK7DSNL-F0AK310C2AD/download/8d1b591cd314a38131347954cf7bdfc2.png?pub_secret=cb6b3bbd1f" class="d-block w-100" alt="阅己 越己 悦己" style="height: auto; max-height: 300px; object-fit: cover;">
+            </a>
+          </div>
+          
+          <div class="carousel-item ">
+            <a href="/booklists/7">
+              <img src="https://files.slack.com/files-tmb/T087YK7DSNL-F0AJPLTCQD8-53da2d4bb5/image-photoroom_480.png?pub_secret=8aa7e67a2a" class="d-block w-100" alt="惊蛰" style="height: auto; max-height: 300px; object-fit: cover;">
+            </a>
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#homepageCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#homepageCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+    </div>
+
+    <!-- 右侧分类导航 - 30% 宽度 -->
+    <div class="col-12 col-lg-4">
+      <div class="card h-100 category-nav-card" style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden;">
+        <div class="card-header" style="background-color: var(--bg-tertiary); border-bottom: 1px solid var(--border-color); padding: 0.5rem 1rem;">
+          <h6 class="mb-0 fw-bold" style="color: var(--text-primary); font-size: 1rem;">
+            <i class="bi bi-grid-3x3-gap me-2"></i>书籍分类
+          </h6>
+        </div>
+        <div class="card-body p-2 category-nav-card-body" style="overflow-y: auto; max-height: 300px;">
+          <div class="row g-2">
+            
+            <div class="col-6">
+              <a href="/category/100000" 
+                 class="btn btn-sm w-100 d-block text-truncate category-nav-btn"
+                 style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-primary); font-weight: 500; font-size: 0.85rem; padding: 0.375rem 0.5rem;"
+                 title="精品小说">
+                
+                  <i class="bi bi-book"></i>
+                
+                <span class="ms-1" style="font-size: 0.85rem;">精品小说</span>
+              </a>
+            </div>
+            
+            <div class="col-6">
+              <a href="/category/200000" 
+                 class="btn btn-sm w-100 d-block text-truncate category-nav-btn"
+                 style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-primary); font-weight: 500; font-size: 0.85rem; padding: 0.375rem 0.5rem;"
+                 title="历史">
+                
+                  <i class="bi bi-clock-history"></i>
+                
+                <span class="ms-1" style="font-size: 0.85rem;">历史</span>
+              </a>
+            </div>
+            
+            <div class="col-6">
+              <a href="/category/300000" 
+                 class="btn btn-sm w-100 d-block text-truncate category-nav-btn"
+                 style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-primary); font-weight: 500; font-size: 0.85rem; padding: 0.375rem 0.5rem;"
+                 title="文学">
+                
+                  <i class="bi bi-book"></i>
+                
+                <span class="ms-1" style="font-size: 0.85rem;">文学</span>
+              </a>
+            </div>
+            
+            <div class="col-6">
+              <a href="/category/400000" 
+                 class="btn btn-sm w-100 d-block text-truncate category-nav-btn"
+                 style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-primary); font-weight: 500; font-size: 0.85rem; padding: 0.375rem 0.5rem;"
+                 title="艺术">
+                
+                  <i class="bi bi-palette"></i>
+                
+                <span class="ms-1" style="font-size: 0.85rem;">艺术</span>
+              </a>
+            </div>
+            
+            <div class="col-6">
+              <a href="/category/500000" 
+                 class="btn btn-sm w-100 d-block text-truncate category-nav-btn"
+                 style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-primary); font-weight: 500; font-size: 0.85rem; padding: 0.375rem 0.5rem;"
+                 title="人物传记">
+                
+                  <i class="bi bi-person-badge"></i>
+                
+                <span class="ms-1" style="font-size: 0.85rem;">人物传记</span>
+              </a>
+            </div>
+            
+            <div class="col-6">
+              <a href="/category/600000" 
+                 class="btn btn-sm w-100 d-block text-truncate category-nav-btn"
+                 style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-primary); font-weight: 500; font-size: 0.85rem; padding: 0.375rem 0.5rem;"
+                 title="哲学宗教">
+                
+                  <i class="bi bi-people"></i>
+                
+                <span class="ms-1" style="font-size: 0.85rem;">哲学宗教</span>
+              </a>
+            </div>
+            
+            <div class="col-6">
+              <a href="/category/700000" 
+                 class="btn btn-sm w-100 d-block text-truncate category-nav-btn"
+                 style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-primary); font-weight: 500; font-size: 0.85rem; padding: 0.375rem 0.5rem;"
+                 title="计算机">
+                
+                  <i class="bi bi-laptop"></i>
+                
+                <span class="ms-1" style="font-size: 0.85rem;">计算机</span>
+              </a>
+            </div>
+            
+            <div class="col-6">
+              <a href="/category/800000" 
+                 class="btn btn-sm w-100 d-block text-truncate category-nav-btn"
+                 style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-primary); font-weight: 500; font-size: 0.85rem; padding: 0.375rem 0.5rem;"
+                 title="心理">
+                
+                  <i class="bi bi-heart-half"></i>
+                
+                <span class="ms-1" style="font-size: 0.85rem;">心理</span>
+              </a>
+            </div>
+            
+            <div class="col-6">
+              <a href="/category/900000" 
+                 class="btn btn-sm w-100 d-block text-truncate category-nav-btn"
+                 style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-primary); font-weight: 500; font-size: 0.85rem; padding: 0.375rem 0.5rem;"
+                 title="社会文化">
+                
+                  <i class="bi bi-globe2"></i>
+                
+                <span class="ms-1" style="font-size: 0.85rem;">社会文化</span>
+              </a>
+            </div>
+            
+            
+            <div class="col-6">
+              <a href="/category" 
+                 class="btn btn-sm w-100 d-block category-nav-btn"
+                 style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-primary); font-weight: 500; font-size: 0.85rem; padding: 0.375rem 0.5rem;">
+                <i class="bi bi-grid"></i> 查看全部
+              </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* 书籍分类标题背景 - 日间模式白色 */
+[data-theme="light"] .category-nav-card .card-header {
+  background-color: #ffffff !important;
+}
+
+/* 右侧分类导航卡片滚动条样式 */
+.category-nav-card-body::-webkit-scrollbar {
+  width: 6px;
+}
+.category-nav-card-body::-webkit-scrollbar-track {
+  background: var(--bg-tertiary);
+  border-radius: 3px;
+}
+.category-nav-card-body::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+.category-nav-card-body::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* 更多分类按钮样式 - 参照 category.html 子分类按钮样式 */
+.category-nav-btn {
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.category-nav-btn:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+[data-theme="light"] .category-nav-btn:hover {
+  background: rgba(220, 177, 155, 0.3) !important;
+}
+</style>
+
+<!-- 新书速递展示区 -->
+
+
+
+    <div class="col-12 p-0 mb-1">
+      <div class="row mb-4 mt-3">
+        <div class="col-12">
+          <div class="d-flex align-items-center justify-content-between w-100 position-relative">
+                <div class="position-relative z-1 xssd-title" style="    background-color: #FF6B3C;
+    padding: 6px 20px;
+    border: 1px solid #21170f;
+    border-radius: 20px;
+    box-shadow: 2px 2px 0 #8B2D00;
+    font-size: 1.1rem;
+    font-weight: bold;
+    white-space: nowrap;">
+                  <i class="bi bi-stars"></i> 新书速递
+            </div>
+<style>
+.xssd-title { color: #fff; }
+[data-theme="light"] .xssd-title { color: #fff; }
+</style>
+                <div class="flex-grow-1 mx-2 position-relative" style="height: 2px;">
+              <div style="border-top: 2px dotted #888; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+            </div>
+                <a href="/new_books"
+               class="fw-light small z-1"
+               style="text-decoration: none; white-space: nowrap; margin-right: 10px; color: var(--text-primary);">
+              查看更多 &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row">
+        
+<div class="col-4 col-md-2">
+  <a href="../book/00qygs3xgmc" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F0AH9JHV7LP/download/00qygs3xgmc.png?pub_secret=1078a9f2fb" 
+             class="img-fluid lazyload" 
+             alt="蓝公案：公心明断">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>蓝公案：公心明断</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">蓝鼎元</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/07zsoqoi5is" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F0AHJPWMACB/download/07zsoqoi5is.png?pub_secret=306d6c507a" 
+             class="img-fluid lazyload" 
+             alt="绮市芳葩">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>绮市芳葩</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">绿芜</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/0kdkdzui30y" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F0AHR6V70D8/download/0kdkdzui30y.png?pub_secret=5f0ed16d44" 
+             class="img-fluid lazyload" 
+             alt="迪士尼英文原版：疯狂动物城2（Zootopia 2）">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>迪士尼英文原版：疯狂动物城2（Zootopia 2）</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">美国迪士尼公司</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/2qa7lez5dx2" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F0AHUQNUSAY/download/2qa7lez5dx2.png?pub_secret=536803dc55" 
+             class="img-fluid lazyload" 
+             alt="大电影双语阅读·疯狂动物城 2（全彩升级版）">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>大电影双语阅读·疯狂动物城 2（全彩升级版）</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">美国迪士尼公司、黄娜</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/4fhejnoqkkn" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F0AHMKKUHA9/download/4fhejnoqkkn.png?pub_secret=090a098fc5" 
+             class="img-fluid lazyload" 
+             alt="包公案：龙图公案">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>包公案：龙图公案</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">安遇时</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/50xnie4e0ih" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F0AHNUWRN1L/download/50xnie4e0ih.png?pub_secret=d318bd2e09" 
+             class="img-fluid lazyload" 
+             alt="斗印">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>斗印</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">赵金明</span>
+    </div>
+  </a>
+</div>
+        
+      </div>
+    </div>
+
+
+
+
+<!-- 著名作家展示区 -->
+
+
+
+
+    <section class="author-carousel seauthor-carousel p-0 mb-4" data-carousel-index="0">
+            <div class="row mb-4 mt-3">
+        <div class="col-12">
+          <div class="d-flex align-items-center justify-content-between w-100 position-relative">
+                <div class="position-relative z-1" style="background-color: var(--bg-secondary);padding: 6px 20px;border: 1px solid var(--border-color);border-radius: 20px;box-shadow: 2px 2px 0 var(--bg-tertiary);font-size: 1.1rem;font-weight: bold;white-space: nowrap;color: var(--category-title-text);">
+                  <i class="bi bi-person-workspace"></i> 著名作家
+            </div>
+                <div class="flex-grow-1 mx-2 position-relative" style="height: 2px;">
+              <div style="border-top: 2px dotted #888; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+            </div>
+                <a href="/authors"
+               class="fw-light small z-1"
+               style="text-decoration: none; white-space: nowrap; margin-right: 10px; color: var(--text-primary);">
+              查看更多 &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+  <div class="carousel-viewport">
+    <div class="carousel-track">
+      
+      
+      <div class="author-grid-col">
+        <a href="/authors/1"
+           class="author-card"
+           style="background-image:url('https://bookbk.img.zhangyue01.com/idc_1/group62/UX/ql/aa3377abc8bfb0d8875b3b5c676c8207.jpg?v=N7WPoRKf&amp;t=fwAAAWhQ1yc.')"
+           title="胡适">
+        </a>
+      </div>
+      
+      <div class="author-grid-col">
+        <a href="/authors/2"
+           class="author-card"
+           style="background-image:url('https://bookbk.img.zhangyue01.com/idc_1/group62/MY/m3/6be1adf3179e036d440170298f9616cc.jpg?v=jVetm2bT&amp;t=fwAAAWhQ08Q.')"
+           title="冰心">
+        </a>
+      </div>
+      
+      <div class="author-grid-col">
+        <a href="/authors/3"
+           class="author-card"
+           style="background-image:url('https://bookbk.img.zhangyue01.com/idc_1/group62/Bb/t7/ce3e2ace402fca00f686652187aa96ea.jpg?v=8HQ12Kwj&amp;t=fwAAAWhQ16k.')"
+           title="徐志摩">
+        </a>
+      </div>
+      
+      <div class="author-grid-col">
+        <a href="/authors/4"
+           class="author-card"
+           style="background-image:url('https://bookbk.img.zhangyue01.com/idc_1/group62/T4/RZ/09fc890818258feb575e39059c51a37f.jpg?v=Zzs9fQGZ&amp;t=fwAAAWhQ1AM.')"
+           title="林徽因">
+        </a>
+      </div>
+      
+      <div class="author-grid-col">
+        <a href="/authors/5"
+           class="author-card"
+           style="background-image:url('https://bookbk.img.zhangyue01.com/idc_1/group62/SD/p3/f9c680a9c035a206d363956087514b00.jpg?v=yrjvMacM&amp;t=fwAAAWhQ14I.')"
+           title="沈从文">
+        </a>
+      </div>
+      
+      <div class="author-grid-col">
+        <a href="/authors/6"
+           class="author-card"
+           style="background-image:url('https://bookbk.img.zhangyue01.com/idc_1/group62/xy/7f/9ae3d1d8562be76144fe88744d0a8683.jpg?v=YClXB-f_&amp;t=fwAAAWhQ1GY.')"
+           title="杨绛">
+        </a>
+      </div>
+      
+      <div class="author-grid-col">
+        <a href="/authors/7"
+           class="author-card"
+           style="background-image:url('https://bookbk.img.zhangyue01.com/idc_1/group62/yv/iK/65c1d8128707e5a154a70e304e60f75c.jpg?v=zIeSU4K2&amp;t=fwAAAWhRECw.')"
+           title="汪曾祺">
+        </a>
+      </div>
+      
+      <div class="author-grid-col">
+        <a href="/authors/8"
+           class="author-card"
+           style="background-image:url('https://bookbk.img.zhangyue01.com/idc_1/group62/We/xw/a94569d41b7f5d9c5adcb860695b1ca4.png?v=3Pap1A5h&amp;t=fwAAAWhREMk.')"
+           title="贾平凹">
+        </a>
+      </div>
+      
+      <div class="author-grid-col">
+        <a href="/authors/9"
+           class="author-card"
+           style="background-image:url('https://bookbk.img.zhangyue01.com/idc_1/group62/K4/my/2ceaece954d58dcdc57b456c6cb013d9.jpg?v=TvitzY2Q&amp;t=fwAAAWhQ2dg.')"
+           title="冯骥才">
+        </a>
+      </div>
+      
+
+      
+      <div class="author-grid-col">
+        <a href="/authors" class="author-card more-card" title="更多作者">
+          <span>更多作者</span>
+        </a>
+      </div>
+    </div>
+
+    <button class="edge-overlay left js-prev" aria-label="上一张">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <button class="edge-overlay right js-next" aria-label="下一张">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+</section>
+<style>
+  :root{
+  --card-radius: 16px;
+}
+/* 仅允许横向手势，避免 iOS Safari 在横滑时触发纵向滚动 */
+.carousel-viewport{
+  touch-action: pan-x;
+  -ms-touch-action: pan-x; /* 兼容旧 Edge */
+}
+.author-carousel{ position: relative; margin: 14px 0; }
+.carousel-viewport{ position: relative; overflow: hidden; width: 100%; border-radius: 18px; padding: 6px 0; }
+.carousel-track{ display: flex; flex-wrap: nowrap; will-change: transform; transition: transform .45s ease; }
+
+.author-grid-col{ flex: 0 0 auto; padding: 0 6px; }
+@media (max-width: 480px){ .author-grid-col{ flex-basis:50%; max-width:50%; } }
+@media (min-width:481px) and (max-width:640px){ .author-grid-col{ flex-basis:33.3333%; max-width:33.3333%; } }
+@media (min-width:641px) and (max-width:1024px){ .author-grid-col{ flex-basis:25%; max-width:25%; } }
+@media (min-width:1025px){ .author-grid-col{ flex-basis:20%; max-width:20%; } }
+
+.author-card{
+  position: relative;
+  display:block;
+  width:100%;
+  height:100px;                 
+  border-radius: var(--card-radius);
+  overflow:hidden;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  text-decoration:none;
+  transition: transform .25s ease;
+}
+.author-card:hover{ transform: translateY(-2px) scale(1.02); }
+
+.author-card.more-card{
+  background: linear-gradient(180deg, rgba(0,0,0,.6), rgba(0,0,0,.35));
+  display:flex; align-items:center; justify-content:center;
+}
+.author-card.more-card span{
+  color:#fff; font-weight:700; letter-spacing:.04em; font-size:25px;
+}
+
+.edge-overlay{
+  position:absolute; top:50%; transform:translateY(-50%);
+  width: 40px !important;
+  height: 100px !important;
+  border:0; padding:0; cursor:pointer;
+  border-radius:50%;
+  background: rgba(255, 255, 255, 0);
+  display:flex; align-items:center; justify-content:center;
+  z-index:5;
+  -webkit-tap-highlight-color: transparent;
+}
+.edge-overlay.left{ left: 7px; }
+.edge-overlay.right{ right:7px; }
+.edge-overlay:hover{ background: rgba(255, 255, 255, 0); }
+.edge-overlay svg{ width:24px; height:24px; color:#fff; pointer-events:none; opacity:.95; filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.8)); }
+
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  function getVisibleCount() {
+    if (window.matchMedia('(max-width: 480px)').matches) return 2;
+    if (window.matchMedia('(min-width: 481px) and (max-width: 640px)').matches) return 3;
+    if (window.matchMedia('(min-width: 641px) and (max-width: 1024px)').matches) return 4;
+    return 5;
+  }
+
+  function setupCarousel(root) {
+    const viewport = root.querySelector('.carousel-viewport');
+    const track    = root.querySelector('.carousel-track');
+    const prevBtn  = root.querySelector('.js-prev');
+    const nextBtn  = root.querySelector('.js-next');
+
+    // 明确：不支持拖动/滑动
+    if (viewport) {
+      viewport.style.touchAction = 'none';
+      viewport.onpointerdown = null;
+      viewport.ontouchstart = null;
+      viewport.onmousedown = null;
+    }
+
+    const originals = Array.from(track.children);
+    const TOTAL = originals.length;
+
+    let visible = getVisibleCount();
+    let itemPercent = 100 / visible;
+    let current = 0;
+    let isMoving = false;
+
+    const CLICK_STEP = 2; // 每次点击移动的卡片数
+
+    function build() {
+      const wasIndex = current; // 记录当前位置（可按需复用）
+      visible = getVisibleCount();
+      itemPercent = 100 / visible;
+
+      track.innerHTML = '';
+      const head = originals.map(n => n.cloneNode(true));
+      const tail = originals.map(n => n.cloneNode(true));
+      const nodes = [...head, ...originals, ...tail];
+      nodes.forEach(n => track.appendChild(n));
+
+      Array.from(track.children).forEach(col => {
+        col.style.flexBasis = itemPercent + '%';
+        col.style.maxWidth  = itemPercent + '%';
+      });
+
+      current = TOTAL; // 居中到原始列表的起始
+      setTranslate(-current * itemPercent, false);
+    }
+
+    function setTranslate(percent, withTransition = true) {
+      track.style.transition = withTransition ? 'transform .45s ease' : 'none';
+      track.style.transform = `translateX(${percent}%)`;
+      if (!withTransition) {
+        // 立刻生效后恢复过渡
+        void track.offsetHeight;
+        track.style.transition = 'transform .45s ease';
+      }
+    }
+
+    function step(dir, magnitude = 1) {
+      if (isMoving) return;
+      isMoving = true;
+      current += dir * magnitude;
+      setTranslate(-current * itemPercent, true);
+    }
+
+    track.addEventListener('transitionend', () => {
+      // 无缝循环
+      if (current < TOTAL) {
+        current += TOTAL;
+        setTranslate(-current * itemPercent, false);
+      } else if (current >= TOTAL + TOTAL) {
+        current -= TOTAL;
+        setTranslate(-current * itemPercent, false);
+      }
+      isMoving = false;
+    });
+
+    // 仅保留按钮点击
+    prevBtn.addEventListener('click', () => step(-1, CLICK_STEP));
+    nextBtn.addEventListener('click', () => step(+1, CLICK_STEP));
+
+    // 可选：键盘无障碍（左右方向键控制）
+    root.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') { step(-1, CLICK_STEP); }
+      else if (e.key === 'ArrowRight') { step(+1, CLICK_STEP); }
+    });
+
+    // 页面尺寸变化时重建
+    let resizeTimer = null;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(build, 120);
+    });
+
+    build();
+  }
+
+  document.querySelectorAll('.seauthor-carousel').forEach(setupCarousel);
+});
+</script>
+
+
+
+<!-- 分类图书展示区 -->
+
+
+
+
+
+    <div class="col-12 p-0 mb-4">
+      <div class="row mb-4 mt-3">
+        <div class="col-12">
+          <div class="d-flex align-items-center justify-content-between w-100 position-relative">
+                <div class="position-relative z-1" style="background-color: var(--bg-secondary);padding: 6px 20px;border: 1px solid var(--border-color);border-radius: 20px;box-shadow: 2px 2px 0 var(--bg-tertiary);font-size: 1.1rem;font-weight: bold;white-space: nowrap;color: var(--category-title-text);">
+                  
+                  
+                    <i class="bi bi-book"></i>
+                  
+                  科幻小说
+            </div>
+                <div class="flex-grow-1 mx-2 position-relative" style="height: 2px;">
+              <div style="border-top: 2px dotted #888; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+            </div>
+                <a href="/category/100004"
+               class="fw-light small z-1"
+               style="text-decoration: none; white-space: nowrap; margin-right: 10px; color: var(--text-primary);">
+              查看更多 &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row">
+        
+<div class="col-4 col-md-2">
+  <a href="../book/88c383f03c3" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08HL3DP9KN/88c383f03c3.jpg?pub_secret=af7b603056" 
+             class="img-fluid lazyload" 
+             alt="海底两万里（精译精注彩插版）">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>海底两万里（精译精注彩插版）</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">[法]儒勒·凡尔纳</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/cmdkwgd5bmk" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08RF9X2YBV/download/12907716.jpg?pub_secret=ae581c9d74" 
+             class="img-fluid lazyload" 
+             alt="美丽新世界">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>美丽新世界</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">[英]阿道司·赫胥黎</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/0457982c275" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08HEEA4R0D/0457982c275.jpg?pub_secret=8da6ee54c2" 
+             class="img-fluid lazyload" 
+             alt="刘慈欣短篇科幻小说合集（28册）">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>刘慈欣短篇科幻小说合集（28册）</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">刘慈欣</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/9e6eae81b44" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08HLQQKZV2/9e6eae81b44.jpg?pub_secret=4e9ad6c5da" 
+             class="img-fluid lazyload" 
+             alt="少数派报告">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>少数派报告</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">[美]菲利普·迪克</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/3985e4c854f" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08HA520G2J/3985e4c854f.jpg?pub_secret=3cc4d76096" 
+             class="img-fluid lazyload" 
+             alt="散落星河的记忆4：璀璨">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>散落星河的记忆4：璀璨</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">桐华</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/18dfskzek74" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F09BQT55TK4/download/18dfskzek74.png?pub_secret=37df50ad2e" 
+             class="img-fluid lazyload" 
+             alt="平面国（插图珍藏版）">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>平面国（插图珍藏版）</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">[英]埃德温·A.艾勃特</span>
+    </div>
+  </a>
+</div>
+        
+      </div>
+    </div>
+
+
+
+    <div class="col-12 p-0 mb-4">
+      <div class="row mb-4 mt-3">
+        <div class="col-12">
+          <div class="d-flex align-items-center justify-content-between w-100 position-relative">
+                <div class="position-relative z-1" style="background-color: var(--bg-secondary);padding: 6px 20px;border: 1px solid var(--border-color);border-radius: 20px;box-shadow: 2px 2px 0 var(--bg-tertiary);font-size: 1.1rem;font-weight: bold;white-space: nowrap;color: var(--category-title-text);">
+                  
+                  
+                    <i class="bi bi-grid-3x3-gap"></i>
+                  
+                  经典作品
+            </div>
+                <div class="flex-grow-1 mx-2 position-relative" style="height: 2px;">
+              <div style="border-top: 2px dotted #888; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+            </div>
+                <a href="/category/300004"
+               class="fw-light small z-1"
+               style="text-decoration: none; white-space: nowrap; margin-right: 10px; color: var(--text-primary);">
+              查看更多 &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row">
+        
+<div class="col-4 col-md-2">
+  <a href="../book/d6a59cb45f5" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08HF2T3HS9/d6a59cb45f5.jpg?pub_secret=4309c1f1ac" 
+             class="img-fluid lazyload" 
+             alt="狂人日记：鲁迅小说全集">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>狂人日记：鲁迅小说全集</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">鲁迅</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/ejakoz0j2vc" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08RE5R42FM/download/12809767.jpg?pub_secret=dd856b7d7f" 
+             class="img-fluid lazyload" 
+             alt="安娜·卡列尼娜">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>安娜·卡列尼娜</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">[俄]列夫·托尔斯泰</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/d2rgegz5yc5" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08REBVJ9B3/download/11261535.jpg?pub_secret=cbae084556" 
+             class="img-fluid lazyload" 
+             alt="卡拉马佐夫兄弟">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>卡拉马佐夫兄弟</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">[俄]陀思妥耶夫斯基</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/rn1018rq11q" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08RCH3AK1T/download/13240224.jpg?pub_secret=8a9098d574" 
+             class="img-fluid lazyload" 
+             alt="朝花夕拾：鲁迅散文全集">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>朝花夕拾：鲁迅散文全集</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">鲁迅</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/3e0wht5ai71" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08R542C683/download/11172204.jpg?pub_secret=7de6348899" 
+             class="img-fluid lazyload" 
+             alt="卡拉马佐夫兄弟（果麦经典）">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>卡拉马佐夫兄弟（果麦经典）</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">陀思妥耶夫斯基</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/58769d8ebb7" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08H98Q00HL/58769d8ebb7.jpg?pub_secret=84086f95fc" 
+             class="img-fluid lazyload" 
+             alt="基督山伯爵">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>基督山伯爵</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">[法]大仲马</span>
+    </div>
+  </a>
+</div>
+        
+      </div>
+    </div>
+
+
+
+    <div class="col-12 p-0 mb-4">
+      <div class="row mb-4 mt-3">
+        <div class="col-12">
+          <div class="d-flex align-items-center justify-content-between w-100 position-relative">
+                <div class="position-relative z-1" style="background-color: var(--bg-secondary);padding: 6px 20px;border: 1px solid var(--border-color);border-radius: 20px;box-shadow: 2px 2px 0 var(--bg-tertiary);font-size: 1.1rem;font-weight: bold;white-space: nowrap;color: var(--category-title-text);">
+                  
+                  
+                    <i class="bi bi-grid-3x3-gap"></i>
+                  
+                  悬疑推理
+            </div>
+                <div class="flex-grow-1 mx-2 position-relative" style="height: 2px;">
+              <div style="border-top: 2px dotted #888; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+            </div>
+                <a href="/category/100008"
+               class="fw-light small z-1"
+               style="text-decoration: none; white-space: nowrap; margin-right: 10px; color: var(--text-primary);">
+              查看更多 &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row">
+        
+<div class="col-4 col-md-2">
+  <a href="../book/0a0811c3cce" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08HK1YRJ3V/0a0811c3cce.jpg?pub_secret=85e7c7c20e" 
+             class="img-fluid lazyload" 
+             alt="海上流华之四面菩萨">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>海上流华之四面菩萨</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">梁燕呢</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/d0661c4df85" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08HKV117CL/d0661c4df85.jpg?pub_secret=27e0c5c9b1" 
+             class="img-fluid lazyload" 
+             alt="福尔摩斯探案全集（果麦经典）">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>福尔摩斯探案全集（果麦经典）</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">柯南·道尔</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/08602d4139e" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08HT35AVT3/08602d4139e.jpg?pub_secret=199572f0df" 
+             class="img-fluid lazyload" 
+             alt="阿加莎·克里斯蒂作品集之大侦探波洛探案全集（全39册）">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>阿加莎·克里斯蒂作品集之大侦探波洛探案全集（全39册）</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">阿加莎·克里斯蒂</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/5327bcaa76f" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08H11K9D0F/5327bcaa76f.jpg?pub_secret=e80bdb1a09" 
+             class="img-fluid lazyload" 
+             alt="克莱因壶">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>克莱因壶</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">[日]冈岛二人</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/487cb9346c7" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08HEENQAF7/487cb9346c7.jpg?pub_secret=d8f636f78f" 
+             class="img-fluid lazyload" 
+             alt="解忧杂货店">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>解忧杂货店</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">东野圭吾</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/47e51a2a999" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08H1GCQXNK/47e51a2a999.jpg?pub_secret=21bb7c0824" 
+             class="img-fluid lazyload" 
+             alt="绝叫（同名日剧原著）">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>绝叫（同名日剧原著）</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">叶真中显</span>
+    </div>
+  </a>
+</div>
+        
+      </div>
+    </div>
+
+
+
+    <div class="col-12 p-0 mb-4">
+      <div class="row mb-4 mt-3">
+        <div class="col-12">
+          <div class="d-flex align-items-center justify-content-between w-100 position-relative">
+                <div class="position-relative z-1" style="background-color: var(--bg-secondary);padding: 6px 20px;border: 1px solid var(--border-color);border-radius: 20px;box-shadow: 2px 2px 0 var(--bg-tertiary);font-size: 1.1rem;font-weight: bold;white-space: nowrap;color: var(--category-title-text);">
+                  
+                  
+                    <i class="bi bi-flower1"></i>
+                  
+                  励志成长
+            </div>
+                <div class="flex-grow-1 mx-2 position-relative" style="height: 2px;">
+              <div style="border-top: 2px dotted #888; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+            </div>
+                <a href="/category/1000002"
+               class="fw-light small z-1"
+               style="text-decoration: none; white-space: nowrap; margin-right: 10px; color: var(--text-primary);">
+              查看更多 &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row">
+        
+<div class="col-4 col-md-2">
+  <a href="../book/55jd8c1yai4" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08R59NLH46/download/12835106.jpg?pub_secret=a7679c7cc5" 
+             class="img-fluid lazyload" 
+             alt="立足当下">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>立足当下</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">克里斯·加德纳 米姆·艾齐勒·里华斯</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/dtqhesmv0s5" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08RFRN54F4/download/13100289.jpg?pub_secret=9efabe986c" 
+             class="img-fluid lazyload" 
+             alt="社交焦虑">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>社交焦虑</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">[日]加藤谛三著</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/xnsxfyjfwy6" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F0AH9QB3MHV/download/xnsxfyjfwy6.png?pub_secret=1e2429ac2d" 
+             class="img-fluid lazyload" 
+             alt="蓬勃生长">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>蓬勃生长</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">朱佳航</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/4xoa17zq8qf" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08QZANPVF1/download/13084864.jpg?pub_secret=5b88c81756" 
+             class="img-fluid lazyload" 
+             alt="原生家庭创伤和疗愈">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>原生家庭创伤和疗愈</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">杨暖</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/d656345bf3a" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08HLC1TKGU/d656345bf3a.jpg?pub_secret=bc0bb6f50d" 
+             class="img-fluid lazyload" 
+             alt="相信">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>相信</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">蔡磊</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/3bc1866bb23" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08HGNTKJ0J/3bc1866bb23.jpg?pub_secret=9ecff0cdce" 
+             class="img-fluid lazyload" 
+             alt="感谢生命的美意">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>感谢生命的美意</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">廖智</span>
+    </div>
+  </a>
+</div>
+        
+      </div>
+    </div>
+
+
+
+    <div class="col-12 p-0 mb-4">
+      <div class="row mb-4 mt-3">
+        <div class="col-12">
+          <div class="d-flex align-items-center justify-content-between w-100 position-relative">
+                <div class="position-relative z-1" style="background-color: var(--bg-secondary);padding: 6px 20px;border: 1px solid var(--border-color);border-radius: 20px;box-shadow: 2px 2px 0 var(--bg-tertiary);font-size: 1.1rem;font-weight: bold;white-space: nowrap;color: var(--category-title-text);">
+                  
+                  
+                    <i class="bi bi-cpu"></i>
+                  
+                  人工智能
+            </div>
+                <div class="flex-grow-1 mx-2 position-relative" style="height: 2px;">
+              <div style="border-top: 2px dotted #888; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+            </div>
+                <a href="/category/700005"
+               class="fw-light small z-1"
+               style="text-decoration: none; white-space: nowrap; margin-right: 10px; color: var(--text-primary);">
+              查看更多 &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row">
+        
+<div class="col-4 col-md-2">
+  <a href="../book/jlqu4ywmxus" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08QV0TDDT9/download/12551430.jpg?pub_secret=7b2f93129a" 
+             class="img-fluid lazyload" 
+             alt="AI定式全解">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>AI定式全解</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">丁烈</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/evkbmi4jyaa" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F09Q74GEW8P/download/evkbmi4jyaa.jpg?pub_secret=a43bbce9b3" 
+             class="img-fluid lazyload" 
+             alt="智慧的疆界：从图灵机到人工智能">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>智慧的疆界：从图灵机到人工智能</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">周志明</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/af2c16005d8" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08H4M7MJ2J/af2c16005d8.jpg?pub_secret=116f7f64b2" 
+             class="img-fluid lazyload" 
+             alt="未来呼啸而来八部曲">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>未来呼啸而来八部曲</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">彼得·戴曼迪斯 史蒂芬·科特勒 梅拉妮·米歇尔</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/622d4129ee5" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08J4PT3N0G/622d4129ee5.jpg?pub_secret=bace1494bf" 
+             class="img-fluid lazyload" 
+             alt="视觉SLAM十四讲：从理论到实践（第2版）">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>视觉SLAM十四讲：从理论到实践（第2版）</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">高翔等著</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/ec957ab7b54" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08HL3DQB8C/ec957ab7b54.jpg?pub_secret=ca286d5404" 
+             class="img-fluid lazyload" 
+             alt="Python神经网络编程">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>Python神经网络编程</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">塔里克·拉希德</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/07sulu94tuk" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F09TH1NH2UQ/download/07sulu94tuk.png?pub_secret=8745f71f1c" 
+             class="img-fluid lazyload" 
+             alt="深度学习革命">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>深度学习革命</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">凯德·梅茨</span>
+    </div>
+  </a>
+</div>
+        
+      </div>
+    </div>
+
+
+
+    <div class="col-12 p-0 mb-4">
+      <div class="row mb-4 mt-3">
+        <div class="col-12">
+          <div class="d-flex align-items-center justify-content-between w-100 position-relative">
+                <div class="position-relative z-1" style="background-color: var(--bg-secondary);padding: 6px 20px;border: 1px solid var(--border-color);border-radius: 20px;box-shadow: 2px 2px 0 var(--bg-tertiary);font-size: 1.1rem;font-weight: bold;white-space: nowrap;color: var(--category-title-text);">
+                  
+                  
+                    <i class="bi bi-graph-up-arrow"></i>
+                  
+                  经济理财
+            </div>
+                <div class="flex-grow-1 mx-2 position-relative" style="height: 2px;">
+              <div style="border-top: 2px dotted #888; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+            </div>
+                <a href="/category/1100000"
+               class="fw-light small z-1"
+               style="text-decoration: none; white-space: nowrap; margin-right: 10px; color: var(--text-primary);">
+              查看更多 &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row">
+        
+<div class="col-4 col-md-2">
+  <a href="../book/azyabhwoj25" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F0AHQUWA56W/download/azyabhwoj25.png?pub_secret=5bf5db7247" 
+             class="img-fluid lazyload" 
+             alt="爆单出圈文案">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>爆单出圈文案</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">成昱元著</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/2i3vcsir44s" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F0AJ3SCN9T3/download/2i3vcsir44s.png?pub_secret=17d78684ed" 
+             class="img-fluid lazyload" 
+             alt="私域裂变运营实战手册">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>私域裂变运营实战手册</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">李焜</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/bp8gtyrd9cb" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08RBHNJLQJ/download/12573567.jpg?pub_secret=9d683367b1" 
+             class="img-fluid lazyload" 
+             alt="置身事内：中国政府与经济发展">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>置身事内：中国政府与经济发展</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">兰小欢</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/snhwst629tx" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F09RZ86SGAH/download/snhwst629tx.png?pub_secret=8a68cfce0f" 
+             class="img-fluid lazyload" 
+             alt="股票大作手操盘法">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>股票大作手操盘法</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">[美]杰西·利弗莫尔著
+曾柯杰编译</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/w5ov8q7shw9" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08RHAKGHR9/download/13240234.jpg?pub_secret=2d11d5515d" 
+             class="img-fluid lazyload" 
+             alt="小米营销法">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>小米营销法</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">黄志伟著</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/2cb5b810698" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08HSTJK2CR/2cb5b810698.jpg?pub_secret=177798d87c" 
+             class="img-fluid lazyload" 
+             alt="质量总监成长记">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>质量总监成长记</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">秦邦福 秦秋玲</span>
+    </div>
+  </a>
+</div>
+        
+      </div>
+    </div>
+
+
+
+    <div class="col-12 p-0 mb-4">
+      <div class="row mb-4 mt-3">
+        <div class="col-12">
+          <div class="d-flex align-items-center justify-content-between w-100 position-relative">
+                <div class="position-relative z-1" style="background-color: var(--bg-secondary);padding: 6px 20px;border: 1px solid var(--border-color);border-radius: 20px;box-shadow: 2px 2px 0 var(--bg-tertiary);font-size: 1.1rem;font-weight: bold;white-space: nowrap;color: var(--category-title-text);">
+                  
+                  
+                    <i class="bi bi-bank"></i>
+                  
+                  政治军事
+            </div>
+                <div class="flex-grow-1 mx-2 position-relative" style="height: 2px;">
+              <div style="border-top: 2px dotted #888; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+            </div>
+                <a href="/category/1200000"
+               class="fw-light small z-1"
+               style="text-decoration: none; white-space: nowrap; margin-right: 10px; color: var(--text-primary);">
+              查看更多 &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row">
+        
+<div class="col-4 col-md-2">
+  <a href="../book/4l3cpzj8pgt" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08QYJ3C1C7/download/12912580.jpg?pub_secret=f92c43b253" 
+             class="img-fluid lazyload" 
+             alt="孙子兵法">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>孙子兵法</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">[春秋]孙武</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/f83e82699a5" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08HTHU6665/f83e82699a5.jpg?pub_secret=5861554c3b" 
+             class="img-fluid lazyload" 
+             alt="列宁选集（全四卷）">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>列宁选集（全四卷）</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">中共中央马克思恩格斯列宁斯大林著作编译局编译</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/nmvyr0sikk1" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08RVH7NKU0/download/12177077.jpg?pub_secret=afd22686bd" 
+             class="img-fluid lazyload" 
+             alt="练兵实纪">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>练兵实纪</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">[明]戚继光</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/lanvnz63sg4" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08RC2RU8BV/download/12582524.jpg?pub_secret=db3947cfed" 
+             class="img-fluid lazyload" 
+             alt="君主论">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>君主论</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">[意]马基雅维利著</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/3bf3e5dd6fd" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08H7A5UXGE/3bf3e5dd6fd.jpg?pub_secret=28c0697fa9" 
+             class="img-fluid lazyload" 
+             alt="政府论（上、下篇）">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>政府论（上、下篇）</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">[英]洛克</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/0952b38f2ff" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08HAU70PDL/0952b38f2ff.jpg?pub_secret=1e6d82f548" 
+             class="img-fluid lazyload" 
+             alt="三民主义 (典藏版)">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>三民主义 (典藏版)</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">孙中山</span>
+    </div>
+  </a>
+</div>
+        
+      </div>
+    </div>
+
+
+
+    <div class="col-12 p-0 mb-4">
+      <div class="row mb-4 mt-3">
+        <div class="col-12">
+          <div class="d-flex align-items-center justify-content-between w-100 position-relative">
+                <div class="position-relative z-1" style="background-color: var(--bg-secondary);padding: 6px 20px;border: 1px solid var(--border-color);border-radius: 20px;box-shadow: 2px 2px 0 var(--bg-tertiary);font-size: 1.1rem;font-weight: bold;white-space: nowrap;color: var(--category-title-text);">
+                  
+                  
+                    <i class="bi bi-mortarboard"></i>
+                  
+                  教育学习
+            </div>
+                <div class="flex-grow-1 mx-2 position-relative" style="height: 2px;">
+              <div style="border-top: 2px dotted #888; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+            </div>
+                <a href="/category/1400000"
+               class="fw-light small z-1"
+               style="text-decoration: none; white-space: nowrap; margin-right: 10px; color: var(--text-primary);">
+              查看更多 &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row">
+        
+<div class="col-4 col-md-2">
+  <a href="../book/yywj36bxyf1" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08R7Q066DU/download/13155795.jpg?pub_secret=ef4929025d" 
+             class="img-fluid lazyload" 
+             alt="孩子：挑战">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>孩子：挑战</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">[美]鲁道夫·德雷克斯</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/a7c0e551d59" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08HLDM2ECU/a7c0e551d59.jpg?pub_secret=6d55889631" 
+             class="img-fluid lazyload" 
+             alt="语文教师专业发展十四讲">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>语文教师专业发展十四讲</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">王荣生</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/zg6gg1ljycv" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F09RX6G7ECT/download/zg6gg1ljycv.png?pub_secret=7703a0bedc" 
+             class="img-fluid lazyload" 
+             alt="一个很好很好的小孩">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>一个很好很好的小孩</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">王悦微</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/uu1a12w8iu2" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08R6MZL66S/download/13027662.jpg?pub_secret=82839b75e2" 
+             class="img-fluid lazyload" 
+             alt="夏山学校">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>夏山学校</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">[英]A.S.尼尔</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/5deb8c9c997" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08HLPB1XAQ/5deb8c9c997.jpg?pub_secret=d70f65e92e" 
+             class="img-fluid lazyload" 
+             alt="文献学概要（修订本）">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>文献学概要（修订本）</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">杜泽逊撰</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/snpui4jxwuw" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08QZ4J4Q5D/download/13029244.jpg?pub_secret=5b9797b5eb" 
+             class="img-fluid lazyload" 
+             alt="吴正宪答小学数学教学50问">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>吴正宪答小学数学教学50问</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">吴正宪等编著</span>
+    </div>
+  </a>
+</div>
+        
+      </div>
+    </div>
+
+
+
+    <div class="col-12 p-0 mb-4">
+      <div class="row mb-4 mt-3">
+        <div class="col-12">
+          <div class="d-flex align-items-center justify-content-between w-100 position-relative">
+                <div class="position-relative z-1" style="background-color: var(--bg-secondary);padding: 6px 20px;border: 1px solid var(--border-color);border-radius: 20px;box-shadow: 2px 2px 0 var(--bg-tertiary);font-size: 1.1rem;font-weight: bold;white-space: nowrap;color: var(--category-title-text);">
+                  
+                  
+                    <i class="bi bi-grid-3x3-gap"></i>
+                  
+                  工业技术
+            </div>
+                <div class="flex-grow-1 mx-2 position-relative" style="height: 2px;">
+              <div style="border-top: 2px dotted #888; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+            </div>
+                <a href="/category/1500001"
+               class="fw-light small z-1"
+               style="text-decoration: none; white-space: nowrap; margin-right: 10px; color: var(--text-primary);">
+              查看更多 &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row">
+        
+<div class="col-4 col-md-2">
+  <a href="../book/ku6ir03zjzl" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08REU68L9Z/download/12869562.jpg?pub_secret=4f399536cc" 
+             class="img-fluid lazyload" 
+             alt="汉服制作专业图解教程">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>汉服制作专业图解教程</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">刘西西　</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/3vjzz09ak1q" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08RKRY1PGR/download/12370245.jpg?pub_secret=f68b7b2b7d" 
+             class="img-fluid lazyload" 
+             alt="EMC电磁兼容设计与测试案例分析">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>EMC电磁兼容设计与测试案例分析</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">郑军奇编著</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/757303f6bc1" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08H9AUPXRU/757303f6bc1.jpg?pub_secret=24fcadcd39" 
+             class="img-fluid lazyload" 
+             alt="纳米集成电路制造工艺（第2版）">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>纳米集成电路制造工艺（第2版）</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">张汝京</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/ac42a02f125" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08HHC0KHQS/ac42a02f125.jpg?pub_secret=5475f0c00c" 
+             class="img-fluid lazyload" 
+             alt="LaTeX入门">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>LaTeX入门</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">刘海洋</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/a1vhxmud7j6" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08R16DNMM4/download/12370314.jpg?pub_secret=7cd23bfe70" 
+             class="img-fluid lazyload" 
+             alt="电气工程师自学成才手册（提高篇）">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>电气工程师自学成才手册（提高篇）</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">蔡杏山</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/41bnvcwrvn0" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08RP19G4QH/download/12773421.jpg?pub_secret=de0ad07166" 
+             class="img-fluid lazyload" 
+             alt="人类是怎么霸气上天的：吾皇巴扎黑航天科学史">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>人类是怎么霸气上天的：吾皇巴扎黑航天科学史</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">白茶</span>
+    </div>
+  </a>
+</div>
+        
+      </div>
+    </div>
+
+
+
+    <div class="col-12 p-0 mb-4">
+      <div class="row mb-4 mt-3">
+        <div class="col-12">
+          <div class="d-flex align-items-center justify-content-between w-100 position-relative">
+                <div class="position-relative z-1" style="background-color: var(--bg-secondary);padding: 6px 20px;border: 1px solid var(--border-color);border-radius: 20px;box-shadow: 2px 2px 0 var(--bg-tertiary);font-size: 1.1rem;font-weight: bold;white-space: nowrap;color: var(--category-title-text);">
+                  
+                  
+                    <i class="bi bi-sun"></i>
+                  
+                  生活百科
+            </div>
+                <div class="flex-grow-1 mx-2 position-relative" style="height: 2px;">
+              <div style="border-top: 2px dotted #888; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+            </div>
+                <a href="/category/1600000"
+               class="fw-light small z-1"
+               style="text-decoration: none; white-space: nowrap; margin-right: 10px; color: var(--text-primary);">
+              查看更多 &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row">
+        
+<div class="col-4 col-md-2">
+  <a href="../book/7c3bcb95895" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08H9S66LDU/7c3bcb95895.jpg?pub_secret=20b74fda88" 
+             class="img-fluid lazyload" 
+             alt="郑子太极拳理拳法">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>郑子太极拳理拳法</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">杨竣雄</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/9ee754338ed" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08HJEDCF6F/9ee754338ed.jpg?pub_secret=69e63f0ec8" 
+             class="img-fluid lazyload" 
+             alt="李小龙遗作：你从未见过的功夫之王（套装共3册）">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>李小龙遗作：你从未见过的功夫之王（套装共3册）</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">李小龙 约翰·里特</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/emtw08656fr" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08R9EQ6KS7/download/12149703.jpg?pub_secret=85a6573e1e" 
+             class="img-fluid lazyload" 
+             alt="酢浆草养成手记">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>酢浆草养成手记</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">蓉儿</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/4266f801c07" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08H15AFHHV/4266f801c07.jpg?pub_secret=b4979f2fa7" 
+             class="img-fluid lazyload" 
+             alt="孙禄堂武学集注：拳意述真">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>孙禄堂武学集注：拳意述真</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">孙禄堂</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/67952371d43" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F08J0SBFDG8/67952371d43.jpg?pub_secret=db3ca34148" 
+             class="img-fluid lazyload" 
+             alt="太清神鉴">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>太清神鉴</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">旧题后周[后周]王朴</span>
+    </div>
+  </a>
+</div>
+        
+<div class="col-4 col-md-2">
+  <a href="../book/dyjx26brba4" class="text-decoration-none text-dark">
+    <div class="card mb-1 bn">
+      <div class="image-container bn">
+        <img data-src="https://files.slack.com/files-pri/T087YK7DSNL-F09RH0BDH4Y/download/dyjx26brba4.jpg?pub_secret=85dc581422" 
+             class="img-fluid lazyload" 
+             alt="李小龙技击法">
+      </div>
+    </div>
+    <div class="text-center mb-3 px-1">
+      <span class="small d-block text-truncate cfff" style="max-width: 100%;"><b>李小龙技击法</b></span>
+      <span class="small d-block text-truncate c777" style="max-width: 100%;">李小龙</span>
+    </div>
+  </a>
+</div>
+        
+      </div>
+    </div>
+
+
+
+    
+    
+
+
+    <div class="col-lg-8 col-md-8  col-sm-12 p-0 pe-md-2 pe-lg-2">
+      
+
+      
+
+
+    </div>
+    
+    
+<style>
+  .btn-feedback {
+    background-color: var(--hot-card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    box-shadow: var(--shadow-md);
+    transition: none;
+  }
+  .btn-feedback:hover,
+  .btn-feedback:focus,
+  .btn-feedback:active {
+    background-color: var(--hot-card-bg) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
+    box-shadow: var(--shadow-md);
+  }
+
+  /* 更多分类按钮样式 - 参照 category.html 子分类按钮样式 */
+  .category-nav-btn {
+    border-radius: 8px;
+    transition: all 0.2s ease;
+  }
+
+  .category-nav-btn:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+  }
+
+  [data-theme="light"] .category-nav-btn:hover {
+    background: rgba(220, 177, 155, 0.3) !important;
+  }
+</style>
+<a href="https://forms.office.com/r/n5TT3Ky0Aw"
+   class="btn btn-feedback w-100 mt-3 mb-3"
+   role="button"
+   target="_blank"
+   rel="noopener">
+  遇到问题？点此反馈！
+</a>
+  </div>
+
+<style>
+#pageLostModal {
+  z-index: 10003 !important;
+}
+.modal-backdrop {
+  z-index: 10002 !important;
+}
+
+</style>
+
+<div class="modal fade" id="pageLostModal" tabindex="-1" aria-labelledby="pageLostModalLabel" aria-hidden="true"
+     style="z-index: 10003 !important;">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background-color: var(--bg-secondary); color: var(--text-primary); border: none;">
+      <div class="modal-body text-center">
+        <h5 class="modal-title mb-3">页面未找到</h5>
+        <p>已跳转到搜索页，请搜索你需要的资源。</p>
+        <p style="color: var(--text-muted);"><small>提示将在 <span id="countdown">3</span> 秒后自动关闭</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  function getCookie(name) {
+    const value = "; " + document.cookie;
+    const parts = value.split("; " + name + "=");
+    if (parts.length === 2) return parts.pop().split(";").shift();
+  }
+
+  function deleteCookie(name) {
+    document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  }
+
+  if (getCookie('from_pagelost')) {
+    const modal = new bootstrap.Modal(document.getElementById('pageLostModal'));
+    modal.show();
+
+    let seconds = 3;
+    const countdownEl = document.getElementById('countdown');
+
+    const interval = setInterval(() => {
+      seconds -= 1;
+      countdownEl.textContent = seconds;
+      if (seconds <= 0) {
+        modal.hide();
+        clearInterval(interval);
+      }
+    }, 1000);
+
+    deleteCookie('from_pagelost');
+  }
+});
+</script>
+
+</main>
+
+<!-- Lazysizes 图片懒加载库 -->
+<script src="/static/lazysizes.min.js" async></script>
+
+
+        <footer class="mastfoot mt-auto">
+            <style>
+              .footer-main {
+                padding: 2.5rem 0 1.5rem 0;
+                border-top: 1px solid var(--hr-color);
+              }
+              .footer-brand-name {
+                font-size: 1.4rem;
+                font-weight: 700;
+                color: var(--text-primary);
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                margin-bottom: 0.75rem;
+              }
+              .footer-brand-name i {
+                color: #c0392b;
+                font-size: 1.5rem;
+              }
+              .footer-tagline {
+                color: var(--text-secondary);
+                font-size: 0.9rem;
+                line-height: 1.6;
+                max-width: 280px;
+                text-align: left;
+                margin-bottom: 1.25rem;
+              }
+              .footer-icons a {
+                color: var(--text-muted);
+                font-size: 1.25rem;
+                margin-right: 0.75rem;
+                transition: color 0.2s ease;
+              }
+              .footer-icons a:hover {
+                color: var(--text-primary);
+              }
+              .footer-nav-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+              }
+              .footer-nav-list li {
+                margin-bottom: 0.65rem;
+              }
+              .footer-nav-list a {
+                color: var(--text-secondary);
+                font-size: 1rem;
+                text-decoration: none;
+                transition: color 0.2s ease;
+              }
+              .footer-nav-list a:hover {
+                color: var(--text-primary);
+              }
+              .footer-bottom {
+                padding: 1rem 0;
+                text-align: center;
+                font-size: 0.8rem;
+                color: var(--text-muted);
+              }
+              @media (max-width: 576px) {
+                .footer-tagline {
+                  max-width: 100%;
+                }
+                .footer-nav-cols {
+                  margin-top: 1.5rem;
+                }
+              }
+            </style>
+
+            <div class="footer-main mt-4">
+              <div class="row align-items-start text-start">
+                <!-- 左侧：品牌 + 简介 + 图标 -->
+                <div class="col-12 col-sm-6 col-md-6 mb-4 mb-sm-0">
+                  <div class="footer-brand-name">
+                    <i class="bi bi-book-half"></i>
+                    SaltyLeo 的书架
+                  </div>
+                  <p class="footer-tagline">
+                    文字的避风港，探索跨越时空的故事，为每位求知者精心汇聚。
+                  </p>
+
+                </div>
+
+                <!-- 右侧：两列导航 -->
+                <div class="col-12 col-sm-6 col-md-3 offset-md-3 footer-nav-cols">
+                  <div class="row">
+                    <div class="col-6">
+                      <ul class="footer-nav-list text-center">
+                        <li><a href="/search"><i class="bi bi-search me-1"></i>搜书</a></li>
+                        <li><a href="/audio"><i class="bi bi-headphones me-1"></i>听书</a></li>
+                        <li><a href="/category"><i class="bi bi-grid-3x3-gap me-1"></i>分类</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+                      <ul class="footer-nav-list text-center">
+                        <li><a href="/about"><i class="bi bi-info-circle me-1"></i>关于</a></li>
+                        <li><a href="/booklists"><i class="bi bi-journal-bookmark me-1"></i>书单</a></li>
+                        <li><a href="/changelog"><i class="bi bi-clock-history me-1"></i>日志</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-bottom">
+              © 2026 tstrs.me &nbsp;·&nbsp; 版权所有，保留所有权利。
+            </div>
+        </footer>
+    </div>
+
+
+<div style="position:absolute;left:-9999px;top:-9999px;visibility:hidden;height:0;width:0;overflow:hidden;" aria-hidden="true">
+  <a href="/static/backup/admin_login.html" rel="nofollow">管理员入口</a>
+  <a href="/static/backup/database_dump.sql" rel="nofollow">数据库备份</a>
+  <a href="/api/v1/secret_endpoint" rel="nofollow">API文档</a>
+</div>
+
+<script>
+(function() {
+  // 主题切换功能
+  var themeToggle = document.getElementById('theme-toggle');
+  
+  function getTheme() {
+    var saved = localStorage.getItem('theme');
+    if (saved) return saved;
+    // 默认使用日间模式
+    return 'light';
+  }
+  
+  function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    try {
+      localStorage.setItem('theme', theme);
+    } catch (e) {
+      // localStorage 可能在隐私模式下不可用
+    }
+  }
+  
+  // 点击切换
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function() {
+      var currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+      var newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      setTheme(newTheme);
+    });
+  }
+  
+  // 监听系统主题变化（仅当用户未手动设置时）
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+    if (!localStorage.getItem('theme')) {
+      setTheme(e.matches ? 'dark' : 'light');
+    }
+  });
+  
+  // 初始化时确保版本戳同步
+  var THEME_VERSION = '20260131';
+  var savedVersion = localStorage.getItem('theme_version');
+  if (savedVersion !== THEME_VERSION) {
+    try {
+      localStorage.removeItem('theme');
+      localStorage.setItem('theme_version', THEME_VERSION);
+      setTheme('light');
+    } catch (e) {}
+  }
+})();
+</script>
+
+</body>
+</html>
