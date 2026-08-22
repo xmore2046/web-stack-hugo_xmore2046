@@ -7,3 +7,6 @@ WebStack-Hugo/
 
 # 浏览器自动化测试产生的临时数据
 .playwright-cli/
+
+# 部署脚本运行日志
+scripts/deploy.log

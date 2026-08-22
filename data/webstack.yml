@@ -34,7 +34,7 @@
           url: https://trends.google.com/trends/
           description: 探索全球搜索趋势。
     - term: 邮箱
-      links:
+      links:      
         - title: QQ 邮箱
           logo: qq邮箱.png
           url: https://mail.qq.com/
@@ -59,8 +59,7 @@
           logo: yahoo.png
           url: https://mail.yahoo.com/
           description: 雅虎公司推出的电子邮箱服务。
-
-
+            
 - taxonomy: AI 工具
   icon: fas fa-brain fa-lg
   list:
@@ -197,12 +196,6 @@
           logo: dokploy.com.png
           url: https://dokploy.com/
           description: 自托管部署与监控平台。
-    - term: 文档与知识
-      links:
-        - title: mdBook
-          logo: rust-lang.github.io.svg
-          url: https://rust-lang.github.io/mdBook/index.html
-          description: 用 Markdown 创建书籍，Rust 实现。
     - term: 云服务器
       links:
         - title: 阿里云
@@ -217,6 +210,79 @@
           logo: 华为云.png
           url: https://www.huaweicloud.com/
           description: 华为云计算服务与全栈解决方案。
+    - term: 应用组件
+      links:
+        # —— IP 与网络检测 ——
+        - title: Ping0
+          url: https://ping0.cc/
+          description: 高精度 IP 归属地、风控值与原生 IP 检测。
+        - title: IP.SB
+          url: https://ip.sb/
+          description: 简洁高效的 IP 地址查询与归属地工具。
+        - title: IPIP
+          url: https://www.ipip.net/ip.html
+          description: 全球 IP 精准定位、风险值与纯净度检测。
+        - title: ipdata
+          url: https://ipdata.co/
+          description: IP 定位与风险评分 API，服务全球 200 亿+ 请求。
+        # —— 隐私与安全检测 ——
+        - title: BrowserScan
+          url: https://www.browserscan.net/
+          description: 浏览器指纹检测，评估在线隐私与反检测能力。
+        - title: Scamalytics
+          url: https://scamalytics.com/
+          description: IP 欺诈风险评分、代理与数据中心检测。
+        - title: FOFA
+          url: https://fofa.info/
+          description: 网络空间测绘与安全搜索引擎。
+        # —— DNS 与域名工具 ——
+        - title: DNS Checker
+          url: https://dnschecker.org/
+          description: 全球多节点 DNS 解析传播检测。
+        - title: NSLookup
+          url: https://www.nslookup.io/
+          description: 在线查询域名 A/AAAA/MX/TXT 等 DNS 记录。
+        - title: DNSPod 域名检测
+          url: https://www.dnspod.cn/
+          description: 腾讯云 DNSPod 域名健康诊断、WHOIS 与拨测。
+        - title: ClouDNS
+          url: https://www.cloudns.net/
+          description: 免费 DNS 托管与域名解析管理平台。
+        # —— 测速与连通性 ——
+        - title: ITDOG
+          url: https://www.itdog.cn/
+          description: 在线 ping、tcping、测速、MTR、DNS 查询。
+        - title: Ping.pe
+          url: https://ping.pe/
+          description: 全球多节点 ping、端口检测与路由追踪。
+        - title: Google Fiber 测速
+          url: https://speed.googlefiber.net/
+          description: Google Fiber 官方网速测试。
+        # —— 生成器与工具箱 ——
+        - title: UUID 生成器
+          logo: uuidgenerator.net.png
+          url: https://www.uuidgenerator.net/
+          description: 在线生成 UUID 与 GUID。
+        - title: 美国地址生成器
+          url: https://www.fakeaddressgenerator.com/
+          description: 生成美国虚拟地址、身份与信用卡信息。
+        - title: 随机十六进制生成器
+          url: https://www.lddgo.net/string/random-hex
+          description: 按长度生成随机 HEX 字符串。
+    - term: 谷歌插件
+      links:
+        - title: Wappalyzer
+          url: https://www.wappalyzer.com/
+          logo: wappalyzer.png
+          description: 识别网站使用的技术栈与框架。
+        - title: Panda
+          url: https://usepanda.com/
+          logo: usepanda.png
+          description: 面向高效生产力打造的智能资讯阅读器。
+        - title: Mustsee
+          url: https://mustsee.earth/
+          logo: mustsee.png
+          description: 每次打开新标签页，发现世界最美的地方。
 
 
 - taxonomy: 设计素材
@@ -264,21 +330,6 @@
           url: https://ezgif.com
           logo: ezgif.png
           description: 在线 GIF 制作、压缩与编辑工具集。
-
-    - term: 谷歌插件
-      links:
-        - title: Wappalyzer
-          url: https://www.wappalyzer.com/
-          logo: wappalyzer.png
-          description: 识别网站使用的技术栈与框架。
-        - title: Panda
-          url: https://usepanda.com/
-          logo: usepanda.png
-          description: 面向高效生产力打造的智能资讯阅读器。
-        - title: Mustsee
-          url: https://mustsee.earth/
-          logo: mustsee.png
-          description: 每次打开新标签页，发现世界最美的地方。
     - term: 图标素材
       links:
         - title: Iconfinder
@@ -488,81 +539,6 @@
           logo: transparenttextures.png
           url: https://www.transparenttextures.com/
           description: 免费无缝纹理素材库。
-
-
-- taxonomy: 学习办公
-  icon: fas fa-graduation-cap fa-lg
-  list:
-    - term: 资源网盘
-      links:
-        - title: 百度网盘
-          logo: 百度网盘.jpg
-          url: https://pan.baidu.com/
-          description: 百度网盘，海量文件云端存储与分享。
-        - title: 夸克网盘
-          logo: 夸克网盘.png
-          url: https://pan.quark.cn/
-          description: 夸克网盘，阿里旗下高速不限速网盘。
-        - title: 阿里云盘
-          logo: 阿里云盘.png
-          url: https://www.aliyundrive.com/
-          description: 阿里云盘，你的数字世界。
-        - title: 坚果云
-          logo: 坚果云.png
-          url: https://www.jianguoyun.com/
-          description: 国内知名的云盘与同步盘服务。
-    - term: 图书社区
-      links:
-        - title: 微信读书
-          url: https://weread.qq.com/
-          logo: 微信读书.jpg
-          description: 微信读书电脑版。
-        - title: 书栈网
-          url: https://www.bookstack.cn/
-          logo: 书栈网.jpg
-          description: IT 互联网开源编程书籍免费阅读与下载。
-        - title: PDF Drive
-          logo: pdfdrive.png
-          url: https://www.pdfdrive.com/
-          description: 海量 PDF 电子书搜索与下载（需代理）。
-        - title: 电子课本网
-          logo: dzkbw.png
-          url: http://www.dzkbw.com/
-          description: 各版本中小学电子课本在线阅读。
-        - title: 经管之家
-          url: https://bbs.pinggu.org/
-          logo: 经管之家.jpg
-          description: 国内活跃的经济、管理、金融、统计在线教育和咨询网站。
-        - title: Inoreader
-          url: https://www.inoreader.com/
-          logo: inoreader.jpg
-          description: 重新掌控你的新闻订阅源。
-    - term: 投资理财
-      links:
-        - title: TradingView
-          logo: tradingview.com.png
-          url: https://www.tradingview.com/
-          description: 全球交易图表与投资社交平台。
-        - title: 价值投资导航
-          logo: value500.com.png
-          url: http://value500.com/
-          description: 坚守十四年的投资数据与资讯网站。
-        - title: 集思录
-          logo: jisilu.cn.ico
-          url: https://www.jisilu.cn/
-          description: 以数据为本的投资社区。
-        - title: 集思录-实时数据
-          logo: jisilu.cn.ico
-          url: https://www.jisilu.cn/data/cbnew/#cb
-          description: 可转债实时行情数据。
-        - title: 看财报
-          logo: kancaibao.com.png
-          url: https://www.kancaibao.com/
-          description: 价值投资财务数据分析工具。
-        - title: 巨潮资讯网
-          logo: cninfo.com.cn.svg
-          url: https://www.cninfo.com.cn/
-          description: 中国证监会指定信息披露网站。
 
 
 - taxonomy: 自媒体运营
@@ -776,11 +752,6 @@
           logo: storelibrary.com.png
           url: https://storelibrary.com/
           description: 千万级电商网站信息和亿级联系人数据，精准筛选潜在客户与商机。
-
-
-- taxonomy: SEO 工具
-  icon: fas fa-search fa-lg
-  list:
     - term: SEO 工具
       links:
         - title: Ahrefs
@@ -803,6 +774,81 @@
           logo: www.similarweb.com.png
           url: https://www.similarweb.com/
           description: 网站流量与用户行为分析，洞察竞品与行业趋势.
+
+
+- taxonomy: 学习办公
+  icon: fas fa-graduation-cap fa-lg
+  list:
+    - term: 资源网盘
+      links:
+        - title: 百度网盘
+          logo: 百度网盘.jpg
+          url: https://pan.baidu.com/
+          description: 百度网盘，海量文件云端存储与分享。
+        - title: 夸克网盘
+          logo: 夸克网盘.png
+          url: https://pan.quark.cn/
+          description: 夸克网盘，阿里旗下高速不限速网盘。
+        - title: 阿里云盘
+          logo: 阿里云盘.png
+          url: https://www.aliyundrive.com/
+          description: 阿里云盘，你的数字世界。
+        - title: 坚果云
+          logo: 坚果云.png
+          url: https://www.jianguoyun.com/
+          description: 国内知名的云盘与同步盘服务。
+    - term: 图书社区
+      links:
+        - title: 微信读书
+          url: https://weread.qq.com/
+          logo: 微信读书.jpg
+          description: 微信读书电脑版。
+        - title: 书栈网
+          url: https://www.bookstack.cn/
+          logo: 书栈网.jpg
+          description: IT 互联网开源编程书籍免费阅读与下载。
+        - title: PDF Drive
+          logo: pdfdrive.png
+          url: https://www.pdfdrive.com/
+          description: 海量 PDF 电子书搜索与下载（需代理）。
+        - title: 电子课本网
+          logo: dzkbw.png
+          url: http://www.dzkbw.com/
+          description: 各版本中小学电子课本在线阅读。
+        - title: 经管之家
+          url: https://bbs.pinggu.org/
+          logo: 经管之家.jpg
+          description: 国内活跃的经济、管理、金融、统计在线教育和咨询网站。
+        - title: Inoreader
+          url: https://www.inoreader.com/
+          logo: inoreader.jpg
+          description: 重新掌控你的新闻订阅源。
+    - term: 投资理财
+      links:
+        - title: TradingView
+          logo: tradingview.com.png
+          url: https://www.tradingview.com/
+          description: 全球交易图表与投资社交平台。
+        - title: 价值投资导航
+          logo: value500.com.png
+          url: http://value500.com/
+          description: 坚守十四年的投资数据与资讯网站。
+        - title: 集思录
+          logo: jisilu.cn.ico
+          url: https://www.jisilu.cn/
+          description: 以数据为本的投资社区。
+        - title: 集思录-实时数据
+          logo: jisilu.cn.ico
+          url: https://www.jisilu.cn/data/cbnew/#cb
+          description: 可转债实时行情数据。
+        - title: 看财报
+          logo: kancaibao.com.png
+          url: https://www.kancaibao.com/
+          description: 价值投资财务数据分析工具。
+        - title: 巨潮资讯网
+          logo: cninfo.com.cn.svg
+          url: https://www.cninfo.com.cn/
+          description: 中国证监会指定信息披露网站。
 
 
 - taxonomy: 悠闲娱乐
