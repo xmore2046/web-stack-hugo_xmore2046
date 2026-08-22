@@ -25,10 +25,10 @@
           logo: github.png
           url: https://github.com/
           description: 全球最大的代码托管与开源社区。
-        - title: Google 云端硬盘
-          logo: drive.google.com.png
-          url: https://drive.google.com/
-          description: Google 云端文件存储与同步。
+        - title: Cloudflare
+          logo: cloudflare.com.png
+          url: https://dash.cloudflare.com/
+          description: CDN、域名解析与边缘计算平台。
         - title: Google 趋势
           logo: trends.google.com.png
           url: https://trends.google.com/trends/
@@ -269,8 +269,8 @@
           url: https://ping.pe/
           description: 全球多节点 ping、端口检测与路由追踪。
         - title: Google Fiber 测速
-          logo: speed.googlefiber.net.png
-          url: https://speed.googlefiber.net/
+          logo: fiber.google.com.png
+          url: https://fiber.google.com/speedtest/
           description: Google Fiber 官方网速测试。
         # —— 生成器与工具箱 ——
         - title: UUID 生成器
@@ -813,6 +813,10 @@
           logo: 坚果云.png
           url: https://www.jianguoyun.com/
           description: 国内知名的云盘与同步盘服务。
+        - title: Google 云端硬盘
+          logo: drive.google.com.png
+          url: https://drive.google.com/
+          description: Google 云端文件存储与同步。
     - term: 图书社区
       links:
         - title: 微信读书
