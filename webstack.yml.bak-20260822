@@ -144,8 +144,8 @@
           description: AI 驱动的代码编辑器。
         - title: Windsurf
           logo: windsurf.com.png
-          url: https://devin.ai/desktop
-          description: 专为 AI 协作打造的新一代 IDE，现由 Devin 运营。
+          url: https://windsurf.com/
+          description: 专为 AI 协作打造的新一代 IDE。
         - title: GitHub Copilot
           logo: github.png
           url: https://github.com/features/copilot
@@ -325,7 +325,7 @@
           logo: gaoding.png
           description: 免费在线抠图，一键换背景。
         - title: Khroma
-          url: https://www.khroma.co/generator/
+          url: https://khroma.co/generator/
           logo: khroma.png
           description: AI 快速发现、搜索与保存你想要的配色。
         - title: Coolors
@@ -348,7 +348,10 @@
           url: https://webgradients.com/
           logo: webgradients.png
           description: 180 款免费线性渐变配色背景。
-
+        - title: Trianglify
+          url: https://qrohlf.com/trianglify-generator/
+          logo: trianglify.png
+          description: 低多边形三角背景图生成器。
     - term: 谷歌插件
       links:
         - title: Wappalyzer
@@ -393,18 +396,24 @@
           url: https://www.iconarchive.com/
           logo: iconarchive.png
           description: 59 万+ 免费图标搜索下载。
-
+        - title: FindIcons
+          url: https://findicons.com/
+          logo: FindIcons.png
+          description: 30 万+ 免费图标搜索。
         - title: IcoMoon
           url: https://icomoon.io/app/
           logo: IcoMoonApp.png
           description: 图标字体、SVG、PDF 与 PNG 生成器。
-
+        - title: EasyIcon
+          url: https://www.easyicon.net/
+          logo: easyicon.png
+          description: PNG、ICO、ICNS 格式图标搜索与下载。
         - title: Flaticon
           url: https://www.flaticon.com/
           logo: flaticon.png
           description: 63 万+ 免费矢量图标，支持多种格式。
         - title: UICloud
-          url: http://ui-cloud.com/
+          url: https://ui-cloud.com/
           logo: UICloud.png
           description: 全球最大的用户界面设计数据库。
         - title: Material Icons
@@ -420,7 +429,7 @@
           logo: ionicons.png
           description: Ionic 框架的高质量图标字体。
         - title: Simple Line Icons
-          url: https://simplelineicons.github.io/
+          url: https://simplelineicons.com/
           logo: simplelineicons.png
           description: 简洁线条图标包。
         - title: Icons8
@@ -445,14 +454,20 @@
           url: https://wallhalla.com/
           logo: wallhalla.png
           description: 桌面与移动端高清壁纸合集。
-
+        - title: 365PSD
+          url: https://365psd.com/
+          logo: 365PSD.png
+          description: 免费 PSD 与矢量插画素材。
         - title: Medialoot
           url: https://medialoot.com/
           logo: Medialoot.png
           description: 免费与付费设计资源库。
-
+        - title: 素材搜索
+          url: https://so.ui001.com/
+          logo: sousucai.png
+          description: 设计素材搜索聚合。
         - title: 素材中国
-          url: http://www.sccnn.com/
+          url: https://www.sccnn.com/
           logo: sccnn.png
           description: 免费素材共享平台。
     - term: 字体资源
@@ -470,7 +485,7 @@
           logo: Fondertype.png
           description: 方正字库官方网站。
         - title: 字体传奇网
-          url: https://www.ziticq.com/
+          url: https://ziticq.com/
           logo: ziticq.png
           description: 中国首个字体品牌设计师交流网。
         - title: 私藏字体
@@ -749,15 +764,21 @@
           logo: trendinsight.png
           url: https://trendinsight.oceanengine.com/
           description: 巨量引擎旗下内容消费趋势洞察品牌。
-
-
+        - title: 蝉小红
+          logo: www.chanxiaohong.com.svg
+          url: https://www.chanxiaohong.com/
+          description: 蝉妈妈旗下小红书数据分析平台。
+        - title: 新红
+          logo: newhong.png
+          url: https://xh.newrank.cn/
+          description: 全方位洞察小红书生态的数据平台。
         - title: 新快
           logo: xinkuai.png
           url: https://xk.newrank.cn/
           description: 新榜旗下免费实用的快手数据工具。
         - title: 快手生意通
           logo: business.kuaishou.com.svg
-          url: https://syt.kwaixiaodian.com/main/
+          url: https://business.kuaishou.com/
           description: 快手商家全生意链路数据服务平台。
         - title: 新视
           logo: xinshi.png
@@ -771,16 +792,22 @@
           logo: hsydata.png
           url: https://www.hsydata.com/
           description: B 站大数据分析平台。
-
+        - title: 头榜
+          logo: www.toubang.tv.svg
+          url: https://www.toubang.tv/
+          description: 主流直播平台主播人气与收入排行。
         - title: 星查查
           logo: xcckol.png
           url: https://www.xcckol.com/
           description: 直播带货货源供应链与数据分析。
         - title: 直播眼
           logo: zbyan.ico
-          url: http://pc.zbyan.net/
+          url: https://pc.zbyan.net/
           description: 直播电商全场景 AI 数据平台。
-
+        - title: 短鱼儿
+          logo: www.duanyuer.com.svg
+          url: https://www.duanyuer.com/
+          description: 直播短视频电商数据服务平台。
         - title: 清博大数据
           logo: gsdata.ico
           url: https://www.gsdata.cn/
@@ -876,7 +903,10 @@
           logo: youshu.youcloud.com.ico
           url: https://youshu.youcloud.com/
           description: 新电商营销大数据分析平台，覆盖广告、选品、素材与竞对分析。
-
+        - title: 叠叠加数据
+          logo: www.diediejia.com.svg
+          url: https://www.diediejia.com/
+          description: 专注挖掘未来商机与爆品监控，Temu、Shein、速卖通知名选品网站。
         - title: FindNiche
           logo: findniche.com.png
           url: https://findniche.com/cn
@@ -983,9 +1013,12 @@
           description: 海量 PDF 电子书搜索与下载（需代理）。
         - title: 电子课本网
           logo: dzkbw.png
-          url: http://www.dzkbw.com/
+          url: https://www.dzkbw.com/
           description: 各版本中小学电子课本在线阅读。
-
+        - title: SaltyLeo 的书架
+          logo: book.saltyleo.com.png
+          url: https://book.saltyleo.com/
+          description: SaltyLeo 的电子书资源书架。
         - title: 经管之家
           url: https://bbs.pinggu.org/
           logo: 经管之家.jpg
@@ -1002,7 +1035,7 @@
           description: 全球交易图表与投资社交平台。
         - title: 价值投资导航
           logo: value500.com.png
-          url: http://value500.com/
+          url: https://value500.com/
           description: 坚守十四年的投资数据与资讯网站。
         - title: 集思录
           logo: jisilu.cn.ico

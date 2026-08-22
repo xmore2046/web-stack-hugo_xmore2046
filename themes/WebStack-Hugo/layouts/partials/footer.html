@@ -27,35 +27,59 @@ var theme = {"ajaxurl":"","addico":"https:\/\/nav.baidu.cn\/wp-content\/themes\/
 </script>
 <script>        
     $(document).ready(function(){
+        // 子分类 Tab 联动：目标为 tab-pane 时先激活对应 Tab，再滚动到所在分类标题
+        function activateModuleTab(hash){
+            var $tab = $('.module-tab[href="' + hash + '"]');
+            if(!$tab.length){ console.warn('activateModuleTab: no tab for', hash); return; }
+            var $sec = $tab.closest('.taxo-section');
+            if(!$sec.length){ $sec = $tab.closest('.tab-content').parent(); }
+            $sec.find('.module-tab').removeClass('active');
+            $tab.addClass('active');
+            $sec.find('.tab-pane').removeClass('show active');
+            $(hash).addClass('show active');
+        }
+        function scrollToHash(hash){
+            var $target = $(hash);
+            if(!$target.length){ console.warn('scrollToHash: target not found', hash); return; }
+            var top;
+            if($target.hasClass('tab-pane')){
+                if(!$target.hasClass('active')){
+                    activateModuleTab(hash);
+                }
+                var $sec = $target.closest('.taxo-section');
+                top = ($sec.length ? $sec.find('.site-tag').first().offset().top : $target.offset().top) - 90;
+            }else{
+                top = $target.offset().top - 90;
+            }
+            $("html, body").animate({scrollTop: top}, {duration: 500, easing: "swing"});
+        }
+        window.activateModuleTab = activateModuleTab;
+        window.scrollToHash = scrollToHash;
+        // 点击子分类模块：原地切换对应收藏内容
+        $(document).on('click', '.module-tab', function (e) {
+            e.preventDefault();
+            activateModuleTab($(this).attr('href'));
+        });
         setTimeout(function () {
             if ($('a.smooth[href="' + window.location.hash + '"]')[0]) {
                 $('a.smooth[href="' + window.location.hash + '"]').click();
             }else if (window.location.hash != '') {
-                $("html, body").animate({
-                    scrollTop: $(window.location.hash).offset().top - 90
-                }, {
-                    duration: 500,
-                    easing: "swing"
-                });
+                scrollToHash(window.location.hash);
             }
         }, 300);
         $(document).on('click','a.smooth',function(ev) {
             if($('#sidebar').hasClass('show') && !$(this).hasClass('change-href')){
                 $('#sidebar').modal('toggle');
             }
-            if($(this).attr("href").substr(0, 1) == "#"){
-                $("html, body").animate({
-                    scrollTop: $($(this).attr("href")).offset().top - 90
-                }, {
-                    duration: 500,
-                    easing: "swing"
-                });
+            var href = $(this).attr("href");
+            if(href && href.substr(0, 1) == "#"){
+                scrollToHash(href);
             }
             if($(this).hasClass('go-search-btn')){
                 $('#search-text').focus();
             }
             if(!$(this).hasClass('change-href')){
-                var menu =  $("a"+$(this).attr("href"));
+                var menu =  $("a"+href);
                 menu.click();
                 toTarget(menu.parent().parent(),true,true);
             }

@@ -4,23 +4,24 @@
    ============================================================ */
 
 :root{
-    --site-ink:          #24303c;                 /* 正文主色 */
-    --site-muted:        #8492a6;                 /* 次要文字 */
-    --site-accent:       #d95f3f;                 /* 品牌强调色 */
-    --site-accent-hover: #c24f31;                 /* 强调色 hover */
-    --site-accent-soft:  rgba(217,95,63,.1);      /* 强调色浅底 */
+    --site-ink:          #1e2a3a;                 /* 正文主色（深蓝灰） */
+    --site-muted:        #7d8ca1;                 /* 次要文字 */
+    --site-accent:       #6366f1;                 /* 品牌强调色（柔和靛蓝） */
+    --site-accent-hover: #5254e8;                 /* 强调色 hover */
+    --site-accent-soft:  rgba(99,102,241,.1);     /* 强调色浅底 */
+    --site-accent-rgb:   99,102,241;              /* 强调色 RGB（供 rgba 使用） */
     --site-line:         #e6ebf1;                 /* 分隔线/描边 */
-    --site-shadow:       0 6px 24px rgba(31,45,61,.08);    /* 卡片阴影 */
-    --site-shadow-hover: 0 14px 36px rgba(31,45,61,.14);   /* hover 阴影 */
+    --site-shadow:       0 6px 24px rgba(30,42,58,.08);     /* 卡片阴影 */
+    --site-shadow-hover: 0 14px 36px rgba(30,42,58,.14);    /* hover 阴影 */
     --site-radius:       16px;                    /* 收藏块/主卡片圆角 */
     --site-radius-lg:    12px;                    /* logo 圆角 */
     --site-radius-sm:    8px;                     /* 小元素圆角 */
 }
 
-/* ===== 1. 页面底纸（浅色） ===== */
+/* ===== 1. 页面底纸（浅色，冷调清爽） ===== */
 body.io-grey-mode{
-    background:#f4f6f8;
-    background-image:linear-gradient(180deg,#fafbfc 0%,#eef1f4 100%);
+    background:#f5f6fa;
+    background-image:linear-gradient(180deg,#fafbfe 0%,#eef0f7 100%);
 }
 
 /* ===== 2. 全局卡片统一圆角 ===== */
@@ -37,8 +38,8 @@ body.io-grey-mode{
 }
 .url-body .card:hover{
     transform:translateY(-3px);
-    border-color:rgba(217,95,63,.25);
-    box-shadow:var(--site-shadow-hover);
+    border-color:rgba(var(--site-accent-rgb),.35);
+    box-shadow:var(--site-shadow-hover), 0 0 0 3px rgba(var(--site-accent-rgb),.08);
 }
 .url-body .card .card-body{
     padding:1rem 1.1rem;
@@ -121,7 +122,7 @@ body.io-black-mode .url-body .card{
     border-color:rgba(255,255,255,.06);
 }
 body.io-black-mode .url-body .card:hover{
-    border-color:rgba(217,95,63,.45);
+    border-color:rgba(var(--site-accent-rgb),.45);
     box-shadow:0 14px 36px rgba(2,4,6,.4);
 }
 /* 夜间模式分类标题强制浅色，覆盖主题的 #888（对比度不足）和 #555（变黑）
@@ -209,4 +210,240 @@ body.io-black-mode #search-bg{
 }
 #search-bg #search-text::placeholder{
     color:rgba(255,255,255,.55) !important;
+}
+
+/* ===== 16. 分类内子分类模块栏：标题与子分类同一行（面包屑式 A / a1 a2 a3），透明无底色 ===== */
+.module-tabs-wrap{
+    margin-bottom:1.1rem;
+}
+.module-tabs{
+    display:flex;
+    flex-wrap:nowrap;
+    align-items:center;
+    gap:.35rem;
+    margin:0;
+    padding:.1rem .1rem .5rem .1rem;
+    list-style:none;
+    background:transparent;
+    border:0;
+    box-shadow:none;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+}
+/* 分类标题（面包屑第一项，品牌色图标 + 深色加粗文字） */
+.module-tab-title{
+    display:inline-flex;
+    align-items:center;
+    flex:0 0 auto;
+    margin:0;
+    padding:.5rem .1rem .5rem 0;
+    font-size:1.05rem;
+    font-weight:700;
+    color:var(--site-ink);
+    white-space:nowrap;
+}
+.module-tab-title .iconfont{
+    color:var(--site-accent);
+    margin-right:.25rem;
+}
+/* 面包屑分隔符 */
+.module-tab-divider{
+    flex:0 0 auto;
+    color:#c3ccd6;
+    font-weight:300;
+    font-size:1.15rem;
+    line-height:1;
+    margin:0 .1rem 0 .05rem;
+    user-select:none;
+}
+/* 子分类列表：与标题同一行 */
+.module-tabs-list{
+    display:flex;
+    align-items:center;
+    gap:.35rem;
+    margin:0;
+    padding:0;
+    list-style:none;
+    flex:0 0 auto;
+}
+/* 移除 Bootstrap nav 默认下划线/分隔样式 */
+.module-tabs .nav-item{
+    margin:0;
+    list-style:none;
+    flex:0 0 auto;
+}
+.module-tabs .nav-link,
+.module-tabs .nav-link:hover,
+.module-tabs .nav-link:focus,
+.module-tabs .nav-link.active{
+    border:0;
+    background:transparent;
+}
+.module-tab{
+    display:block;
+    position:relative;
+    width:auto;
+    padding:.45rem .85rem .5rem;
+    border-radius:8px;
+    color:var(--site-muted);
+    font-size:.92rem;
+    font-weight:500;
+    text-align:center;
+    white-space:nowrap;
+    transition:color .2s ease;
+}
+.module-tab:hover{
+    color:var(--site-accent);
+    text-decoration:none;
+}
+.module-tab.active{
+    background:transparent;
+    color:var(--site-accent) !important;
+}
+/* 激活 Tab：底部细线，清爽无底色 */
+.module-tab.active::after{
+    content:'';
+    position:absolute;
+    left:50%;
+    bottom:2px;
+    transform:translateX(-50%);
+    width:22px;
+    height:2.5px;
+    border-radius:2px;
+    background:var(--site-accent);
+}
+.module-tab.active:hover{
+    color:var(--site-accent) !important;
+}
+/* Tab 面板显示控制 */
+.tab-content > .tab-pane{
+    display:none;
+}
+.tab-content > .tab-pane.show.active{
+    display:block;
+}
+/* Tab 面板内容淡入 */
+.module-tabs-wrap + .tab-content > .tab-pane.show.active{
+    animation:fadeInUp .28s ease;
+}
+@keyframes fadeInUp{
+    from{opacity:0; transform:translateY(6px);}
+    to{opacity:1; transform:none;}
+}
+/* 窄屏：标题与模块保持一行，允许横向轻扫 */
+@media (max-width:575.98px){
+    .module-tabs{
+        gap:.25rem;
+        padding:.05rem .05rem .4rem .05rem;
+    }
+    .module-tab-title{
+        font-size:.92rem;
+        padding:.45rem 0;
+    }
+    .module-tab{
+        padding:.4rem .7rem .45rem;
+        font-size:.84rem;
+    }
+    /* 模块栏可横向滑动的右缘渐变遮罩提示 */
+    .module-tabs-wrap{
+        position:relative;
+    }
+    .module-tabs-wrap::after{
+        content:'';
+        position:absolute;
+        top:.05rem;
+        right:.05rem;
+        bottom:.45rem;
+        width:3.2rem;
+        background:linear-gradient(90deg,rgba(245,246,250,0) 0%,#f5f6fa 100%);
+        pointer-events:none;
+        border-radius:0 8px 8px 0;
+        opacity:.95;
+    }
+}
+/* 夜间模式（模块栏保持透明，下划线亮靛蓝） */
+body.io-black-mode .module-tabs{
+    background:transparent;
+    border:0;
+}
+@media (max-width:575.98px){
+    body.io-black-mode .module-tabs-wrap::after{
+        background:linear-gradient(90deg,rgba(27,29,31,0) 0%,#1b1d1f 100%);
+    }
+}
+body.io-black-mode .module-tab-title{
+    color:#e8e8e8;
+}
+body.io-black-mode .module-tab-title .iconfont{
+    color:#a5b4fc;
+}
+body.io-black-mode .module-tab-divider{
+    color:rgba(255,255,255,.25);
+}
+body.io-black-mode .module-tab{
+    color:#aeb4bd;
+}
+body.io-black-mode .module-tab:hover{
+    background:transparent;
+    color:#93a5fb;
+}
+body.io-black-mode .module-tab.active,
+body.io-black-mode .module-tab.active:hover{
+    background:transparent;
+    color:#93a5fb !important;
+}
+body.io-black-mode .module-tab.active::after{
+    background:#a5b4fc;
+}
+
+/* ===== 17. 侧边栏折叠/选中分类：去除红色文字与块状底色，改为品牌色+极浅底 ===== */
+.io-grey-mode .sidebar-show,
+.io-black-mode .sidebar-show{
+    color:var(--site-accent);
+    background:rgba(var(--site-accent-rgb),.08);
+    border-radius:var(--site-radius);
+}
+.io-grey-mode .sidebar-show a,
+.io-black-mode .sidebar-show a{
+    color:var(--site-accent);
+}
+.io-grey-mode .sidebar-show ul,
+.io-black-mode .sidebar-show ul{
+    background:transparent;
+}
+.io-grey-mode .sidebar-item>a:hover,
+.io-black-mode .sidebar-item>a:hover{
+    color:var(--site-accent);
+    background:rgba(var(--site-accent-rgb),.06);
+}
+
+/* ===== 18. 友情链接：与模块栏统一（去圆点、同字号颜色） ===== */
+.friendlink a{
+    margin:0;
+    padding:.45rem .85rem .5rem;
+    font-size:.92rem;
+    font-weight:500;
+    color:var(--site-muted);
+    border-radius:8px;
+}
+.friendlink a:before{
+    content:none;
+}
+.friendlink a:hover{
+    color:var(--site-accent);
+    text-decoration:none;
+}
+body.io-black-mode .friendlink a{
+    color:#aeb4bd;
+}
+body.io-black-mode .friendlink a:hover{
+    color:#93a5fb;
+}
+
+/* ===== 19. 页脚版权行配色统一 ===== */
+.main-footer .footer-text{
+    color:var(--site-muted);
+}
+body.io-black-mode .main-footer .footer-text{
+    color:#aeb4bd;
 }
