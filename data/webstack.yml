@@ -242,6 +242,10 @@
           logo: fofa.info.png
           url: https://fofa.info/
           description: 网络空间测绘与安全搜索引擎。
+        - title: Web-Check
+          logo: web-check.xyz.png
+          url: https://web-check.xyz/
+          description: 免费一站式网站综合分析：SSL/TLS、HTTP 头、DNS、端口、威胁情报与性能检测。
         # —— DNS 与域名工具 ——
         - title: DNS Checker
           logo: dnschecker.org.png
