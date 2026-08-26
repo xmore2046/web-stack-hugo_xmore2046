@@ -1,5 +1,4 @@
 ---
-
 - taxonomy: 常用推荐
   icon: far fa-star
   list:
@@ -29,10 +28,6 @@
           logo: cloudflare.com.png
           url: https://dash.cloudflare.com/
           description: CDN、域名解析与边缘计算平台。
-        - title: Google 趋势
-          logo: trends.google.com.png
-          url: https://trends.google.com/trends/
-          description: 探索全球搜索趋势。
     - term: 邮箱
       links:
         - title: QQ 邮箱
@@ -103,10 +98,8 @@
           logo: sora.com.png
           url: https://sora.chatgpt.com/
           description: OpenAI 文生视频工具，文本/图像转沉浸式视频。
-
     - term: AI 代码助手
       links:
-
         - title: Claude Code
           logo: claude.ai.png
           url: https://www.anthropic.com/claude-code
@@ -119,7 +112,6 @@
           logo: github.png
           url: https://github.com/features/copilot
           description: GitHub 官方 AI 编程助手。
-
         - title: v0 by Vercel
           logo: v0.dev.png
           url: https://v0.app/
@@ -256,27 +248,44 @@
           logo: www.lddgo.net.png
           url: https://www.lddgo.net/string/random-hex
           description: 按长度生成随机 HEX 字符串。
-        - title: 地址生成器
-          logo: https://usaddressgen.com/favicon.ico
-          url: https://usaddressgen.com/
-          description: 虚拟地址、身份与信用卡信息。
-        - title: 美国地址生成器
-          logo: www.fakeaddressgenerator.com.png
-          url: https://www.fakeaddressgenerator.com/
-          description: 生成美国虚拟地址、身份与信用卡信息。
+        # —— 在线工具 ——
+        - title: JSON Editor Online
+          logo: jsoneditoronline.org.png
+          url: https://jsoneditoronline.org/
+          description: 在线 JSON 编辑器，支持格式化、可视化、对比。
+        - title: Beautifier
+          logo: beautifier.io.png
+          url: https://beautifier.io/
+          description: 格式化 JavaScript、JSON、HTML、CSS 等。
+        - title: SQL 格式化
+          logo: dpriver.com.ico
+          url: https://www.dpriver.com/pp/sqlformat.htm
+          description: 在线美化 SQL 语句，格式化方便阅读。
+        - title: TableConvert
+          logo: tableconvert.com.png
+          url: https://tableconvert.com/
+          description: Excel/表格转 SQL、HTML、JSON、Markdown 等格式。
+        - title: TinyPNG
+          logo: tinypng.png
+          url: https://tinypng.com/
+          description: 智能压缩 PNG/JPG 图片，兼顾画质与体积。
+        - title: GoQR
+          logo: goqr.png
+          url: https://goqr.me/
+          description: 免费在线生成二维码，支持 Logo 与自定义样式。
     - term: 谷歌插件
       links:
         - title: Wappalyzer
-          url: https://www.wappalyzer.com/
           logo: wappalyzer.png
+          url: https://www.wappalyzer.com/
           description: 识别网站使用的技术栈与框架。
         - title: Panda
-          url: https://usepanda.com/
           logo: usepanda.png
+          url: https://usepanda.com/
           description: 面向高效生产力打造的智能资讯阅读器。
         - title: Mustsee
-          url: https://mustsee.earth/
           logo: mustsee.png
+          url: https://mustsee.earth/
           description: 每次打开新标签页，发现世界最美的地方。
 
 - taxonomy: 设计素材
@@ -284,59 +293,52 @@
   list:
     - term: 在线工具
       links:
-        - title: TinyPNG
-          url: https://tinypng.com/
-          logo: tinypng.png
-          description: 智能压缩 PNG/JPG 图片，兼顾画质与体积。
-        - title: TableConvert
-          url: https://tableconvert.com/
-          logo: tableconvert.com.png
-          description: Excel/表格转 SQL、HTML、JSON、Markdown 等格式。
-        - title: JSON Editor Online
-          url: https://jsoneditoronline.org/
-          logo: jsoneditoronline.org.png
-          description: 在线 JSON 编辑器，支持格式化、可视化、对比。
-        - title: Beautifier
-          url: https://beautifier.io/
-          logo: beautifier.io.png
-          description: 格式化 JavaScript、JSON、HTML、CSS 等。
-        - title: SQL 格式化
-          url: https://www.dpriver.com/pp/sqlformat.htm
-          logo: dpriver.com.ico
-          description: 在线美化 SQL 语句，格式化方便阅读。
-        - title: GoQR
-          url: https://goqr.me/
-          logo: goqr.png
-          description: 免费在线生成二维码，支持 Logo 与自定义样式。
-
+        - title: Canva
+          logo: canva.ico
+          url: https://www.canva.com/
+          description: 在线设计平台，支持海报、演示文稿与社交媒体素材制作。
+        - title: Remove.bg
+          logo: removebg.png
+          url: https://www.remove.bg/
+          description: 一键去除图片背景，支持批量处理。
+        - title: Vectorizer
+          logo: vectorizer.png
+          url: https://vectorizer.com/zh/
+          description: 在线图像矢量化工具，将位图转换为可编辑的矢量图。
+        - title: Vectorizer.AI
+          logo: vectorizer.ai.png
+          url: https://vectorizer.ai/
+          description: AI 图像矢量化工具，支持 SVG、EPS、PDF 输出。
+        - title: Recraft
+          logo: recraft.png
+          url: https://www.recraft.ai/
+          description: AI 矢量图形与品牌设计生成工具。
     - term: 图标素材
       links:
         - title: Iconfinder
-          url: https://www.iconfinder.com
           logo: Iconfinder.png
+          url: https://www.iconfinder.com/
           description: 超 210 万免费与付费矢量图标库。
         - title: Iconfont
-          url: https://www.iconfont.cn/
           logo: iconfont.png
+          url: https://www.iconfont.cn/
           description: 阿里巴巴矢量图标库。
         - title: Iconmonstr
-          url: https://iconmonstr.com/
           logo: iconmonstr.png
+          url: https://iconmonstr.com/
           description: 免费简洁图标，助力你的下一个项目。
         - title: IcoMoon
-          url: https://icomoon.io/app/
           logo: IcoMoonApp.png
+          url: https://icomoon.io/app/
           description: 图标字体、SVG、PDF 与 PNG 生成器。
         - title: Flaticon
-          url: https://www.flaticon.com/
           logo: flaticon.png
+          url: https://www.flaticon.com/
           description: 63 万+ 免费矢量图标，支持多种格式。
-
         - title: Font Awesome
-          url: https://fontawesome.com/icons/
           logo: fontawesomeicon.png
+          url: https://fontawesome.com/icons/
           description: Font Awesome 全套 675 个免费图标。
-
         - title: Noun Project
           logo: nounproject.png
           url: https://thenounproject.com/
@@ -344,44 +346,42 @@
     - term: 平面素材
       links:
         - title: Freepik
-          url: https://www.freepik.com/
           logo: freepik.png
+          url: https://www.freepik.com/
           description: 超百万免费矢量、PSD、照片与图标。
         - title: Unsplash
-          url: https://unsplash.com/
           logo: unsplash.png
+          url: https://unsplash.com/
           description: 免费高清图片素材库。
         - title: WallHalla
-          url: https://wallhalla.com/
           logo: wallhalla.png
+          url: https://wallhalla.com/
           description: 桌面与移动端高清壁纸合集。
-
         - title: Medialoot
-          url: https://medialoot.com/
           logo: Medialoot.png
+          url: https://medialoot.com/
           description: 免费与付费设计资源库。
-
         - title: 素材中国
-          url: http://www.sccnn.com/
           logo: sccnn.png
+          url: http://www.sccnn.com/
           description: 免费素材共享平台。
     - term: 字体资源
       links:
         - title: Google Fonts
-          url: https://fonts.google.com/
           logo: googlefont.png
+          url: https://fonts.google.com/
           description: Google 免费开源字体库。
         - title: Adobe Fonts
-          url: https://fonts.adobe.com/
           logo: typekit.png
+          url: https://fonts.adobe.com/
           description: Adobe 字体库，收录全球顶级字体。
         - title: 方正字库
-          url: https://www.foundertype.com/
           logo: Fondertype.png
+          url: https://www.foundertype.com/
           description: 方正字库官方网站。
         - title: 字体传奇网
-          url: https://www.ziticq.com/
           logo: ziticq.png
+          url: https://www.ziticq.com/
           description: 中国首个字体品牌设计师交流网。
 
 - taxonomy: 素材资源
@@ -505,7 +505,7 @@
           description: 微信公众号管理平台。
         - title: 视频号助手
           logo: channels.weixin.qq.com.png
-          url: https://channels.weixin.qq.com
+          url: https://channels.weixin.qq.com/
           description: 视频号创作者后台。
         - title: 小红书创作中心
           logo: creator.xiaohongshu.com.png
@@ -667,6 +667,10 @@
           description: 图片灵感平台，适合家居、服饰等视觉品类营销。
     - term: 选品工具
       links:
+        - title: Google 趋势
+          logo: trends.google.com.png
+          url: https://trends.google.com/trends/
+          description: 探索全球搜索趋势。
         - title: 卖家精灵
           logo: www.sellersprite.com.png
           url: https://www.sellersprite.com/cn/
@@ -691,7 +695,6 @@
           logo: ozon.menglar.com.ico
           url: https://ozon.menglar.com/
           description: Ozon 电商选品与俄罗斯市场大数据分析平台。
-
         - title: FindNiche
           logo: findniche.com.png
           url: https://findniche.com/cn
@@ -721,7 +724,7 @@
         - title: SimilarWeb
           logo: www.similarweb.com.png
           url: https://www.similarweb.com/
-          description: 网站流量与用户行为分析，洞察竞品与行业趋势.
+          description: 网站流量与用户行为分析，洞察竞品与行业趋势。
 
 - taxonomy: 学习办公
   icon: fas fa-graduation-cap fa-lg
@@ -751,12 +754,12 @@
     - term: 图书社区
       links:
         - title: 微信读书
-          url: https://weread.qq.com/
           logo: 微信读书.jpg
+          url: https://weread.qq.com/
           description: 微信读书电脑版。
         - title: 书栈网
-          url: https://www.bookstack.cn/
           logo: 书栈网.jpg
+          url: https://www.bookstack.cn/
           description: IT 互联网开源编程书籍免费阅读与下载。
         - title: PDF Drive
           logo: pdfdrive.png
@@ -767,12 +770,12 @@
           url: http://www.dzkbw.com/
           description: 各版本中小学电子课本在线阅读。
         - title: 最大的电子书库
-          url: https://z-lib.sk/
           logo: https://z-lib.sk/favicon.ico
+          url: https://z-lib.sk/
           description: 在线电子书搜索与阅读资源平台。
         - title: Inoreader
-          url: https://www.inoreader.com/
           logo: inoreader.jpg
+          url: https://www.inoreader.com/
           description: 重新掌控你的新闻订阅源。
     - term: 投资理财
       links:
@@ -780,17 +783,14 @@
           logo: tradingview.com.png
           url: https://www.tradingview.com/
           description: 全球交易图表与投资社交平台。
-
         - title: 价值投资导航
           logo: value500.com.png
           url: http://value500.com/
           description: 坚守十四年的投资数据与资讯网站。
-
         - title: 集思录-实时数据
           logo: jisilu.cn.ico
           url: https://www.jisilu.cn/data/cbnew/#cb
           description: 可转债实时行情数据。
-
         - title: 巨潮资讯网
           logo: cninfo.com.cn.svg
           url: https://www.cninfo.com.cn/
