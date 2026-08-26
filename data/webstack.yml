@@ -98,6 +98,26 @@
           logo: sora.com.png
           url: https://sora.chatgpt.com/
           description: OpenAI 文生视频工具，文本/图像转沉浸式视频。
+        - title: 即梦 AI
+          logo: jimeng.jianying.com.png
+          url: https://jimeng.jianying.com/
+          description: 字节跳动 AI 创作平台，图片与视频一键生成。
+        - title: Kimi
+          logo: kimi.moonshot.cn.png
+          url: https://kimi.moonshot.cn/
+          description: 月之暗面 AI 助手，擅长长文本阅读与深度分析。
+        - title: 通义
+          logo: www.tongyi.com.png
+          url: https://www.tongyi.com/
+          description: 阿里巴巴 AI 大模型助手，问答创作与多模态一体。
+        - title: 豆包
+          logo: www.doubao.com.png
+          url: https://www.doubao.com/
+          description: 字节跳动 AI 助手，支持问答、写作与图像生成。
+        - title: 腾讯混元
+          logo: hunyuan.tencent.com.png
+          url: https://hunyuan.tencent.com/
+          description: 腾讯自研混元大模型，支持对话、绘画与视频生成。
     - term: AI 代码助手
       links:
         - title: Claude Code
@@ -241,9 +261,9 @@
           url: https://www.uuidgenerator.net/
           description: 在线生成 UUID 与 GUID。
         - title: 美国地址生成器
-          logo: www.fakeaddressgenerator.com.png
-          url: https://www.fakeaddressgenerator.com/
-          description: 生成美国虚拟地址、身份与信用卡信息。
+          logo: usaddressgen.com.svg
+          url: https://usaddressgen.com/
+          description: 一键生成美国虚拟地址、街道、城市与邮编。
         - title: 随机十六进制生成器
           logo: www.lddgo.net.png
           url: https://www.lddgo.net/string/random-hex
