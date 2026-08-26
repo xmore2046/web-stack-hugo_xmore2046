@@ -34,7 +34,7 @@
           url: https://trends.google.com/trends/
           description: 探索全球搜索趋势。
     - term: 邮箱
-      links:      
+      links:
         - title: QQ 邮箱
           logo: qq邮箱.png
           url: https://mail.qq.com/
@@ -59,7 +59,7 @@
           logo: yahoo.png
           url: https://mail.yahoo.com/
           description: 雅虎公司推出的电子邮箱服务。
-            
+
 - taxonomy: AI 工具
   icon: fas fa-brain fa-lg
   list:
@@ -89,14 +89,6 @@
           logo: aistudio.google.com.png
           url: https://aistudio.google.com/prompts/new_chat
           description: Google 官方的 AI 开发与对话平台。
-        - title: Napkin
-          logo: napkin.ai.png
-          url: https://www.napkin.ai/
-          description: 将文本一键转化为视觉图表。
-        - title: Gamma
-          logo: gamma.app.jpg
-          url: https://gamma.app/
-          description: AI 一键生成 PPT 与文档。
         - title: Google NotebookLM
           logo: notebooklm.google.com.png
           url: https://notebooklm.google/
@@ -107,44 +99,14 @@
           description: Google AI 图像生成模型（Gemini 2.5 Flash Image）。
     - term: AI 多媒体
       links:
-        - title: Suno
-          logo: suno.com.png
-          url: https://suno.com/home
-          description: AI 生成原创音乐，免费制作歌曲。
         - title: Sora
           logo: sora.com.png
           url: https://sora.chatgpt.com/
           description: OpenAI 文生视频工具，文本/图像转沉浸式视频。
-        - title: Veo-3
-          logo: aistudio.google.com.png
-          url: https://aistudio.google.com/models/veo-3
-          description: Google 视频生成模型 Veo 3。
+
     - term: AI 代码助手
       links:
-        - title: v0 by Vercel
-          logo: v0.dev.png
-          url: https://v0.app/
-          description: Vercel 出品的 AI 全栈应用生成工具。
-        - title: Cursor
-          logo: cursor.com.png
-          url: https://www.cursor.com/
-          description: AI 驱动的代码编辑器。
-        - title: Windsurf
-          logo: windsurf.com.png
-          url: https://devin.ai/desktop
-          description: 专为 AI 协作打造的新一代 IDE，现由 Devin 运营。
-        - title: GitHub Copilot
-          logo: github.png
-          url: https://github.com/features/copilot
-          description: GitHub 官方 AI 编程助手。
-        - title: Trae
-          logo: trae.ai.png
-          url: https://www.trae.ai/
-          description: 字节跳动推出的 AI IDE。
-        - title: Kiro
-          logo: kiro.dev.png
-          url: https://kiro.dev/
-          description: 从原型到生产的 AI IDE。
+
         - title: Claude Code
           logo: claude.ai.png
           url: https://www.anthropic.com/claude-code
@@ -153,7 +115,15 @@
           logo: openai.com.png
           url: https://openai.com/zh-Hans-CN/codex/
           description: OpenAI 推出的 AI 编码工具。
+        - title: GitHub Copilot
+          logo: github.png
+          url: https://github.com/features/copilot
+          description: GitHub 官方 AI 编程助手。
 
+        - title: v0 by Vercel
+          logo: v0.dev.png
+          url: https://v0.app/
+          description: Vercel 出品的 AI 全栈应用生成工具。
 
 - taxonomy: 开发者工具
   icon: fas fa-code fa-lg
@@ -192,10 +162,7 @@
           logo: 1panel.cn.png
           url: https://1panel.cn/
           description: 现代化 Linux 服务器管理面板。
-        - title: Dokploy
-          logo: dokploy.com.png
-          url: https://dokploy.com/
-          description: 自托管部署与监控平台。
+
     - term: 云服务器
       links:
         - title: 阿里云
@@ -289,6 +256,14 @@
           logo: www.lddgo.net.png
           url: https://www.lddgo.net/string/random-hex
           description: 按长度生成随机 HEX 字符串。
+        - title: 地址生成器
+          logo: https://usaddressgen.com/favicon.ico
+          url: https://usaddressgen.com/
+          description: 虚拟地址、身份与信用卡信息。
+        - title: 美国地址生成器
+          logo: www.fakeaddressgenerator.com.png
+          url: https://www.fakeaddressgenerator.com/
+          description: 生成美国虚拟地址、身份与信用卡信息。
     - term: 谷歌插件
       links:
         - title: Wappalyzer
@@ -303,7 +278,6 @@
           url: https://mustsee.earth/
           logo: mustsee.png
           description: 每次打开新标签页，发现世界最美的地方。
-
 
 - taxonomy: 设计素材
   icon: fas fa-palette fa-lg
@@ -330,26 +304,11 @@
           url: https://www.dpriver.com/pp/sqlformat.htm
           logo: dpriver.com.ico
           description: 在线美化 SQL 语句，格式化方便阅读。
-        - title: ScreenShots.pro
-          url: https://screenshots.pro/
-          logo: screenshots.pro.png
-          description: App Store / Google Play 截图生成器。
-        - title: 截图美化
-          url: https://shots.so/
-          logo: shots.so.png
-          description: 截图美化，套上浏览器、iPhone、iPad、MacBook 外壳。
-        - title: PostSpark
-          url: https://postspark.app/
-          logo: postspark.app.png
-          description: 美丽的截图与模型展示生成器。
         - title: GoQR
           url: https://goqr.me/
           logo: goqr.png
           description: 免费在线生成二维码，支持 Logo 与自定义样式。
-        - title: EZGIF
-          url: https://ezgif.com
-          logo: ezgif.png
-          description: 在线 GIF 制作、压缩与编辑工具集。
+
     - term: 图标素材
       links:
         - title: Iconfinder
@@ -364,44 +323,20 @@
           url: https://iconmonstr.com/
           logo: iconmonstr.png
           description: 免费简洁图标，助力你的下一个项目。
-        - title: Icon Archive
-          url: https://www.iconarchive.com/
-          logo: iconarchive.png
-          description: 59 万+ 免费图标搜索下载。
-
         - title: IcoMoon
           url: https://icomoon.io/app/
           logo: IcoMoonApp.png
           description: 图标字体、SVG、PDF 与 PNG 生成器。
-
         - title: Flaticon
           url: https://www.flaticon.com/
           logo: flaticon.png
           description: 63 万+ 免费矢量图标，支持多种格式。
-        - title: UICloud
-          url: http://ui-cloud.com/
-          logo: UICloud.png
-          description: 全球最大的用户界面设计数据库。
-        - title: Material Icons
-          url: https://fonts.google.com/icons
-          logo: Materialicons.png
-          description: Google Material 系统图标，900+ 种尺寸与密度。
+
         - title: Font Awesome
           url: https://fontawesome.com/icons/
           logo: fontawesomeicon.png
           description: Font Awesome 全套 675 个免费图标。
-        - title: Ionicons
-          url: https://ionicons.com/
-          logo: ionicons.png
-          description: Ionic 框架的高质量图标字体。
-        - title: Simple Line Icons
-          url: https://simplelineicons.github.io/
-          logo: simplelineicons.png
-          description: 简洁线条图标包。
-        - title: Icons8
-          logo: icons8.png
-          url: https://icons8.com/
-          description: 高质量图标与插画设计资源。
+
         - title: Noun Project
           logo: nounproject.png
           url: https://thenounproject.com/
@@ -448,7 +383,6 @@
           url: https://www.ziticq.com/
           logo: ziticq.png
           description: 中国首个字体品牌设计师交流网。
-
 
 - taxonomy: 素材资源
   icon: far fa-folder-open fa-lg
@@ -560,7 +494,6 @@
           url: https://www.transparenttextures.com/
           description: 免费无缝纹理素材库。
 
-
 - taxonomy: 自媒体运营
   icon: fas fa-bullhorn fa-lg
   list:
@@ -668,8 +601,6 @@
           logo: trendinsight.png
           url: https://trendinsight.oceanengine.com/
           description: 巨量引擎旗下内容消费趋势洞察品牌。
-
-
         - title: 新快
           logo: xinkuai.png
           url: https://xk.newrank.cn/
@@ -682,9 +613,6 @@
           logo: xinshi.png
           url: https://xs.newrank.cn/
           description: 新榜旗下视频号数据分析平台。
-
-
-
 
 - taxonomy: 外贸电商
   icon: fas fa-globe fa-lg
@@ -795,12 +723,15 @@
           url: https://www.similarweb.com/
           description: 网站流量与用户行为分析，洞察竞品与行业趋势.
 
-
 - taxonomy: 学习办公
   icon: fas fa-graduation-cap fa-lg
   list:
     - term: 资源网盘
       links:
+        - title: Google 云端硬盘
+          logo: drive.google.com.png
+          url: https://drive.google.com/
+          description: Google 云端文件存储与同步。
         - title: 百度网盘
           logo: 百度网盘.jpg
           url: https://pan.baidu.com/
@@ -817,10 +748,6 @@
           logo: 坚果云.png
           url: https://www.jianguoyun.com/
           description: 国内知名的云盘与同步盘服务。
-        - title: Google 云端硬盘
-          logo: drive.google.com.png
-          url: https://drive.google.com/
-          description: Google 云端文件存储与同步。
     - term: 图书社区
       links:
         - title: 微信读书
@@ -839,10 +766,10 @@
           logo: dzkbw.png
           url: http://www.dzkbw.com/
           description: 各版本中小学电子课本在线阅读。
-        - title: 经管之家
-          url: https://bbs.pinggu.org/
-          logo: 经管之家.jpg
-          description: 国内活跃的经济、管理、金融、统计在线教育和咨询网站。
+        - title: 最大的电子书库
+          url: https://z-lib.sk/
+          logo: https://z-lib.sk/favicon.ico
+          description: 在线电子书搜索与阅读资源平台。
         - title: Inoreader
           url: https://www.inoreader.com/
           logo: inoreader.jpg
@@ -853,27 +780,21 @@
           logo: tradingview.com.png
           url: https://www.tradingview.com/
           description: 全球交易图表与投资社交平台。
+
         - title: 价值投资导航
           logo: value500.com.png
           url: http://value500.com/
           description: 坚守十四年的投资数据与资讯网站。
-        - title: 集思录
-          logo: jisilu.cn.ico
-          url: https://www.jisilu.cn/
-          description: 以数据为本的投资社区。
+
         - title: 集思录-实时数据
           logo: jisilu.cn.ico
           url: https://www.jisilu.cn/data/cbnew/#cb
           description: 可转债实时行情数据。
-        - title: 看财报
-          logo: kancaibao.com.png
-          url: https://www.kancaibao.com/
-          description: 价值投资财务数据分析工具。
+
         - title: 巨潮资讯网
           logo: cninfo.com.cn.svg
           url: https://www.cninfo.com.cn/
           description: 中国证监会指定信息披露网站。
-
 
 - taxonomy: 悠闲娱乐
   icon: fas fa-film fa-lg

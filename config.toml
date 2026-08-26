@@ -1,6 +1,6 @@
 baseURL               = "https://web-panel.vpmaxs.dpdns.org/"
 locale                = "zh-CN"
-title                 = "WebStack-Hugo 网址导航"
+title                 = "web-panel-网址导航"
 theme                 = "WebStack-Hugo"
 preserveTaxonomyNames = true
 disablePathToLower    = true
@@ -13,22 +13,22 @@ publishDir            = "public"				# 站点静态文件保存目录
     description   = "网址导航 | WebStack-Hugo"
     upload        = ""                                                        # 左侧导航栏的"网站提交"
     about         = "mailto:xmore2046@outlook.com"	                          # 左侧导航栏的"关于导航"页面(./about)
-    repository    = ""							  # 本站源码仓库地址（留空待填，如 https://github.com/xmore2046/web-stack-hugo_xmore2046）
-    enablePreLoad = false					# 关闭预加载动画（避免打开页面时的方块滑动加载效果）
-    textPreLoad   = "网址导航"					# 预加载的动画文字, 只有当enablePreLoad=true时生效
-    expandSidebar = false					# 默认展开左侧边导航栏
+    repository    = ""							    # 本站源码仓库地址（留空待填，如 https://github.com/xmore2046/web-stack-hugo_xmore2046）
+    enablePreLoad = false					        # 关闭预加载动画（避免打开页面时的方块滑动加载效果）
+    textPreLoad   = "网址导航"					     # 预加载的动画文字, 只有当enablePreLoad=true时生效
+    expandSidebar = false					        # 默认展开左侧边导航栏
     logosPath     = "/assets/images/logos"			# 网站每个导航地址logo存放地址
     defaultLogo   = "/images/logo.svg"				# logo图片资源不存在或者错误时, 默认显示的logo; 该参数如为空,将会一直加载对应的logo,直至成功
-    nightMode     = true						# 默认站点为深色(夜间)模式；页面 JS 会按系统偏好(prefers-color-scheme)或用户手动选择覆盖
-    yiyan         = true                         		# 默认启用一言服务
-    fancybox      = true                                        # 使用 Fancybox 实现图片灯箱/放大功能
+    nightMode     = true						    # 默认站点为深色(夜间)模式；页面 JS 会按系统偏好(prefers-color-scheme)或用户手动选择覆盖
+    yiyan         = true                         	# 默认启用一言服务
+    fancybox      = true                            # 使用 Fancybox 实现图片灯箱/放大功能
 
-[params.seo]    
+[params.seo]
     baiduhmid       = ''                        	# 百度统计 hm.src 的 ID
     baiduSiteVer    = ''                        	# 百度HTML标签验证(baidu-site-verification)
     tj51laid        = ''                        	# 51.LA 网站统计
     tj51lack        = ''
-    GoogleAdsClient = ''					# Google AdSense 
+    GoogleAdsClient = ''					        # Google AdSense
 
 [params.qweather]
     key = "a34d3676a1f8477c8a9bfffa68a4a82a"
@@ -41,7 +41,7 @@ publishDir            = "public"				# 站点静态文件保存目录
     logoExpandDark    = "images/logo.svg"
     logoCollapseLight = "images/logo.svg"
     logoCollapseDark  = "images/logo.svg"
-    
+
 [markup.goldmark.renderer]
     unsafe = true
 
