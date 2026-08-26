@@ -19,8 +19,10 @@
         type="text/css" media="all" />
     <link rel="stylesheet" id="bootstrap-css" href="{{ relURL "assets/css/bootstrap.min-4.3.1.css" }}"
         type="text/css" media="all" />
+    {{ if .Site.Params.fancybox }}
     <link rel="stylesheet" id="fancybox-css" href="{{ relURL "assets/css/fancybox.min-3.5.7.css" }}"
         type="text/css" media="all" />
+    {{ end }}
     <link rel="stylesheet" id="iowen-css" href="{{ relURL "assets/css/style-3.03029.1.css" }}"
         type="text/css" media="all" />
     <link rel="stylesheet" id="custom-css" href="{{ relURL "assets/css/custom-style.css" }}"
@@ -64,10 +66,13 @@
     {{ end }}
     <!-- end Fancybox -->
 
-    <!-- 预连接外部 API：一言 & 和风天气 -->
+    <!-- 只为启用的外部功能建立连接，减少无效 DNS/TLS 请求 -->
+    {{ if .Site.Params.yiyan }}
     <link rel="preconnect" href="https://v1.hitokoto.cn" crossorigin />
+    {{ end }}
+    {{ if .Site.Params.qweather.key }}
     <link rel="preconnect" href="https://widget.qweather.net" />
     <link rel="dns-prefetch" href="https://devapi.qweather.com" />
-    <!-- end 预连接外部 API -->
+    {{ end }}
 
 </head>

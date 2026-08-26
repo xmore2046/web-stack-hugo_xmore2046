@@ -4,14 +4,14 @@
     <div class="url-body default">
         {{ if $link.qrcode }}
             {{ if findRE "http.*?(.|\n)*?" $link.qrcode }}
-            <a href="javascript:" target="" class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" data-html="true"
+            <a href="{{ $link.url }}" target="_blank" rel="noopener" class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" data-html="true"
                 title="<img src='{{ $link.qrcode }}' width='128'>">
             {{ else }}
-                <a href="javascript:" target="" class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" data-html="true"
+                <a href="{{ $link.url }}" target="_blank" rel="noopener" class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" data-html="true"
                 title="<img src='{{ $p.logosPath }}/{{ $link.qrcode }}' width='128'>">
             {{ end }}
         {{ else }}
-            <a href="{{ $link.url }}" target="_blank" data-id="" data-url="{{ $link.url }}"
+            <a href="{{ $link.url }}" target="_blank" rel="noopener" data-id="" data-url="{{ $link.url }}"
             class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" data-original-title="{{ $link.description }}">
         {{ end }}
             <div class="card-body">

@@ -4,7 +4,7 @@
             <div class="navbar navbar-expand-md">
                 <div class="container-fluid p-0">
 
-                    <a href="" class="navbar-brand d-md-none" title="{{ .Site.Title }}">
+                    <a href="{{ "/" | relURL }}" class="navbar-brand d-md-none" title="{{ .Site.Title }}">
                         <img src="{{ relURL $.Site.Params.images.logoCollapseLight }}" class="logo-light"
                             alt="{{ .Site.Title }}">
                         <img src="{{ relURL $.Site.Params.images.logoCollapseDark }}" class="logo-dark d-none"
@@ -76,15 +76,28 @@
                         {{ with .Site.Params.yiyan }}
                         <li class="nav-item mr-3 mr-lg-0 d-none d-lg-block">
                             <script>
-                                fetch('https://v1.hitokoto.cn')
-                                    .then(response => response.json())
-                                    .then(data => {
-                                    const hitokoto = document.getElementById('hitokoto_text')
-                                    hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
-                                    hitokoto.innerText = data.hitokoto
-                                    })
-                                    .catch(console.error)
-                            </script>                           
+                                (function () {
+                                    function loadHitokoto() {
+                                        var controller = new AbortController();
+                                        var timeout = setTimeout(function () { controller.abort(); }, 3000);
+                                        fetch('https://v1.hitokoto.cn', { signal: controller.signal })
+                                            .then(function (response) { return response.ok ? response.json() : null; })
+                                            .then(function (data) {
+                                                if (!data) return;
+                                                var hitokoto = document.getElementById('hitokoto_text');
+                                                hitokoto.href = 'https://hitokoto.cn/?uuid=' + encodeURIComponent(data.uuid);
+                                                hitokoto.textContent = data.hitokoto;
+                                            })
+                                            .catch(function () {})
+                                            .finally(function () { clearTimeout(timeout); });
+                                    }
+                                    if ('requestIdleCallback' in window) {
+                                        requestIdleCallback(loadHitokoto, { timeout: 2000 });
+                                    } else {
+                                        window.addEventListener('load', loadHitokoto, { once: true });
+                                    }
+                                }());
+                            </script>
                             <div id="hitokoto"><a href="#" target="_blank" id="hitokoto_text">疏影横斜水清浅，暗香浮动月黄昏。</a></div>
                         </li>
                         {{ end }}

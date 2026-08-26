@@ -383,7 +383,7 @@
           description: 免费与付费设计资源库。
         - title: 素材中国
           logo: sccnn.png
-          url: http://www.sccnn.com/
+          url: https://www.sccnn.com/
           description: 免费素材共享平台。
     - term: 字体资源
       links:
@@ -787,12 +787,8 @@
           description: 海量 PDF 电子书搜索与下载（需代理）。
         - title: 电子课本网
           logo: dzkbw.png
-          url: http://www.dzkbw.com/
+          url: https://www.dzkbw.com/
           description: 各版本中小学电子课本在线阅读。
-        - title: 最大的电子书库
-          logo: https://z-lib.sk/favicon.ico
-          url: https://z-lib.sk/
-          description: 在线电子书搜索与阅读资源平台。
         - title: Inoreader
           logo: inoreader.jpg
           url: https://www.inoreader.com/
@@ -805,7 +801,7 @@
           description: 全球交易图表与投资社交平台。
         - title: 价值投资导航
           logo: value500.com.png
-          url: http://value500.com/
+          url: https://value500.com/
           description: 坚守十四年的投资数据与资讯网站。
         - title: 集思录-实时数据
           logo: jisilu.cn.ico
