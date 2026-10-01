@@ -225,10 +225,6 @@
           logo: web-check.xyz.png
           url: https://web-check.xyz/
           description: 免费一站式网站综合分析：SSL/TLS、HTTP 头、DNS、端口、威胁情报与性能检测。
-        - title: 腾讯朱雀 AI 文本检测
-          logo: matrix.tencent.com.png
-          url: https://matrix.tencent.com/ai-detect/
-          description: 识别人类与 AI 书写模式的检测系统。
         # —— DNS 与域名工具 ——
         - title: DNS Checker
           logo: dnschecker.org.png
@@ -255,10 +251,6 @@
           logo: ping.pe.png
           url: https://ping.pe/
           description: 全球多节点 ping、端口检测与路由追踪。
-        - title: TCP Test
-          logo: https://www.tcptest.cn/favicon.ico
-          url: https://www.tcptest.cn/ping
-          description: 在线 Ping、TCP 端口连通性与网络质量检测。
         - title: Google Fiber 测速
           logo: fiber.google.com.png
           url: https://fiber.google.com/speedtest/
@@ -341,7 +333,7 @@
           logo: recraft.png
           url: https://www.recraft.ai/
           description: AI 矢量图形与品牌设计生成工具。
-    - term: 图标与 Logo
+    - term: 图标素材
       links:
         - title: Iconfinder
           logo: Iconfinder.png
@@ -367,10 +359,6 @@
           logo: fontawesomeicon.png
           url: https://fontawesome.com/icons/
           description: Font Awesome 全套 675 个免费图标。
-        - title: World Vector Logo
-          logo: iconfont.png
-          url: https://worldvectorlogo.com/
-          description: 免费下载品牌 Logo 的矢量图形资源库。
         - title: Noun Project
           logo: nounproject.png
           url: https://thenounproject.com/
@@ -543,6 +531,10 @@
           logo: creator.xiaohongshu.com.png
           url: https://creator.xiaohongshu.com/
           description: 小红书创作者服务平台。
+        - title: 腾讯朱雀 AI 文本检测
+          logo: matrix.tencent.com.png
+          url: https://matrix.tencent.com/ai-detect/
+          description: 识别人类与 AI 书写模式的检测系统。
     - term: 国外平台
       links:
         - title: Product Hunt
@@ -779,7 +771,7 @@
           logo: 坚果云.png
           url: https://www.jianguoyun.com/
           description: 国内知名的云盘与同步盘服务。
-    - term: 阅读与资讯
+    - term: 图书社区
       links:
         - title: 微信读书
           logo: 微信读书.jpg
